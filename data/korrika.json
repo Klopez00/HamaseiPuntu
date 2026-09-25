@@ -1,0 +1,60 @@
+{
+  "type":"special","lang":"eu",
+  "title":"Korrika","subtitle":"Canciones de la carrera por el euskera",
+  "bio":"La Korrika es una carrera popular ininterrumpida de 11 días que recorre Euskal Herria a favor del euskera. En esta edición especial trabajamos solo una para no saturar: la de Fermín Muguruza (2021). No está en Spotify — búscala en YouTube.",
+  "mentions":"también merecen una escucha la canción de la Korrika de Pello Reparaz (2026) y la de Gozategi. Tres generaciones, una misma carrera.",
+  "songs":{
+    "korrika":{
+      "title":"Korrika","artist":"Fermín Muguruza","cardDesc":"Fermín Muguruza (2021). Globalización, identidad, diversidad. Big Beñat vs Big Mac.",
+      "introEs":"La Korrika es una carrera ininterrumpida de 11 días a favor del euskera, organizada por AEK desde 1980. Recorre Euskal Herria de punta a punta con un testigo (la consigna). Esta canción de Fermín Muguruza (2021) habla de globalización, identidad y diversidad cultural. Big Beñat es un personaje inventado como antagonista de Big Mac: la individualidad frente a la homogeneización. Atención: la canción no está en Spotify. Búscala en YouTube.",
+      "known":[
+        {"eu":"herria","es":"pueblo","orig":"Goiz ilun hartan irten ginen herri hartan ziren","origEs":"Salimos los que había en aquel pueblo","origSong":"Atalaia","here":"Korrika, herri bat mugimenduan","hereEs":"Korrika, un pueblo en movimiento"},
+        {"eu":"mundua","es":"mundo","orig":"Munduak ahazten banau","origEs":"Si el mundo me olvida","origSong":"Elektrizitatea","here":"Mundu bat bildu!","hereEs":"¡Unir un mundo!"},
+        {"eu":"lurra","es":"tierra","orig":"Lurraren erdian belarrarekin jolasean","origEs":"En medio de la tierra jugando con la hierba","origSong":"Elektrizitatea","here":"Lurra ez baita zolua","hereEs":"Porque la Tierra no es un agujero"},
+        {"eu":"berria","es":"nuevo","orig":"Jaio berrien antzera","origEs":"Como los recién nacidos","origSong":"Negua joan da ta","here":"Mende berri bat hasteko dugu Korrika","hereEs":"Tenemos la Korrika para empezar un nuevo siglo"},
+        {"eu":"begiratu","es":"mirar","orig":"Itsasoruntz begiratu nun","origEs":"Miré hacia el mar","origSong":"Atalaia","here":"Begira ezazu!","hereEs":"¡Mira!"}
+      ],
+      "vocab":[
+        {"eu":"herria","es":"pueblo","level":1},{"eu":"mundua","es":"mundo","level":1},{"eu":"jendea","es":"gente","level":1},
+        {"eu":"lurra","es":"tierra","level":1},{"eu":"burua","es":"cabeza","level":1},{"eu":"deia","es":"llamada","level":1},
+        {"eu":"korrika","es":"carrera, corriendo","level":2,"note":"Korrika (mayúscula) = el evento"},{"eu":"kontsigna","es":"consigna, reivindicación","level":2,"note":"el testigo que se pasa en la Korrika: contiene la reivindicación"},
+        {"eu":"mendea","es":"siglo","level":2},{"eu":"eskualduna","es":"vasco/a","level":2,"morph":"euskal","morphEs":"vasco (raíz)"},
+        {"eu":"mugaeguna","es":"fecha de caducidad","level":2,"morph":"muga + egun","morphEs":"límite + día"},{"eu":"makina","es":"un montón de, bien de","level":2,"note":"makina jendea = bien de gente"},
+        {"eu":"mundukideak","es":"ciudadanos del mundo","level":3,"morph":"mundu + kide","morphEs":"mundo + compañero"},
+        {"eu":"uniformetasuna","es":"uniformidad","level":3,"morph":"uniforme","morphEs":"uniforme"},
+        {"eu":"gisakoa","es":"todos iguales","level":3,"morph":"gisa","morphEs":"igual que, del mismo modo"},
+        {"eu":"uztartu","es":"mezclar, unir","level":3,"note":"para Gozategi: mezclar (nahastu) = bueno","ant":"ezarri","antEs":"imponer"},
+        {"eu":"ezarpena","es":"imposición","level":3,"morph":"ezarri","morphEs":"imponer"},{"eu":"elkartrukatu","es":"intercambiar","level":3,"morph":"elkar + trukatu","morphEs":"mutuamente + intercambiar"},
+        {"eu":"derrigortu","es":"forzar, obligar","level":3},{"eu":"zuloa","es":"agujero","level":3,"note":"en la canción: zolua (forma dialectal)"}
+      ],
+      "phrases":[
+        {"eu":"Korrika badator!","es":"¡Viene la Korrika!"},
+        {"eu":"Korrika, herri bat mugimenduan","es":"Korrika, un pueblo en movimiento","known":"herria"},
+        {"eu":"Badator ta Big Beñatentzat\nbeste ezinezko misio bat","es":"Viene y para Big Beñat\notra misión imposible","note":"Big Beñat: personaje inventado como antagonista de Big Mac. Individualidad frente a la homogeneización con McDonald's como símbolo."},
+        {"eu":"Mundu bat bildu da kontsigna\nEzin huts egin antiheroiak","es":"Unir un mundo es la reivindicación\nNo pueden fallar los antihéroes","known":"mundua","note":"Kontsigna: la reivindicación que porta el testigo en la Korrika."},
+        {"eu":"Big beat-a erritmo erraldoiaz\nNor ez du martxan jarriko horrelako deia?","es":"El big beat con ritmo gigante\n¿A quién no pondrá en marcha una llamada así?"},
+        {"eu":"Gas-Gasteiztik Bai-Baionarat\nMende berri bat hasteko dugu Korrika","es":"De Ga-Gasteiz a Ba-Baiona\ntenemos la Korrika para empezar un nuevo siglo","note":"El tartamudeo en Gas-Gasteiztik y Bai-Baionarat imita el arranque de la carrera. Gasteiz (Vitoria) y Baiona (Bayona): de punta a punta de Euskal Herria."},
+        {"eu":"Buruan mundua, makina jendea","es":"El mundo en la cabeza, un montón de gente"},
+        {"eu":"Pentsatu globalki ta\nekin lokalki ez al da?","es":"¿Acaso no es pensar globalmente\ny actuar localmente?","note":"Construcción inversa al castellano: la pregunta retórica («ez al da?») va al final."},
+        {"eu":"Eskualdunak gara\neta mundukideak","es":"Somos vascos\ny ciudadanos del mundo","known":"mundua","note":"Mundukideak: palabra preciosa. Kide = compañero. Mundukideak = compañeros de otros en el mundo.","grammar":{"label":"Gara = somos (izan, oraina)","rows":[["ni","naiz","soy"],["gu","gara","somos"],["zuek","zarete","sois"],["haiek","dira","son"]]}},
+        {"eu":"Uniformetasunetik at, gizakiak\nEz kasko transgenikoak\nEz zenbakiak","es":"Fuera de la uniformidad, seres humanos\nno cascos transgénicos\nno números"},
+        {"eu":"Bizirik, mugaegunik ez baitu euskarak","es":"Viva, porque el euskera no tiene fecha de caducidad"},
+        {"eu":"Modernizatzea bada izan gisakoa\nBarra kodea tatuatu nire ipurdian","es":"Si modernizarse es ser todos iguales\ntatúa el código de barras en mi culo","note":"Gisakoa: de gisa (igual que). Ironía: si ser moderno es ser todos iguales, entonces tatúame el código de barras."},
+        {"eu":"BEGIRA EZAZU... BIG BEAT BEÑAT\nBEGIRA EZAZU... BIG MAC BEHERA\nKORRIKA BADATOR... BIG BEÑA BURU\nMUNDU BAT BILDU!","es":"¡MIRA! BIG BEAT BEÑAT\n¡MIRA! ABAJO BIG MAC\nVIENE LA KORRIKA... BIG BEÑA AL FRENTE\n¡UNIR UN MUNDO!","known":"begiratu, mundua"},
+        {"eu":"Macdonalizazioa, kultur globalizatua\nKontsumitu plastikoa, janari azkarra bezala","es":"La macdonalización, la cultura globalizada\nconsumir plástico, como comida rápida"},
+        {"eu":"Uztartzea da bat, bestea ezarpena\nElkartrukatu edo derrigortu ereduak","es":"Una cosa es mezclar, otra es imponer\nintercambiar o forzar modelos","note":"La frase clave de la canción. Contrapone: nahastu/uztartu/elkartrukatu (mezclar, intercambiar = bien) vs ezarpena/derrigortu (imposición, forzar = mal)."},
+        {"eu":"Big Beñat, babarrunak eta aza popularra\nSuge tako mexikarra eta pa amb tomàquet","es":"Big Beñat, alubias y col popular\ntaco de serpiente mexicano y pan con tomate","note":"Mezcla deliberada de comidas de distintas culturas: alubias vascas, tacos mexicanos, pa amb tomàquet catalán."},
+        {"eu":"Gazta eta intxaurrak\nLurra ez baita zolua","es":"Queso y nueces\nporque la Tierra no es un agujero","known":"lurra"},
+        {"eu":"Bazter dezagun behingoz\nkaka zahar-zaharra","es":"Dejemos de una vez\nla mierda vieja"},
+        {"eu":"Ttipi ttapa, ttipi ttapa... KORRIKA!","es":"Paso a pasito... ¡KORRIKA!","note":"Ttipi ttapa: onomatopeya de pasitos cortos y rápidos."}
+      ],
+      "praktika":[
+        {"eu":"Eskualdunak gara","es":"(somos vascos)","challenge":"¿Si hablo solo de mí (ni)?","answer":"Eskualduna naiz","explanation":"gara (gu) → naiz (ni), eskualdunak → eskualduna"},
+        {"eu":"Korrika badator","es":"(viene la Korrika)","challenge":"¿Si vienen todos (haiek)?","answer":"Korrika badatoz","explanation":"badator (hura) → badatoz (haiek)"},
+        {"eu":"Mundu bat bildu","es":"(unir un mundo)","challenge":"¿En pasado? (unimos un mundo)","answer":"Mundu bat bildu genuen","explanation":"añadir auxiliar transitivo pasado: genuen (guk)"},
+        {"eu":"Begira ezazu","es":"(mira)","challenge":"¿Si se lo decimos a varias personas (zuek)?","answer":"Begira ezazue","explanation":"imperativo: ezazu (zuk) → ezazue (zuek)"},
+        {"eu":"Lurra ez baita zolua","es":"(porque la Tierra no es un agujero)","challenge":"¿En afirmativo? (la Tierra es un agujero)","answer":"Lurra zolua baita / Lurra zolua da","explanation":"negación: ez baita → afirmativo: baita / da"}
+      ]
+    }
+  }
+}

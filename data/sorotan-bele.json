@@ -1,0 +1,64 @@
+{
+  "type":"multi","lang":"eu",
+  "title":"Sorotan Bele","subtitle":"Aprende euskera con canciones de Sorotan Bele",
+  "bio":"Sorotan Bele fue un grupo de Hondarribia formado en 1991. Solo sacaron dos discos en los 90 y desaparecieron sin dejar rastro. Pop-rock en euskera con letras entre lo narrativo y lo poético. Atalaia cuenta la historia de una ballena; Mariñelaren zai es una despedida en el puerto. Canon del rock vasco de los 90.",
+  "songs":{
+    "atalaia":{
+      "title":"Atalaia","cardDesc":"Balleneros, mar, mañana oscura. Narrativa.",
+      "introEs":"Una canción narrativa. Una mañana oscura salen a la mar, divisan un ballenero, aparece una cría de ballena. El vigía grita desde la atalaya. La historia se cuenta como si la vivieras: olores, gritos, lluvia en el rostro. Hondarribia y el mar como escenario.",
+      "known":[],
+      "vocab":[
+        {"eu":"itsasoa","es":"mar","level":1},{"eu":"goiza","es":"mañana","level":1},{"eu":"euria","es":"lluvia","level":1},
+        {"eu":"aurpegia","es":"rostro, cara","level":1},{"eu":"herria","es":"pueblo","level":1},{"eu":"ontzia","es":"barco","level":1},
+        {"eu":"balea","es":"ballena","level":2},{"eu":"kumea","es":"cría","level":2},{"eu":"arpoia","es":"arpón","level":2},
+        {"eu":"soka","es":"soga, cuerda","level":2},{"eu":"usaina","es":"olor","level":2},{"eu":"oihua","es":"grito","level":2},
+        {"eu":"atalaia","es":"atalaya, vigía","level":2},{"eu":"gupidarik","es":"sin compasión","level":3},
+        {"eu":"algaraka","es":"jaleo, alboroto","level":3},{"eu":"garraxia","es":"grito (agudo)","level":3,"note":"ohiu garraxix = a gritos (redundancia expresiva)"}
+      ],
+      "phrases":[
+        {"eu":"Goiz ilun hartan irten ginen","es":"Aquella mañana oscura salimos"},
+        {"eu":"Herri hartan ziren\nbale arrantzaleak","es":"En aquel pueblo había\nballeneros"},
+        {"eu":"Itsasoruntz begiratu nun","es":"Miré hacia el mar"},
+        {"eu":"Bale kume bat agertu zan","es":"Apareció una cría de ballena"},
+        {"eu":"Sokaz loturik arpoia","es":"El arpón atado con soga"},
+        {"eu":"Arpegia euriz bustia","es":"El rostro mojado por la lluvia"},
+        {"eu":"Ohiu garraxix hasi nintzen","es":"Empecé a gritos","note":"Ohiu garraxix: redundancia expresiva. Ohiua = grito, garraxia = grito agudo. Gritar gritando."},
+        {"eu":"Gupidarik gabe, algaraka","es":"Sin compasión, a lo loco"},
+        {"eu":"Atalaiatik oihuka","es":"Gritando desde la atalaya"}
+      ],
+      "praktika":[
+        {"eu":"Goiz ilun hartan irten ginen","es":"(aquella mañana oscura salimos)","challenge":"¿Si salí yo solo (ni)?","answer":"Goiz ilun hartan irten nintzen","explanation":"nor iragana: ginen (gu) → nintzen (ni)"},
+        {"eu":"Bale kume bat agertu zan","es":"(apareció una cría)","challenge":"¿Si aparecieron varias (haiek)?","answer":"Bale kume batzuk agertu ziren","explanation":"nor iragana: zan (hura) → ziren (haiek), bat → batzuk"},
+        {"eu":"Itsasoruntz begiratu nun","es":"(miré hacia el mar)","challenge":"¿Si miramos nosotros?","answer":"Itsasoruntz begiratu genuen","explanation":"nork iragana: nun (nik) → genuen (guk)"},
+        {"eu":"Sokaz loturik arpoia","es":"(el arpón atado con soga)","challenge":"¿Cómo dirías: los arpones atados?","answer":"Sokaz loturik arpoiak","explanation":"singular → plural: arpoia → arpoiak"},
+        {"eu":"Ohiu garraxix hasi nintzen","es":"(empecé a gritos)","challenge":"¿Si empezamos nosotros?","answer":"Ohiu garraxix hasi ginen","explanation":"nor iragana: nintzen (ni) → ginen (gu)"}
+      ]
+    },
+    "marinelaren":{
+      "title":"Mariñelaren zai","cardDesc":"Despedida en el puerto. Marinero, padre, baile.",
+      "introEs":"Una canción de despedida. El marinero se va a Irlanda y alguien le espera. Mientras tanto, todos bailan alegres en el puerto. Habla con su padre: amo al marinero. La espera, el mar, la fiesta que intenta tapar la ausencia.",
+      "known":[],
+      "vocab":[
+        {"eu":"marinela","es":"marinero","level":1},{"eu":"aita","es":"padre","level":1},{"eu":"ama","es":"madre","level":1},
+        {"eu":"dantza","es":"baile","level":1},{"eu":"alai","es":"alegre","level":1},{"eu":"maite","es":"querer, amar","level":1},
+        {"eu":"portua","es":"puerto","level":2},{"eu":"irla","es":"isla","level":2},{"eu":"zai","es":"esperando","level":2,"note":"mariñelaren zai = esperando al marinero"},
+        {"eu":"joan","es":"ir, irse","level":2},{"eu":"itxaron","es":"esperar","level":2}
+      ],
+      "phrases":[
+        {"eu":"Marinela Irlandara doa","es":"El marinero se va a Irlanda","grammar":{"label":"Joan (irse): nor, oraina","rows":[["ni","noa","voy"],["hura","doa","va"],["gu","goaz","vamos"],["haiek","doaz","van"]]}},
+        {"eu":"Marinelaren zai nago","es":"Estoy esperando al marinero","grammar":{"label":"Egon (estar): nor, oraina","rows":[["ni","nago","estoy"],["hura","dago","está"],["gu","gaude","estamos"]]}},
+        {"eu":"Ta guztiak dantzan, guztiak alai","es":"Y todos bailando, todos alegres"},
+        {"eu":"Marinela maite dut, aita","es":"Amo al marinero, padre","grammar":{"label":"Maitatu: nork-nor, oraina","rows":[["nik","maite dut","yo amo/quiero"],["zuk","maite duzu","tú amas"],["guk","maite dugu","nosotros amamos"]]}},
+        {"eu":"Portuan itxaroten","es":"Esperando en el puerto"},
+        {"eu":"Noiz etorriko da?","es":"¿Cuándo volverá?"}
+      ],
+      "praktika":[
+        {"eu":"Marinela Irlandara doa","es":"(el marinero se va a Irlanda)","challenge":"¿Si vamos nosotros?","answer":"Irlandara goaz","explanation":"nor: doa (hura) → goaz (gu)"},
+        {"eu":"Marinela maite dut","es":"(amo al marinero)","challenge":"¿Si le amas tú (zuk)?","answer":"Marinela maite duzu","explanation":"nork: dut (nik) → duzu (zuk)"},
+        {"eu":"Zai nago","es":"(estoy esperando)","challenge":"¿Si estamos esperando nosotros?","answer":"Zai gaude","explanation":"nor: nago (ni) → gaude (gu)"},
+        {"eu":"Noiz etorriko da?","es":"(¿cuándo volverá?)","challenge":"¿Si vuelven ellos?","answer":"Noiz etorriko dira?","explanation":"nor futuro: da (hura) → dira (haiek)"},
+        {"eu":"Guztiak dantzan","es":"(todos bailando)","challenge":"¿Cómo dirías: yo bailando?","answer":"Ni dantzan","explanation":"guztiak → ni (cambio de sujeto)"}
+      ]
+    }
+  }
+}

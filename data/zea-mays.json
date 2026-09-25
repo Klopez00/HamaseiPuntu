@@ -1,0 +1,100 @@
+{
+  "type":"multi","lang":"eu",
+  "title":"Zea Mays","subtitle":"Aprende euskera con canciones de Zea Mays",
+  "bio":"Zea Mays fue un grupo de Gernika formado en 1999. Pop-rock melódico en euskera con letras poéticas e intensas. Elektrizitatea es su canción más conocida; Negua joan da ta una de las más bonitas del pop vasco. Forman parte del canon de los 2000 junto a Ken Zazpi y Sorotan Bele.",
+  "songs":{
+    "elektrizitatea":{
+      "title":"Elektrizitatea","cardDesc":"Noche, soledad, energía. Poética intensa.",
+      "introEs":"Una canción intensa y poética. Alguien baila desnuda entre la hierba, de noche, y cuando la oscuridad la atrapa, decide que si es energía, se irá volando. Pide a las estrellas perdidas que sus lágrimas fecunden la tierra. Si es electricidad, quedará escrita en la tierra para siempre. Existe una versión con la Orquesta Sinfónica de Euskadi que merece mucho la pena.",
+      "known":[
+        {"eu":"aurpegia","es":"rostro","orig":"Arpegia euriz bustia","origEs":"El rostro mojado por la lluvia","origSong":"Atalaia","here":"Ilargiak erakusten duen aurpegiaren aurrean / Aurpegi biluziak","hereEs":"Ante la cara que muestra la luna / Los rostros desnudos"},
+        {"eu":"euria","es":"lluvia","orig":"Arpegia euriz bustia","origEs":"El rostro mojado por la lluvia","origSong":"Atalaia","here":"Euri tanten artean","hereEs":"Entre las gotas de lluvia"},
+        {"eu":"dantza","es":"baile","orig":"Ta guztiak dantzan, guztiak alai","origEs":"Y todos bailando, todos alegres","origSong":"Mariñelaren zai","here":"Belar artean, bakardadean bilusik dantzan","hereEs":"Entre la hierba, desnuda bailando en soledad"},
+        {"eu":"ilun","es":"oscuro/a","orig":"Goiz ilun hartan irten ginen","origEs":"Aquella mañana oscura salimos","origSong":"Atalaia","here":"Gau ilun honen azken arnasketaren","hereEs":"De esta noche oscura, la última respiración"},
+        {"eu":"joan","es":"ir, irse","orig":"Marinela Irlandara doa","origEs":"El marinero se va a Irlanda","origSong":"Mariñelaren zai","here":"Negua joan da ta","hereEs":"El invierno se ha ido"},
+        {"eu":"agertu","es":"aparecer","orig":"Bale kume bat agertu zan","origEs":"Apareció una cría de ballena","origSong":"Atalaia","here":"Izpi txiki-txikiren bat agertuz doa","hereEs":"Un rayito muy pequeño va apareciendo"}
+      ],
+      "vocab":[
+        {"eu":"lurra","es":"tierra","level":1,"ant":"zerua","antEs":"cielo"},{"eu":"mundua","es":"mundo","level":1},
+        {"eu":"gorputza","es":"cuerpo","level":1},{"eu":"zerua","es":"cielo","level":1,"ant":"lurra","antEs":"tierra"},
+        {"eu":"energia","es":"energía","level":1},{"eu":"oina","es":"pie","level":1,"note":"oinak = los pies"},
+        {"eu":"belarra","es":"hierba","level":2},{"eu":"bakardadea","es":"soledad","level":2,"morph":"bakar","morphEs":"solo"},
+        {"eu":"pentsamenduak","es":"pensamientos","level":2,"morph":"pentsa","morphEs":"pensar"},
+        {"eu":"ilargia","es":"luna","level":2,"morph":"hil + argi","morphEs":"muertos + luz (luz de los muertos)"},
+        {"eu":"izarra","es":"estrella","level":2},{"eu":"arima","es":"alma","level":2},{"eu":"atea","es":"puerta","level":2},
+        {"eu":"biluzia","es":"desnudo/a","level":3},{"eu":"iluntasuna","es":"oscuridad","level":3,"morph":"ilun","morphEs":"oscuro","ant":"argia","antEs":"luz"},
+        {"eu":"negar malkoak","es":"lágrimas","level":3,"morph":"negar","morphEs":"llanto"},
+        {"eu":"arnasketa","es":"respiración","level":3,"morph":"arnas","morphEs":"aliento"},
+        {"eu":"amildegi","es":"precipicio","level":3},{"eu":"ispilua","es":"espejo","level":3},
+        {"eu":"elektrizitatea","es":"electricidad","level":3}
+      ],
+      "phrases":[
+        {"eu":"Belar artean, bakardadean bilusik dantzan","es":"Entre la hierba, desnuda bailando en soledad"},
+        {"eu":"Oinak bustirik, lurraren erdian\nbelarrarekin jolasean","es":"Con los pies mojados, en medio de la tierra\njugando con la hierba"},
+        {"eu":"Pentsamenduak joan egin zaizkit\negunarekin batera","es":"Los pensamientos se me han ido\njunto con el día","grammar":{"label":"Conjugar: joan egin (nor-nori, iragana)","rows":[["niri","joan egin zaizkit","se me han ido"],["zuri","joan egin zaizkizu","se te han ido"],["hari","joan egin zaizkio","se le han ido"],["guri","joan egin zaizkigu","se nos han ido"]]}},
+        {"eu":"Iluntasunak hartu egin nau,\nnegar malkoak","es":"La oscuridad me ha atrapado,\nlágrimas","grammar":{"label":"Conjugar: hartu (nork-nor, oraina)","rows":[["hark...ni","hartu nau","me ha atrapado"],["hark...zu","hartu zaitu","te ha atrapado"],["hark...gu","hartu gaitu","nos ha atrapado"]]}},
+        {"eu":"Gau ilun honen azken arnasketaren\nazkenengo segunduetan\nnik ere oihukatu egingo dut","es":"En los últimos segundos\nde la última respiración de esta noche oscura,\nyo también gritaré"},
+        {"eu":"Munduak ahazten banau,\nlur honek askatzen banau","es":"Si el mundo me olvida,\nsi esta tierra me libera","grammar":{"label":"ba- = si (condicional)","rows":[["ni","ahazten banau","si me olvida"],["zu","ahazten bazaitu","si te olvida"],["gu","ahazten bagaitu","si nos olvida"]]}},
+        {"eu":"Zerbait utzi beharko dut\nbehintzat euri tanten artean","es":"Algo tendré que dejar\nal menos entre las gotas de lluvia"},
+        {"eu":"Ilargiak erakusten duen\naurpegiaren aurrean","es":"Ante la cara que muestra la luna"},
+        {"eu":"Eskatzen diet oihukatuz\nizar galduei","es":"Pido gritando\na las estrellas perdidas"},
+        {"eu":"Nire negar malkoek\nernal dezatela lurra","es":"Que mis lágrimas\nfecunden la tierra"},
+        {"eu":"Nire arimarekin, energia banaiz","es":"Con mi alma, si soy energía"},
+        {"eu":"Badaezpada banoa,\nhegaka ez bada ez noa","es":"Por si acaso me voy,\nsi no es volando no me voy"},
+        {"eu":"Nire gorputzak eskatzen dizkidan\nate apurtuetara","es":"Hacia las puertas rotas\nque mi cuerpo me pide"},
+        {"eu":"Zeruak eskaintzen didan amildegira","es":"Hacia el precipicio que el cielo me ofrece"},
+        {"eu":"Lurrean betirako idatzirik geldituko naiz","es":"Quedaré escrita en la tierra para siempre"},
+        {"eu":"Elektrizitatea banaiz, elektrizitatean banaiz\nLurrean idatzirik geldituko naiz","es":"Si soy electricidad, si estoy en la electricidad\nQuedaré escrita en la tierra"}
+      ],
+      "praktika":[
+        {"eu":"Iluntasunak hartu egin nau","es":"(la oscuridad me ha atrapado)","challenge":"¿Si te ha atrapado a ti (zu)?","answer":"Iluntasunak hartu egin zaitu","explanation":"nork-nor: nau (ni) → zaitu (zu)"},
+        {"eu":"Oihukatu egingo dut","es":"(gritaré)","challenge":"¿Si gritamos nosotros (guk)?","answer":"Oihukatu egingo dugu","explanation":"nork futuro: dut (nik) → dugu (guk)"},
+        {"eu":"Munduak ahazten banau","es":"(si el mundo me olvida)","challenge":"¿Si te olvida a ti?","answer":"Munduak ahazten bazaitu","explanation":"ba- condicional: banau (ni) → bazaitu (zu)"},
+        {"eu":"Lurrean idatzirik geldituko naiz","es":"(quedaré escrita en la tierra)","challenge":"¿Si quedamos nosotros?","answer":"Lurrean idatzirik geldituko gara","explanation":"nor futuro: naiz (ni) → gara (gu)"},
+        {"eu":"Pentsamenduak joan egin zaizkit","es":"(los pensamientos se me han ido)","challenge":"¿Si se te han ido a ti (zuri)?","answer":"Pentsamenduak joan egin zaizkizu","explanation":"nor-nori: zaizkit (niri) → zaizkizu (zuri)"}
+      ]
+    },
+    "negua":{
+      "title":"Negua joan da ta","cardDesc":"El invierno se fue. Sol, alegría, piel, latidos.",
+      "introEs":"Una canción sobre el final del invierno interior. El sol tiene miedo escénico, como un actor que lleva tiempo sin actuar. Poco a poco un rayito aparece, la alegría abraza, y se pide en voz alta que por favor digan que el invierno se ha ido, porque el alma fría no se lo cree. Al final, junto a otra persona, las aristas se redondean.",
+      "known":[],
+      "vocab":[
+        {"eu":"elurra","es":"nieve","level":1},{"eu":"mendia","es":"montaña","level":1},
+        {"eu":"eguzkia","es":"sol","level":1},{"eu":"ura","es":"agua","level":1,"note":"ur urdinak = aguas azules"},
+        {"eu":"begia","es":"ojo","level":1,"ant":"belarria","antEs":"oído"},{"eu":"negua","es":"invierno","level":1,"ant":"uda","antEs":"verano"},
+        {"eu":"beldurra","es":"miedo","level":2,"ant":"ausardia","antEs":"valentía"},
+        {"eu":"poztasuna","es":"alegría","level":2,"morph":"poz","morphEs":"alegría (raíz)","ant":"tristura","antEs":"tristeza"},
+        {"eu":"larrua","es":"piel","level":2},{"eu":"belarria","es":"oído, oreja","level":2,"ant":"begia","antEs":"ojo"},
+        {"eu":"soinua","es":"sonido","level":2},{"eu":"bularra","es":"pecho","level":2},
+        {"eu":"teloia","es":"telón","level":3},{"eu":"izpia","es":"rayo (de luz)","level":3,"note":"izpi txiki-txikiren bat = un rayito muy pequeño"},
+        {"eu":"laztandu","es":"acariciar","level":3},{"eu":"lainoa","es":"nube, niebla","level":3},
+        {"eu":"gordina","es":"crudo","level":3},{"eu":"taupada","es":"latido","level":3},
+        {"eu":"izara","es":"sábana","level":3},{"eu":"ertza","es":"arista, borde","level":3,"note":"borobildu = redondear"}
+      ],
+      "phrases":[
+        {"eu":"Elurrak joan direnean\nnire mendien artean","es":"Cuando las nieves se han ido\nde entre mis montañas"},
+        {"eu":"Eguzkia teloian atzekaldean da","es":"El sol está detrás del telón"},
+        {"eu":"Ateratzeko beldur da\nbeldur eszenikoa\naspaldi antzeztu ez duen obra honetan","es":"Tiene miedo de salir\nmiedo escénico\nen esta obra que no ha interpretado desde hace tiempo"},
+        {"eu":"Izpi txiki-txikiren bat\nagertuz doa gaurkoan","es":"Un rayito muy pequeño\nva apareciendo hoy"},
+        {"eu":"Poztasun handi batek besarkatzen nau","es":"Una gran alegría me abraza","grammar":{"label":"Conjugar: besarkatu (nork-nor, oraina)","rows":[["hark...ni","besarkatzen nau","me abraza"],["hark...zu","besarkatzen zaitu","te abraza"],["hark...gu","besarkatzen gaitu","nos abraza"]]}},
+        {"eu":"Mesedez ozen esan\nnegua joan egin dela\nnire arima hotzak ez du sinisten eta","es":"Por favor decid en voz alta\nque el invierno se ha ido\nque mi alma fría no se lo cree"},
+        {"eu":"Laztandu nazazu orain\nur urdinen artean","es":"Acaríciame ahora\nentre las aguas azules","grammar":{"label":"Imperativo: -nazazu (tú a mí)","rows":[["zuk niri","laztandu nazazu","acaríciame"],["zuk niri","besarkatu nazazu","abrázame"],["zuk niri","maitatu nazazu","quiéreme"]]}},
+        {"eu":"Orain lainorik ez da","es":"Ahora no hay nubes"},
+        {"eu":"Aurpegi biluziak","es":"Los rostros desnudos"},
+        {"eu":"Ta larrua jotzean\ngarrasirik ozenena\ngordin amaigabea","es":"Y al golpear la piel\nel grito más fuerte\ncrudo, interminable"},
+        {"eu":"Negua joan da ta","es":"El invierno se ha ido"},
+        {"eu":"Jaio berrien antzera\ntaupaden beharra dut orain","es":"Como los recién nacidos\nnecesito latidos ahora"},
+        {"eu":"Belarriekin ikusteko\nnire begiek entzuten ez dutena","es":"Para ver con los oídos\nlo que mis ojos no oyen"},
+        {"eu":"Soinu bakar bakarra\nzure bularraldean","es":"Un único sonido\nen tu pecho"},
+        {"eu":"Borobildu zaizkit ertzak\nzure ondoan\nizpi lasaigarri bat","es":"Se me han redondeado las aristas\njunto a ti\nun rayo tranquilizador"}
+      ],
+      "praktika":[
+        {"eu":"Poztasun handi batek besarkatzen nau","es":"(una gran alegría me abraza)","challenge":"¿Si te abraza a ti (zu)?","answer":"Poztasun handi batek besarkatzen zaitu","explanation":"nork-nor: nau (ni) → zaitu (zu)"},
+        {"eu":"Laztandu nazazu","es":"(acaríciame)","challenge":"¿Si se lo pides a varias personas (zuek)?","answer":"Laztandu nazazue","explanation":"imperativo: nazazu (zuk) → nazazue (zuek)"},
+        {"eu":"Negua joan egin dela","es":"(que el invierno se ha ido)","challenge":"¿En futuro? (que se irá)","answer":"Negua joango dela","explanation":"futuro: joan egin dela → joango dela"},
+        {"eu":"Taupaden beharra dut","es":"(necesito latidos)","challenge":"¿Si necesitamos nosotros (guk)?","answer":"Taupaden beharra dugu","explanation":"nork-nor: dut (nik) → dugu (guk)"},
+        {"eu":"Borobildu zaizkit ertzak","es":"(se me han redondeado las aristas)","challenge":"¿Si se te han redondeado a ti?","answer":"Borobildu zaizkizu ertzak","explanation":"nor-nori: zaizkit (niri) → zaizkizu (zuri)"}
+      ]
+    }
+  }
+}
