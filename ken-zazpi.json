@@ -1,0 +1,155 @@
+{
+  "type":"multi","lang":"eu",
+  "title":"Ken Zazpi","subtitle":"Aprende euskera con canciones de Ken Zazpi",
+  "bio":"Ken Zazpi fue un grupo de Vitoria-Gasteiz formado en 1996. Pop-rock en euskera con letras directas y emocionales. Zapalduen olerkia es un himno generacional; Ilargia una de las canciones de amor más conocidas en euskera.",
+  "spotifyRec":{"text":"Os recomiendo escuchar las versiones del directo Ken Zazpi Urte Zuzenean en el Victoria Eugenia:","url":"https://open.spotify.com/album/67ZXlNwv1S1Qon3xczb6hS"},
+  "antonyms":[
+    {"eu":"ilun","es":"oscuro","ant":"argi","antEs":"claro, luz","ctx":"\"Goiz ilun hartan\" (Atalaia) ↔ \"bere argia ikusteko\" (Ilargia)"},
+    {"eu":"joan","es":"ir, irse","ant":"etorri","antEs":"venir","ctx":"\"Marinela Irlandara doa\" (Mariñelaren) ↔ \"esan bakardadeari gaur ez etortzeko\" (Ilargia)"},
+    {"eu":"ahaztu","es":"olvidar","ant":"oroitu","antEs":"recordar","ctx":"\"Munduak ahazten banau\" (Elektrizitatea)"},
+    {"eu":"beldurra","es":"miedo","ant":"ausardia","antEs":"valentía","ctx":"\"Aitaren beldurrei\" (Zapalduen olerkia)"},
+    {"eu":"poztasuna","es":"alegría","ant":"tristura","antEs":"tristeza","ctx":"\"Poztasun handi batek besarkatzen nau\" (Negua joan da ta)"},
+    {"eu":"negua","es":"invierno","ant":"uda","antEs":"verano","ctx":"\"Negua joan da ta\" (Zea Mays)"},
+    {"eu":"hasi","es":"empezar","ant":"bukatu","antEs":"terminar","ctx":"\"Ohiuka hasi nintzen\" (Atalaia)"},
+    {"eu":"maite","es":"amar","ant":"gorroto","antEs":"odiar","ctx":"\"Marinela maite dut\" (Mariñelaren zai)"},
+    {"eu":"galdu","es":"perder","ant":"aurkitu","antEs":"encontrar","ctx":"\"Galtzen dituena\" (Ilargia)"},
+    {"eu":"itzali","es":"apagar","ant":"piztu","antEs":"encender","ctx":"\"Nire sua itzali da\" (Ilargia)"},
+    {"eu":"egia","es":"verdad","ant":"gezurra","antEs":"mentira","ctx":"\"Bestearen egia\" (Zapalduen) / \"Ez dela egia\" (Ilargia)"}
+  ],
+  "songs":{
+    "zapalduen":{
+      "title":"Zapalduen olerkia","cardDesc":"El poema de los oprimidos. Dedicatorias, amargura, esperanza.",
+      "introEs":"El poema de los oprimidos. Una canción dedicatoria: a las camas vacías, a las lágrimas de la madre, a los sonidos del metal, a los miedos del padre, a los amigos perdidos en el camino, al viento de libertad. Pide que le digan que todo va a cambiar, que las generaciones futuras no tendrán que cantar esta canción.",
+      "known":[
+        {"eu":"herria","es":"pueblo","orig":"Goiz ilun hartan irten ginen herri hartan ziren","origEs":"Salimos los que había en aquel pueblo","origSong":"Atalaia","here":"Herri ikustezin hontan itzalekin jolasten","hereEs":"En este pueblo invisible jugando con las sombras"},
+        {"eu":"aita","es":"padre","orig":"Marinela maite dut, aita","origEs":"Amo al marinero, padre","origSong":"Mariñelaren zai","here":"Aitaren beldurrei","hereEs":"A los miedos del padre"},
+        {"eu":"beldurra","es":"miedo","orig":"Ateratzeko beldur da, beldur eszenikoa","origEs":"Tiene miedo de salir, miedo escénico","origSong":"Negua joan da ta","here":"Aitaren beldurrei","hereEs":"A los miedos del padre"},
+        {"eu":"bakardadea","es":"soledad","orig":"Bakardadean bilusik dantzan","origEs":"Desnuda bailando en soledad","origSong":"Elektrizitatea","here":"Lagun minei, bakardadeari","hereEs":"A los amigos íntimos, a la soledad"},
+        {"eu":"maite","es":"querido/a, amar","orig":"Marinela maite dut, aita","origEs":"Amo al marinero, padre","origSong":"Mariñelaren zai","here":"Zer maitatu behar den / Esaidazu maitea","hereEs":"Qué se debe amar / Dime cariño"},
+        {"eu":"negar / malko","es":"llanto / lágrima","orig":"Negar malkoak","origEs":"Lágrimas","origSong":"Elektrizitatea","here":"Malkorik botako","hereEs":"Ni derramarán lágrimas"}
+      ],
+      "vocab":[
+        {"eu":"herria","es":"pueblo","level":1},{"eu":"ama","es":"madre","level":1},{"eu":"aita","es":"padre","level":1},
+        {"eu":"laguna","es":"amigo/a","level":1,"note":"lagun mina = amigo íntimo"},{"eu":"maitea","es":"cariño, querido/a","level":1,"ant":"gorroto","antEs":"odio"},
+        {"eu":"egia","es":"verdad","level":1,"ant":"gezurra","antEs":"mentira"},{"eu":"denbora","es":"tiempo","level":1},
+        {"eu":"itzala","es":"sombra","level":2},{"eu":"geroa","es":"futuro","level":2},{"eu":"istoria","es":"historia","level":2},
+        {"eu":"beldurra","es":"miedo","level":2,"ant":"ausardia","antEs":"valentía"},{"eu":"bakardadea","es":"soledad","level":2,"morph":"bakar","morphEs":"solo"},{"eu":"malkoa","es":"lágrima","level":2},
+        {"eu":"askatasuna","es":"libertad","level":2,"morph":"aske","morphEs":"libre"},{"eu":"haizea","es":"viento","level":2},
+        {"eu":"ezintasuna","es":"imposibilidad","level":3,"morph":"ezin","morphEs":"no poder (ezin dut egin = no puedo hacerlo)"},{"eu":"egunsentia","es":"amanecer","level":3,"morph":"egun + senti","morphEs":"día + sentir"},
+        {"eu":"zapaldua","es":"oprimido/a","level":3,"morph":"zapaldu","morphEs":"pisar, oprimir"},{"eu":"olerkia","es":"poema","level":3},
+        {"eu":"samina","es":"amargura","level":3},{"eu":"hotsa","es":"sonido","level":3,"note":"burdin hotsak = sonidos del metal"},
+        {"eu":"ondorengoak","es":"descendientes","level":3,"morph":"ondoren","morphEs":"después (los que vienen después)"},{"eu":"istripu","es":"accidente","level":3}
+      ],
+      "phrases":[
+        {"eu":"Herri ikustezin hontan\nitzalekin jolasten","es":"En este pueblo invisible\njugando con las sombras","known":"herria"},
+        {"eu":"Neu izaten saiatzen,\ngeroa margozten.","es":"Intentando ser yo mismo/a,\npintando el futuro."},
+        {"eu":"Nire ezintasun denak\nbehin da berriz kantatzen,","es":"Todas mis imposibilidades\ncantando una y otra vez,"},
+        {"eu":"Egunsentia hurbilao sentitzen.","es":"Sintiendo más cerca el amanecer."},
+        {"eu":"Denok ez dugu berdin\nkontatzen istoria,","es":"No todos contamos\nla historia igual,"},
+        {"eu":"Zaila da ulertzea\nbestearen egia.","es":"Es difícil entender\nla verdad del otro."},
+        {"eu":"Baina kantatu nahi dut\nzapalduen olerkia,\nestalita duten samin guztia.","es":"Pero quiero cantar\nel poema de los oprimidos,\ntoda la amargura que han tapado."},
+        {"eu":"Ohe hutsei, amaren malkoei,","es":"A las camas vacías, a las lágrimas de la madre,","known":"negar / malko","grammar":{"label":"Dativo: -ei / -ari (a quién va dedicado)","rows":[["ohe hutsei","a las camas vacías","plural -ei"],["amaren malkoei","a las lágrimas de la madre","genitivo + -ei"],["bakardadeari","a la soledad","singular -ari"],["lagun minei","a los amigos íntimos","plural -ei"]]}},
+        {"eu":"Lapurtzen diguten\ndenbora iheskorrari,","es":"Al tiempo fugaz\nque nos roban,"},
+        {"eu":"Burdin hotsei,\naitaren beldurrei,","es":"A los sonidos del metal,\na los miedos del padre,","known":"aita, beldurra"},
+        {"eu":"Sufritzen dugunoi...","es":"A los que sufrimos..."},
+        {"eu":"Txikitatik entzuten\nzer izan behar garen,","es":"Desde pequeños escuchando\nqué debemos ser,"},
+        {"eu":"Indarrez inposatuz\nzer maitatu behar den.","es":"Imponiendo por la fuerza\nqué se debe amar.","known":"maite"},
+        {"eu":"Lagun minei, bakardadeari,","es":"A los amigos íntimos, a la soledad,","known":"bakardadea"},
+        {"eu":"Bizigabe utzitako\nune bakoitzari,","es":"A cada momento\ndejado sin vivir,"},
+        {"eu":"Izan zirenei, gaur garenari,\nizango direnei...","es":"A los que fueron, a lo que somos hoy,\na los que serán...","grammar":{"label":"Izan: pasado, presente y futuro","rows":[["izan zirenak","los que fueron","iragana"],["gaur garenak","lo que somos hoy","oraina"],["izango direnak","los que serán","geroa"]]}},
+        {"eu":"Esaidazu maitea\ndena aldatuko dela,","es":"Dime cariño\nque todo va a cambiar,","known":"maite"},
+        {"eu":"Bihar ere nirekin\negongo zarela","es":"Que mañana también\nestarás conmigo"},
+        {"eu":"Eta ondorengoek ez dutela sekula\nkantu hau kantatuko,\nmalkorik botako, esan maitea...","es":"Y que los descendientes nunca\ncantarán esta canción,\nni derramarán lágrimas, dime cariño..."},
+        {"eu":"Esan laztana\nentzun nahi dudana\nesan laguna.","es":"Dime amor\nlo que quiero oír\ndime amigo/a."},
+        {"eu":"Istripuei, berri txarrei,","es":"A los accidentes, a las malas noticias,"},
+        {"eu":"Bidean galdu ditugun\nlagun guztiei,","es":"A todos los amigos\nque hemos perdido en el camino,"},
+        {"eu":"Gugatik dena eman dutenei,","es":"A los que han dado todo por nosotros,"},
+        {"eu":"Askatasun haizeari,\nzuei, zuei, zuei...","es":"Al viento de libertad,\na vosotros, a vosotros, a vosotros..."}
+      ],
+      "praktika":[
+        {"eu":"Kantatu nahi dut","es":"(quiero cantar)","challenge":"¿Si queremos nosotros (guk)?","answer":"Kantatu nahi dugu","explanation":"nork: dut (nik) → dugu (guk)"},
+        {"eu":"Dena aldatuko dela","es":"(que todo va a cambiar)","challenge":"¿En pasado? (que todo cambió)","answer":"Dena aldatu zela","explanation":"futuro -ko dela → pasado zela"},
+        {"eu":"Sufritzen dugunoi","es":"(a los que sufrimos)","challenge":"¿Si hablamos de los que sufren (haiek)?","answer":"Sufritzen dutenei","explanation":"dugunoi (guk) → dutenei (haiek)"},
+        {"eu":"Zaila da ulertzea","es":"(es difícil entender)","challenge":"¿En negativo? (no es difícil)","answer":"Ez da zaila ulertzea","explanation":"negación: ez + auxiliar al principio"},
+        {"eu":"Bihar ere nirekin egongo zarela","es":"(que mañana estarás conmigo)","challenge":"¿Si estamos nosotros?","answer":"Bihar ere gurekin egongo garela","explanation":"nirekin → gurekin, zarela → garela"}
+      ]
+    },
+    "ilargia":{
+      "title":"Ilargia","cardDesc":"Amor herido. La luna, el fuego, la soga que sostiene y ahoga.",
+      "introEs":"Una canción de amor herido. Le dice a la lluvia que no caiga, a la soledad que no venga. La otra persona es a la vez la soga que le sostiene y la que le ahoga. Robaría la luna cada noche, pero ella está ciega para ver su luz. Al final, su fuego se ha apagado: no eres la única estrella de la noche.",
+      "known":[
+        {"eu":"euria","es":"lluvia","orig":"Arpegia euriz bustia","origEs":"El rostro mojado por la lluvia","origSong":"Atalaia","here":"Esaiozu euriari berriz, ez jauzteko","hereEs":"Dile a la lluvia que no caiga más"},
+        {"eu":"bakardadea","es":"soledad","orig":"Bakardadean bilusik dantzan","origEs":"Desnuda bailando en soledad","origSong":"Elektrizitatea","here":"Esan bakardadeari gaur ez etortzeko","hereEs":"Dile a la soledad que hoy no venga"},
+        {"eu":"soka","es":"soga, cuerda","orig":"Sokaz loturik arpoia","origEs":"El arpón atado con soga","origSong":"Atalaia","here":"Eusten nauen soka zara","hereEs":"Eres la soga que me sostiene"},
+        {"eu":"ilargia","es":"luna","orig":"Ilargiak erakusten duen aurpegiaren aurrean","origEs":"Ante la cara que muestra la luna","origSong":"Elektrizitatea","here":"Zuretzat ilargia lapurtuko nuke gauero","hereEs":"Para ti robaría la luna cada noche"},
+        {"eu":"izarra","es":"estrella","orig":"Eskatzen diet oihukatuz izar galduei","origEs":"Pido gritando a las estrellas perdidas","origSong":"Elektrizitatea","here":"Ez zara gaueko izar bakarra","hereEs":"No eres la única estrella de la noche"},
+        {"eu":"negarra","es":"llanto","orig":"Negar malkoak","origEs":"Lágrimas","origSong":"Elektrizitatea","here":"Eragin didazu negarra","hereEs":"Me has hecho llorar"}
+      ],
+      "vocab":[
+        {"eu":"euria","es":"lluvia","level":1},{"eu":"gaua","es":"noche","level":1},{"eu":"sua","es":"fuego","level":1},
+        {"eu":"argia","es":"luz","level":1,"ant":"iluntasuna","antEs":"oscuridad"},{"eu":"negarra","es":"llanto","level":1},
+        {"eu":"ilargia","es":"luna","level":2,"morph":"hil + argi","morphEs":"muertos + luz (luz de los muertos)"},{"eu":"izarra","es":"estrella","level":2},{"eu":"soka","es":"soga, cuerda","level":2},
+        {"eu":"bakardadea","es":"soledad","level":2,"morph":"bakar","morphEs":"solo"},{"eu":"ametsak","es":"sueños","level":2},{"eu":"mina","es":"dolor","level":2},
+        {"eu":"irrifarra","es":"sonrisa","level":2,"morph":"irri","morphEs":"risa"},
+        {"eu":"lapurtu","es":"robar","level":3,"morph":"lapur","morphEs":"ladrón"},{"eu":"ito","es":"ahogar","level":3},{"eu":"eutsi","es":"sostener, aguantar","level":3},
+        {"eu":"itsu","es":"ciego/a","level":3},{"eu":"itzali","es":"apagar","level":3,"ant":"piztu","antEs":"encender"},{"eu":"galdu","es":"perder","level":3,"ant":"aurkitu","antEs":"encontrar"},
+        {"eu":"sentitu","es":"sentir","level":3},{"eu":"sinetsi","es":"creer","level":3}
+      ],
+      "phrases":[
+        {"eu":"Esaiozu euriari berriz, ez jauzteko","es":"Dile a la lluvia que no caiga más","known":"euria","grammar":{"label":"Esaiozu = dile (imperativo nor-nori-nork)","rows":[["zuk hari","esaiozu","dile"],["zuk niri","esaidazu","dime"],["zuk haiei","esaiezu","diles"]]}},
+        {"eu":"Esan bakardadeari gaur ez etortzeko","es":"Dile a la soledad que hoy no venga","known":"bakardadea"},
+        {"eu":"Eusten nauen soka zara\nta itotzen nauena","es":"Eres la soga que me sostiene\ny la que me ahoga","known":"soka","note":"Imagen potentísima: la misma persona es la soga que salva y la que ahoga."},
+        {"eu":"Ametsak sortu zizkidana\ngaltzen dituena","es":"La que me creó los sueños\ny la que los pierde"},
+        {"eu":"Zuretzat ilargia lapurtuko nuke gauero","es":"Para ti robaría la luna cada noche","known":"ilargia","grammar":{"label":"Condicional: -ko nuke (yo haría)","rows":[["nik","lapurtuko nuke","yo robaría"],["nik","egingo nuke","yo haría"],["nik","emango nuke","yo daría"],["guk","lapurtuko genuke","nosotros robaríamos"]]}},
+        {"eu":"Eta zu itsu zaude bere argia ikusteko","es":"Y tú estás ciega para ver su luz"},
+        {"eu":"Irrifarrez gero minez\neragin didazu negarra","es":"Con sonrisas primero, con dolor\nme has hecho llorar","known":"negarra"},
+        {"eu":"Nire sua itzali da","es":"Mi fuego se ha apagado"},
+        {"eu":"Ez zara gaueko izar bakarra, ez zara!","es":"No eres la única estrella de la noche, ¡no lo eres!","known":"izarra"},
+        {"eu":"Esan sentitzen dudana ez dela egia","es":"Di que lo que siento no es verdad"},
+        {"eu":"Une baten sinisteko\nez garen guztia","es":"Para creer por un momento\ntodo lo que no somos"}
+      ],
+      "praktika":[
+        {"eu":"Ilargia lapurtuko nuke","es":"(robaría la luna)","challenge":"¿Si robaríamos nosotros (guk)?","answer":"Ilargia lapurtuko genuke","explanation":"condicional nork: nuke (nik) → genuke (guk)"},
+        {"eu":"Esaiozu euriari","es":"(dile a la lluvia)","challenge":"¿Si me lo dices a mí? (dime)","answer":"Esaidazu","explanation":"esaiozu (zuk hari) → esaidazu (zuk niri)"},
+        {"eu":"Nire sua itzali da","es":"(mi fuego se ha apagado)","challenge":"¿En futuro? (se apagará)","answer":"Nire sua itzaliko da","explanation":"nor: itzali da (pasado) → itzaliko da (futuro)"},
+        {"eu":"Zu itsu zaude","es":"(tú estás ciega)","challenge":"¿Si estamos nosotros ciegos?","answer":"Gu itsu gaude","explanation":"egon: zaude (zu) → gaude (gu)"},
+        {"eu":"Eragin didazu negarra","es":"(me has hecho llorar)","challenge":"¿Si nos ha hecho llorar? (guri)","answer":"Eragin digu negarra","explanation":"nor-nori-nork: didazu (zuk niri) → digu (hark guri)"}
+      ]
+    }
+  },
+  "gernika":{
+    "title":"Gernika","introEs":"La canción trata sobre el bombardeo de Gernika. La incluimos como extra porque solo tiene 4-5 frases en euskera mezcladas con nombres reales de víctimas. No necesita quiz ni flashcards: el aprendizaje aquí es otro.",
+    "lines":[
+      {"text":"Javier Gardoqui"},{"text":"Josefina Solozabal"},{"text":"Aurelio Legarreta"},{"text":"Catalina Arrieta"},{"text":"Maria Luz Fierro"},
+      {"text":"Agirre hamabi urte","eu":true,"es":"Agirre, doce años"},
+      {"text":"Francisco Araluzea"},
+      {"text":"Neskato erre bat,","eu":true,"es":"una niña quemada"},
+      {"text":"Gernikan!","eu":true,"es":"¡en Gernika!"},
+      {"text":""},
+      {"text":"Regina Aldama"},
+      {"text":"Ume identifika ezina","eu":true,"es":"niño imposible de identificar"},
+      {"text":"Aurelia Candes Lopez"},{"text":"Clara Zaldunbide"},
+      {"text":"Gorputz zatiak","eu":true,"es":"trozos de cuerpo"},
+      {"text":"Germana Basabe Ormaetxea"},{"text":"Telesforo Elierobarrutia"},{"text":"Maria Santa"},{"text":"Bilbao Uriona"},
+      {"text":"Behi zatia","eu":true,"es":"trozo de vaca"},
+      {"text":"Candida Amias"},
+      {"text":"Agure baten gorputz errea","eu":true,"es":"cuerpo quemado de un anciano"},
+      {"text":"Catalina Barrena Barrena"},{"text":"Agapita Iturralde Zuloaga eta"},{"text":"Maria Iturralde Zuloaga,"},
+      {"text":"Gernikan!","eu":true,"es":"¡en Gernika!"},
+      {"text":""},
+      {"text":"Asto behi gorputz zati","eu":true,"es":"burro, vaca, trozo de cuerpo"},
+      {"text":"Neskato erre bat","eu":true,"es":"una niña quemada"},
+      {"text":"Ume identifika ezina","eu":true,"es":"niño imposible de identificar"},
+      {"text":"Gernikan!","eu":true,"es":"¡en Gernika!"},
+      {"text":""},
+      {"text":"Daniel Ibarzabal"},{"text":"Catalina Arrien Jaio"},
+      {"text":"Asto","eu":true,"es":"burro"},
+      {"text":"Gorputz zati","eu":true,"es":"trozo de cuerpo"},
+      {"text":"Andreenekin nahastuta","eu":true,"es":"mezclado con las mujeres"},
+      {"text":"Juana Beotegi Bilbao"},{"text":"Jacinta Gandiaga"},
+      {"text":"Eta","eu":true,"es":"y"},
+      {"text":"Ehunka ume","eu":true,"es":"cientos de niños"},
+      {"text":"Identifika ezinak","eu":true,"es":"imposibles de identificar"}
+    ]
+  }
+}
