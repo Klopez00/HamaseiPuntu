@@ -1,0 +1,106 @@
+{
+  "type":"multi","lang":"eu",
+  "title":"Zetak","subtitle":"Aprende euskera con canciones de Zetak",
+  "bio":"Zetak es un grupo de Navarra formado en 2014. Pop-rock emotivo con letras poéticas que hablan de pérdida, memoria y celebración de la vida. Hileta kantu nafarra es una despedida; Zeinen ederra izango den una celebración del futuro. Dos caras de la misma moneda.",
+  "songs":{
+    "zeinen":{
+      "title":"Zeinen ederra izango den","cardDesc":"Qué bonito va a ser. Futuro, fiestas, luna, amigos.",
+      "introEs":"Una canción sobre imaginar un futuro bonito: rayos de sol, fiestas de pueblo, bailar en plazas, dejar la garganta en cada canción. Todo teñido de una melancolía dulce: una cerveza al cielo en honor a los caídos, la luna que susurra que aún no estamos todos. Larrun es un monte en la frontera vasco-francesa. Urbasa es una sierra en Navarra.",
+      "known":[
+        {"eu":"itzala","es":"sombra","orig":"Herri ikustezin hontan itzalekin jolasten","origEs":"En este pueblo invisible jugando con las sombras","origSong":"Zapalduen olerkia","here":"Eguzki izpiak zure itzala belarretan marrazten","hereEs":"Los rayos de sol pintando tu sombra en la hierba"},
+        {"eu":"belarra","es":"hierba","orig":"Belar artean, bakardadean bilusik dantzan","origEs":"Entre la hierba, desnuda bailando en soledad","origSong":"Elektrizitatea","here":"Zure itzala belarretan marrazten","hereEs":"Pintando tu sombra en la hierba"},
+        {"eu":"zerua","es":"cielo","orig":"Zeruak eskaintzen didan amildegira","origEs":"Hacia el precipicio que el cielo me ofrece","origSong":"Elektrizitatea","here":"Garagardo bat zerura eroritakoen omenez","hereEs":"Una cerveza al cielo en honor a los caídos"},
+        {"eu":"ametsak","es":"sueños","orig":"Ametsak sortu zizkidana galtzen dituena","origEs":"La que me creó los sueños y la que los pierde","origSong":"Ilargia","here":"Gordetako ametsen kutxa irekiak","hereEs":"Cajas abiertas de sueños guardados"},
+        {"eu":"lagun minak","es":"amigos íntimos","orig":"Lagun minei, bakardadeari","origEs":"A los amigos íntimos, a la soledad","origSong":"Zapalduen olerkia","here":"Lagun minekin ilunabarra eternala bihurtuko da","hereEs":"El atardecer con los amigos íntimos se volverá eterno"},
+        {"eu":"ilargia","es":"luna","orig":"Zuretzat ilargia lapurtuko nuke gauero","origEs":"Para ti robaría la luna cada noche","origSong":"Ilargia","here":"Xuxurlatuko digu ilargiak oraindik denok ez gaudela","hereEs":"Nos susurrará la luna que aún no estamos todos"},
+        {"eu":"dantza","es":"baile","orig":"Ta guztiak dantzan, guztiak alai","origEs":"Y todos bailando, todos alegres","origSong":"Mariñelaren zai","here":"Dantzatuko genuke plazetan","hereEs":"Bailaríamos en las plazas"},
+        {"eu":"herria","es":"pueblo","orig":"Herri ikustezin hontan","origEs":"En este pueblo invisible","origSong":"Zapalduen olerkia","here":"Herri txikietako festetan","hereEs":"En las fiestas de pueblos pequeños"}
+      ],
+      "vocab":[
+        {"eu":"ederra","es":"bonito/a, hermoso/a","level":1},{"eu":"eguzkia","es":"sol","level":1},
+        {"eu":"izpia","es":"rayo","level":1,"note":"eguzki izpiak = rayos de sol"},{"eu":"muxua","es":"beso","level":1},
+        {"eu":"festak","es":"fiestas","level":1},{"eu":"kantua","es":"canción","level":1},
+        {"eu":"garagardoa","es":"cerveza","level":2},{"eu":"itzala","es":"sombra","level":2},
+        {"eu":"plaza","es":"plaza","level":2},{"eu":"zorionekoak","es":"afortunados","level":2,"morph":"zorion","morphEs":"felicidad, suerte"},
+        {"eu":"ilobak","es":"nietos","level":2},{"eu":"amona","es":"abuela","level":2},
+        {"eu":"haritza","es":"roble","level":2},{"eu":"ilunabarra","es":"atardecer","level":2,"morph":"ilun + nabar","morphEs":"oscuro + mezclado"},
+        {"eu":"esnatu","es":"despertar","level":3},{"eu":"eztarria","es":"garganta","level":3},
+        {"eu":"betirako","es":"para siempre","level":3,"morph":"beti","morphEs":"siempre"},
+        {"eu":"xuxurlatu","es":"susurrar","level":3},{"eu":"eternala","es":"eterno","level":3},
+        {"eu":"kutxa","es":"caja","level":3}
+      ],
+      "phrases":[
+        {"eu":"Zeinen ederra izango den\nEguzki izpiak zure itzala belarretan marrazten","es":"Qué bonito va a ser\nlos rayos de sol pintando tu sombra en la hierba","known":"itzala, belarra"},
+        {"eu":"Muxu bat Larrunen","es":"Un beso en Larrun"},
+        {"eu":"Garagardo bat zerura\neroritakoen omenez","es":"Una cerveza al cielo\nen honor a los caídos","known":"zerua"},
+        {"eu":"Herri txikietako festetan\nesnatuko bagina bihar\ndantzatuko genuke plazetan","es":"Si mañana nos despertáramos\nen las fiestas de pueblos pequeños\nbailaríamos en las plazas","known":"herria, dantza","grammar":{"label":"Condicional: bagina... genuke","rows":[["esnatuko bagina","si nos despertáramos","ba- + subjuntivo"],["dantzatuko genuke","bailaríamos","condicional"],["jakingo bagenu","si supiéramos",""],["egingo genuke","haríamos",""]]}},
+        {"eu":"Sekula-santan ez bezala","es":"Como nunca antes"},
+        {"eu":"Eta kantu bakoitzean\nutziko genuke eztarria\nazkenengoa bailitzan\nedota denetan lehenengoa","es":"Y en cada canción\ndejaríamos la garganta\ncomo si fuera la última\no la primera de todas"},
+        {"eu":"Gu zorionekoak\ngordetako ametsen kutxa irekiak","es":"Nosotros los afortunados\ncajas abiertas de sueños guardados","known":"ametsak"},
+        {"eu":"Ilobak amona ezagutzean\nharitz bat jaioko da Urbasan","es":"Cuando los nietos conozcan a la abuela\nnacerá un roble en Urbasa"},
+        {"eu":"Urteekin ohartuko gara\nbetirako biziko zela","es":"Con los años nos daremos cuenta\nde que vivirá para siempre"},
+        {"eu":"Lagun minekin ilunabarra\neternala bihurtuko da","es":"El atardecer con los amigos íntimos\nse volverá eterno","known":"lagun minak"},
+        {"eu":"Xuxurlatuko digu ilargiak\noraindik denok ez gaudela","es":"Nos susurrará la luna\nque aún no estamos todos","known":"ilargia"}
+      ],
+      "praktika":[
+        {"eu":"Dantzatuko genuke plazetan","es":"(bailaríamos en las plazas)","challenge":"¿Si bailaría yo solo (nik)?","answer":"Dantzatuko nuke plazetan","explanation":"condicional nork: genuke (guk) → nuke (nik)"},
+        {"eu":"Xuxurlatuko digu ilargiak","es":"(nos susurrará la luna)","challenge":"¿Si me susurra a mí solo (niri)?","answer":"Xuxurlatuko dit ilargiak","explanation":"nor-nori-nork: digu (guri) → dit (niri)"},
+        {"eu":"Haritz bat jaioko da","es":"(nacerá un roble)","challenge":"¿Si nacen varios robles?","answer":"Haritz batzuk jaioko dira","explanation":"bat → batzuk, da → dira"},
+        {"eu":"Gu zorionekoak","es":"(nosotros los afortunados)","challenge":"¿Si hablamos de uno solo (ni)?","answer":"Ni zorionekoa","explanation":"gu → ni, zorionekoak → zorionekoa"},
+        {"eu":"Betirako biziko zela","es":"(que vivirá para siempre)","challenge":"¿Si viviremos nosotros?","answer":"Betirako biziko garela","explanation":"zela (hura) → garela (gu)"}
+      ]
+    },
+    "hileta":{
+      "title":"Hileta kantu nafarra","cardDesc":"Canción fúnebre navarra. Despedida, muerte, memoria.",
+      "introEs":"Una despedida. El protagonista escribe una canción fúnebre para alguien que odiaba las canciones fúnebres navarras. Quiere levantarle una lápida en mitad del pueblo, como se hace en el norte. La canción está llena de referencias navarras: Arakil, Ibarbeltza (ibar = valle, beltz = negro), Urederra, Urbasa. Notas culturales: Ekhi es el sol como dios pagano vasco. Ekialde (el Este) significa literalmente \"el lado del sol\". Herio es la Muerte personificada. Ambos aparecen mucho en las canciones de Pello Reparaz. Oskorri es un grupo de folk vasco clásico — próximamente veremos canciones suyas en el bloque 3.",
+      "known":[
+        {"eu":"gorroto","es":"odiar","orig":"Maite ↔ gorroto (antónimo)","origEs":"Amar ↔ odiar","origSong":"Ken Zazpi (antónimo)","here":"Gorroto zenituen hileta kantu nafarrak","hereEs":"Odiabas las canciones fúnebres navarras"},
+        {"eu":"herria","es":"pueblo","orig":"Herri ikustezin hontan","origEs":"En este pueblo invisible","origSong":"Zapalduen olerkia","here":"Herriaren erdian zutitu nahi baitizut hilarritxo bat","hereEs":"Quiero levantarte una pequeña lápida en mitad del pueblo"},
+        {"eu":"ama","es":"madre","orig":"Ohe hutsei, amaren malkoei","origEs":"A las camas vacías, a las lágrimas de la madre","origSong":"Zapalduen olerkia","here":"Amaren begietan","hereEs":"En los ojos de la madre"},
+        {"eu":"begia","es":"ojo","orig":"Belarriekin ikusteko nire begiek entzuten ez dutena","origEs":"Para ver con los oídos lo que mis ojos no oyen","origSong":"Negua joan da ta","here":"Amaren begietan","hereEs":"En los ojos de la madre"},
+        {"eu":"itzali","es":"apagar","orig":"Nire sua itzali da","origEs":"Mi fuego se ha apagado","origSong":"Ilargia","here":"Betirako itzali zinela zioen unean","hereEs":"En el momento que decía que te habías apagado para siempre"},
+        {"eu":"haizea","es":"viento","orig":"Askatasun haizeari","origEs":"Al viento de libertad","origSong":"Zapalduen olerkia","here":"Ipar-haizea maitatzen erakutsi zidanari","hereEs":"Al que me enseñó a amar el viento del norte"},
+        {"eu":"negua + gordina","es":"invierno + crudo","orig":"Negua joan da ta / gordina","origEs":"El invierno se ha ido / crudo","origSong":"Negua joan da ta","here":"Ibarbeltzen negu gordin hau epeldu zidanari","hereEs":"Al que me calentó este invierno crudo en Ibarbeltz"},
+        {"eu":"besarkatu","es":"abrazar","orig":"Poztasun handi batek besarkatzen nau","origEs":"Una gran alegría me abraza","origSong":"Negua joan da ta","here":"Besarkatuko gara berriro","hereEs":"Nos abrazaremos de nuevo"},
+        {"eu":"maite","es":"amar","orig":"Marinela maite dut, aita","origEs":"Amo al marinero, padre","origSong":"Mariñelaren zai","here":"Ipar-haizea maitatzen erakutsi zidanari","hereEs":"Al que me enseñó a amar el viento del norte"}
+      ],
+      "vocab":[
+        {"eu":"hileta","es":"funeral","level":1},{"eu":"agur","es":"adiós","level":1},
+        {"eu":"kantua","es":"canción","level":1},{"eu":"begia","es":"ojo","level":1},
+        {"eu":"leihoa","es":"ventana","level":1},{"eu":"besoa","es":"brazo","level":1},
+        {"eu":"hilarritxoa","es":"pequeña lápida","level":2,"morph":"hil + arri + txo","morphEs":"muerte + piedra + diminutivo"},
+        {"eu":"enara","es":"golondrina","level":2},{"eu":"gauerdia","es":"medianoche","level":2,"morph":"gau + erdi","morphEs":"noche + mitad"},
+        {"eu":"bidelaguna","es":"compañero de camino","level":2,"morph":"bide + lagun","morphEs":"camino + compañero"},
+        {"eu":"ixiltasuna","es":"silencio","level":2,"morph":"ixil","morphEs":"callado, silencioso"},
+        {"eu":"Herio","es":"la Muerte (personificada)","level":2,"note":"aparece en muchas canciones vascas"},
+        {"eu":"zutitu","es":"levantar, erigir","level":3},{"eu":"ondoratu","es":"ponerse (el sol)","level":3},
+        {"eu":"epeldu","es":"calentar, templar","level":3},{"eu":"kokatu","es":"posarse, colocarse","level":3},
+        {"eu":"atseden","es":"descanso","level":3},{"eu":"bapatean","es":"de repente","level":3},
+        {"eu":"xuxurlatu","es":"susurrar","level":3},{"eu":"hizkuntza","es":"idioma, lengua","level":3}
+      ],
+      "phrases":[
+        {"eu":"Gorroto zenituen hileta kantu nafarrak\nta orain idazten dizut bat","es":"Odiabas las canciones fúnebres navarras\ny ahora te escribo una","known":"gorroto","note":"\"ta\" = \"eta\" (y). Muy habitual en euskera coloquial."},
+        {"eu":"Iparraldean bezala\nherriaren erdian\nzutitu nahi baitizut hilarritxo bat","es":"Como en el norte, en mitad del pueblo\nquiero levantarte una pequeña lápida","known":"herria"},
+        {"eu":"Zaude orain Oskorriren kantutan","es":"Estás ahora en las canciones de Oskorri"},
+        {"eu":"Itxasgorrietan Ekhi ondoratzen denean","es":"Cuando Ekhi se pone en los mares rojos"},
+        {"eu":"Amaren begietan\nbetirako itzali zinela zioen unean","es":"En los ojos de la madre\nen el momento que decía que te habías apagado para siempre","known":"ama, begia, itzali"},
+        {"eu":"Eta orain zer esan\nIpar-haizea maitatzen erakutsi zidanari zer esan","es":"Y ahora qué decir\nal que me enseñó a amar el viento del norte, qué decirle","known":"haizea, maite"},
+        {"eu":"Ibarbeltzen negu gordin hau\nepeldu zidanari nola esan","es":"Al que me calentó este invierno crudo en Ibarbeltz\ncómo decirle","known":"negua + gordina","note":"Ibar = valle, beltz = negro. Ibarbeltz es una región de Navarra."},
+        {"eu":"Agur\nAsko nuen esateko\nAsko zuri emateko","es":"Adiós\nmucho tenía que decir\nmucho que darte"},
+        {"eu":"Agur\nArakiletik dator Herio\nBehar baino lehenago","es":"Adiós\ndesde Arakil viene la Muerte\nantes de lo debido"},
+        {"eu":"Enara bat kokatu da berriz gure leihoan\nta nik zu zaitut besotan","es":"Una golondrina se ha posado de nuevo en nuestra ventana\ny yo te tengo en brazos"},
+        {"eu":"Urederra bera bezala\ngauerdi pare hortan\natseden hartu duzu bapatean","es":"Como la propia Urederra\nen aquella medianoche\nhas descansado de repente"},
+        {"eu":"Nire kantuen armonia zen bidelagunari zer esan","es":"Qué decirle a mi compañero de camino que era la armonía de mis canciones"},
+        {"eu":"Ixiltasunaren hizkuntzan ulertzen zidan horri nola esan","es":"Cómo decirle al que me entendía en el idioma del silencio"},
+        {"eu":"Ta Kantauritik harago zerbait balego\nbesarkatuko gara berriro\nbatzen gaituenean Heriok","es":"Y si más allá del Cantábrico hubiera algo\nnos abrazaremos de nuevo\ncuando la Muerte nos junte","known":"besarkatu"}
+      ],
+      "praktika":[
+        {"eu":"Idazten dizut bat","es":"(te escribo una)","challenge":"¿Si te escribimos nosotros (guk)?","answer":"Idazten dizugu bat","explanation":"nor-nori-nork: dizut (nik zuri) → dizugu (guk zuri)"},
+        {"eu":"Besarkatuko gara berriro","es":"(nos abrazaremos de nuevo)","challenge":"¿En pasado? (nos abrazamos)","answer":"Besarkatu ginen berriro","explanation":"futuro: -ko gara → pasado: ginen"},
+        {"eu":"Enara bat kokatu da","es":"(una golondrina se ha posado)","challenge":"¿Si se posan varias?","answer":"Enara batzuk kokatu dira","explanation":"bat → batzuk, da → dira"},
+        {"eu":"Nik zu zaitut besotan","es":"(yo te tengo en brazos)","challenge":"¿Si te tenemos nosotros (guk)?","answer":"Guk zu zaitugu besotan","explanation":"nork-nor: zaitut (nik) → zaitugu (guk)"},
+        {"eu":"Atseden hartu duzu","es":"(has descansado)","challenge":"¿Si descansamos nosotros?","answer":"Atseden hartu dugu","explanation":"nork: duzu (zuk) → dugu (guk)"}
+      ]
+    }
+  }
+}
