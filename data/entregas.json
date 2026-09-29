@@ -1,0 +1,27 @@
+{
+  "blocks": [
+    {
+      "id": 1,
+      "title": "1. BLOKEA",
+      "subtitle": "Canon rock 90-00",
+      "items": [
+        {"id": "sorotan-bele", "title": "01. Sorotan Bele", "desc": "Atalaia + Mariñelaren zai", "kind": "song", "name": "Sorotan Bele", "songs": ["Atalaia", "Mariñelaren zai"]},
+        {"id": "zea-mays", "title": "02. Zea Mays", "desc": "Elektrizitatea + Negua joan da ta", "kind": "song", "name": "Zea Mays", "songs": ["Elektrizitatea", "Negua joan da ta"]},
+        {"id": "korrika", "title": "Edizio Berezia: Korrika", "desc": "Fermín Muguruza (2021)", "kind": "special", "name": "Korrika", "songs": ["Korrika"]},
+        {"id": "ken-zazpi", "title": "03. Ken Zazpi", "desc": "Zapalduen olerkia + Ilargia + Gernika", "kind": "song", "name": "Ken Zazpi", "songs": ["Zapalduen olerkia", "Ilargia"]},
+        {"id": "repaso-1", "title": "1. Blokearen errepasoa", "desc": "Flashcardak + hitz partekatuak + azterketa", "kind": "repaso"}
+      ]
+    },
+    {
+      "id": 2,
+      "title": "2. BLOKEA",
+      "subtitle": "Mainstream aktuala",
+      "items": [
+        {"id": "zetak", "title": "01. Zetak", "desc": "Hileta kantu nafarra + Zeinen ederra izango den", "kind": "song", "name": "Zetak", "songs": ["Zeinen ederra izango den", "Hileta kantu nafarra"]}
+      ]
+    }
+  ],
+  "next": [
+    {"date": "8 urria", "label": "Izaro"}
+  ]
+}
