@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hamasei Puntu</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--sea:#58cc02;--sea-light:#e5f8cc;--sea-dark:#46a302;--storm:#afafaf;--coral:#ff4b4b;--coral-light:#ffe0e0;--dark:#3c3c3c;--mid:#777;--light-border:#e5e5e5;--amber:#f59e0b;--amber-light:#fef3c7;--purple:#8b5cf6}
+body{font-family:-apple-system,'Helvetica Neue',system-ui,sans-serif;background:#f7f7f7;color:var(--dark);line-height:1.6;min-height:100vh}
+body.special{background:#fdf8f5;--sea:#e85d26;--sea-light:#fef0e9;--sea-dark:#c44a1c}
+h1,h2,h3{font-family:Georgia,'Times New Roman',serif;font-weight:400}
+.container{max-width:720px;margin:0 auto;padding:24px 20px}
+.special-banner{background:linear-gradient(135deg,#e85d26,#d44a1c);color:#fff;text-align:center;padding:14px 20px;border-radius:10px;margin-bottom:24px}
+.special-banner .sb-tag{font-size:.7rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;opacity:.8;margin-bottom:4px}
+.special-banner .sb-title{font-family:Georgia,serif;font-size:1.6rem}
+.landing{text-align:center;padding:30px 20px 40px}.landing h1{font-size:2.6rem;color:var(--dark);line-height:1.1;margin-bottom:8px}.landing .sub{font-size:1.05rem;color:var(--storm);margin-bottom:30px}.landing .bio{max-width:540px;margin:0 auto 24px;font-size:.92rem;color:var(--mid);line-height:1.7;text-align:left}
+.song-cards{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}.song-card{background:#fff;border:1px solid var(--light-border);border-radius:10px;padding:28px 24px;width:260px;cursor:pointer;transition:all .2s;text-align:left;box-shadow:0 2px 0 var(--light-border)}.song-card:hover{border-color:var(--sea);box-shadow:0 2px 0 var(--sea);transform:translateY(-1px)}.song-card h3{font-size:1.4rem;color:var(--dark);margin-bottom:6px}.song-card p{font-size:.85rem;color:var(--storm);line-height:1.5}
+.top-bar{display:flex;align-items:center;gap:12px;padding:16px 0;border-bottom:1px solid var(--light-border);margin-bottom:24px}.back-btn{background:0 0;border:none;cursor:pointer;font-size:1.4rem;color:var(--storm);padding:4px 8px;border-radius:6px}.back-btn:hover{background:rgba(0,0,0,.05)}.top-bar h2{font-size:1.5rem;color:var(--dark)}
+.tabs{display:flex;gap:4px;background:#fff;border-radius:10px;padding:4px;border:1px solid var(--light-border);margin-bottom:28px}.tab{flex:1;padding:10px 3px;border:none;background:0 0;border-radius:8px;font-family:-apple-system,sans-serif;font-size:.66rem;font-weight:500;color:var(--storm);cursor:pointer;transition:all .15s}.tab.active{background:var(--sea);color:#fff}
+.intro-section{background:#fff;border-radius:10px;padding:28px 24px;border:1px solid var(--light-border)}.intro-section h3{font-size:1.3rem;color:var(--dark);margin-bottom:12px}.intro-section p{font-size:.92rem;color:var(--mid);line-height:1.7}.intro-section .rec{margin-top:14px;padding:12px 16px;background:#f0f7ff;border-radius:8px;font-size:.85rem;color:#2563eb}
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}.vocab-card{background:#fff;border:1px solid var(--light-border);border-radius:8px;padding:16px 18px;cursor:pointer;transition:all .15s;min-height:72px}.vocab-card:hover{border-color:var(--sea)}.vocab-card .w{font-family:Georgia,serif;font-size:1.2rem;color:var(--dark)}.vocab-card .flip-hint{font-size:.72rem;color:var(--storm);margin-top:6px;opacity:.6}.vocab-card .es{font-size:.85rem;color:var(--mid);margin-top:6px;padding-top:6px;border-top:1px solid var(--light-border)}.vocab-card .note{font-size:.78rem;color:var(--sea-dark);margin-top:4px;font-style:italic}
+.vocab-morph-btn{display:block;margin-top:8px;padding:6px 12px;background:#fef9e7;border:1.5px solid #f0d060;border-radius:6px;font-family:-apple-system,sans-serif;font-size:.75rem;font-weight:600;color:#92750c;cursor:pointer;text-align:center}.vocab-morph-btn:hover{background:#fef08a}.vocab-morph-reveal{margin-top:8px;padding:10px 12px;background:#fef9e7;border-radius:6px;border:1px solid #f0d060}.vocab-morph-reveal .morph-root{background:#fef08a;color:#1a1a1a;font-weight:600;padding:1px 5px;border-radius:3px}.vocab-morph-reveal .morph-main{font-size:.9rem;color:#1a1a1a}
+.vocab-ant-btn{display:block;margin-top:8px;padding:6px 12px;background:#f0ebff;border:1.5px solid var(--purple);border-radius:6px;font-family:-apple-system,sans-serif;font-size:.75rem;font-weight:600;color:var(--purple);cursor:pointer;text-align:center}.vocab-ant-btn:hover{background:#e4dafc}.vocab-ant-reveal{margin-top:8px;padding:10px 12px;background:#f0ebff;border-radius:6px;border:1px solid var(--purple)}.vocab-ant-reveal .ant-word-big{font-family:Georgia,serif;font-size:1.05rem;color:var(--purple)}.vocab-ant-reveal .ant-es{font-size:.8rem;color:var(--mid);margin-top:2px}
+.level-header{display:flex;align-items:center;gap:10px;margin:24px 0 14px}.level-header:first-of-type{margin-top:0}.level-badge{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;font-size:.78rem;font-weight:700;color:#fff}.level-badge.l1{background:var(--sea)}.level-badge.l2{background:var(--amber)}.level-badge.l3{background:var(--coral)}.level-text{font-size:.82rem;font-weight:500;color:var(--mid)}
+.known-card{background:#fff;border:1px solid var(--amber);border-left:4px solid var(--amber);border-radius:8px;padding:18px 18px 16px;margin-bottom:16px}.known-card .w{font-family:Georgia,serif;font-size:1.2rem;color:var(--dark)}.known-card .es{font-size:.85rem;color:var(--mid);margin-top:2px;margin-bottom:12px}.known-ctx{background:#fefcf5;border-radius:6px;padding:10px 14px;margin-bottom:8px}.known-ctx-label{font-size:.7rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;margin-bottom:4px}.known-ctx-label.orig{color:var(--storm)}.known-ctx-label.here{color:var(--amber)}.known-ctx-phrase{font-family:Georgia,serif;font-size:.95rem;color:var(--dark);line-height:1.4}.known-ctx-trans{font-size:.8rem;color:var(--mid);margin-top:2px}.known-arrow{text-align:center;color:var(--amber);font-size:1.1rem;margin:4px 0}
+.phrase-block{background:#fff;border:1px solid var(--light-border);border-radius:10px;padding:20px 24px;margin-bottom:14px;cursor:pointer;transition:border-color .15s}.phrase-block:hover{border-color:var(--sea)}.phrase-block.has-known{background:#fffdf5;border-color:#f0e6c8}.phrase-block.has-known:hover{border-color:var(--amber)}.phrase-block .known-tag{display:inline-block;font-size:.68rem;color:var(--amber);background:var(--amber-light);padding:2px 8px;border-radius:10px;margin-top:8px}
+.phrase-w{font-family:Georgia,serif;font-size:1.15rem;color:var(--dark);line-height:1.4}.phrase-es{font-size:.88rem;color:var(--mid);margin-top:10px;padding-top:10px;border-top:1px solid var(--light-border)}.phrase-note{font-size:.8rem;color:var(--sea-dark);margin-top:8px;font-style:italic;line-height:1.5}
+.grammar-toggle{display:inline-block;margin-top:10px;font-size:.78rem;font-weight:500;color:var(--sea-dark);cursor:pointer;border:none;background:0 0;font-family:-apple-system,sans-serif;padding:4px 0}.grammar-toggle:hover{text-decoration:underline}.grammar-box{margin-top:10px;padding:14px 16px;background:var(--sea-light);border-radius:8px;font-size:.82rem;line-height:1.8;color:var(--dark)}.grammar-box .conj{color:var(--sea-dark);font-weight:600}.grammar-box .label{color:var(--storm);font-size:.76rem}
+.reveal-all-btn{display:inline-block;margin-bottom:16px;padding:8px 16px;background:0 0;border:1.5px solid var(--light-border);border-radius:8px;font-family:-apple-system,sans-serif;font-size:.8rem;font-weight:500;color:var(--storm);cursor:pointer}.reveal-all-btn:hover{border-color:var(--sea);color:var(--sea-dark)}
+.praktika-block{background:#fff;border:1px solid var(--light-border);border-radius:10px;padding:24px;margin-bottom:16px}.praktika-original{font-family:Georgia,serif;font-size:1.1rem;color:var(--dark);margin-bottom:4px}.praktika-trans{font-size:.82rem;color:var(--storm);margin-bottom:14px}.praktika-challenge{font-size:.88rem;font-weight:500;color:var(--sea-dark);margin-bottom:12px}.praktika-input{width:100%;padding:12px 14px;border:1.5px solid var(--light-border);border-radius:8px;font-family:-apple-system,sans-serif;font-size:.92rem;color:var(--dark);outline:0}.praktika-input:focus{border-color:var(--sea)}.praktika-show{margin-top:10px;padding:8px 16px;background:0 0;border:1.5px solid var(--light-border);border-radius:8px;font-family:-apple-system,sans-serif;font-size:.8rem;font-weight:500;color:var(--storm);cursor:pointer}.praktika-show:hover{border-color:var(--sea);color:var(--sea-dark)}.praktika-answer{margin-top:12px;padding:14px 16px;background:var(--sea-light);border-radius:8px}.praktika-answer .ans{font-family:Georgia,serif;font-size:1.1rem;color:var(--sea-dark)}.praktika-answer .exp{font-size:.8rem;color:var(--mid);margin-top:4px}
+.quiz-header{text-align:center;margin-bottom:28px}.quiz-header h3{font-size:1.4rem;color:var(--dark);margin-bottom:6px}.quiz-header p{font-size:.88rem;color:var(--storm)}.quiz-type-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:24px}.quiz-type-btn{padding:16px 20px;border-radius:10px;font-family:-apple-system,sans-serif;font-size:.9rem;font-weight:600;cursor:pointer;flex:1;max-width:240px;text-align:center;background:#fff;border:1.5px solid var(--light-border);color:var(--dark);box-shadow:0 2px 0 var(--light-border)}.quiz-type-btn:hover{border-color:var(--sea)}.quiz-type-btn:active{box-shadow:none;transform:translateY(2px)}.quiz-type-btn .qt-icon{font-size:1.4rem;margin-bottom:6px}.quiz-type-btn .qt-label{font-size:.82rem;color:var(--mid);font-weight:400}
+.quiz-progress{height:4px;background:var(--light-border);border-radius:2px;margin-bottom:24px;overflow:hidden}.quiz-progress-bar{height:100%;background:var(--sea);border-radius:2px;transition:width .3s ease}.quiz-question{background:#fff;border:1px solid var(--light-border);border-radius:10px;padding:28px 24px;text-align:center}.quiz-prompt-label{font-size:.78rem;color:var(--storm);margin-bottom:8px;text-transform:uppercase;letter-spacing:.04em}.quiz-prompt{font-family:Georgia,serif;font-size:1.4rem;color:var(--dark);margin-bottom:24px;line-height:1.3}
+.quiz-mode-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}.quiz-mode-btn{padding:14px 24px;border-radius:8px;font-family:-apple-system,sans-serif;font-size:.88rem;font-weight:500;cursor:pointer;flex:1;max-width:220px}.quiz-mode-btn.test{background:var(--sea);color:#fff;border:1.5px solid var(--sea);box-shadow:0 3px 0 var(--sea-dark)}.quiz-mode-btn.test:active{box-shadow:none;transform:translateY(2px)}.quiz-mode-btn.reveal{background:#fff;color:var(--dark);border:1.5px solid var(--light-border);box-shadow:0 3px 0 var(--light-border)}.quiz-mode-btn.reveal:active{box-shadow:none;transform:translateY(2px)}
+.quiz-options{display:flex;flex-direction:column;gap:10px}.quiz-opt{padding:14px 18px;border:1.5px solid var(--light-border);border-radius:8px;background:#fff;cursor:pointer;font-family:-apple-system,sans-serif;font-size:.9rem;color:var(--dark);text-align:left}.quiz-opt:hover:not(.locked){border-color:var(--sea);background:var(--sea-light)}.quiz-opt.correct{border-color:var(--sea);background:var(--sea-light);color:var(--sea-dark);font-weight:600}.quiz-opt.wrong{border-color:var(--coral);background:var(--coral-light);color:var(--coral)}.quiz-opt.locked{cursor:default}.quiz-opt.dim{opacity:.45}
+.quiz-reveal-answer{padding:18px 24px;background:var(--sea-light);border:1.5px solid var(--sea);border-radius:8px;text-align:center}.quiz-reveal-answer .ans-label{font-size:.76rem;color:var(--storm);margin-bottom:6px}.quiz-reveal-answer .ans-text{font-family:Georgia,serif;font-size:1.3rem;color:var(--sea-dark)}
+.quiz-next{display:block;margin:20px auto 0;padding:12px 32px;background:var(--sea);color:#fff;border:none;border-radius:8px;font-family:-apple-system,sans-serif;font-size:.9rem;font-weight:500;cursor:pointer;box-shadow:0 3px 0 var(--sea-dark)}.quiz-next:active{box-shadow:none;transform:translateY(2px)}
+.quiz-result{text-align:center;padding:40px 20px}.quiz-result .score{font-family:Georgia,serif;font-size:3rem;color:var(--dark)}.quiz-result .msg{font-size:1rem;color:var(--storm);margin:8px 0 28px}.restart-btn{padding:12px 28px;background:var(--sea);color:#fff;border:none;border-radius:8px;font-family:-apple-system,sans-serif;font-size:.9rem;font-weight:500;cursor:pointer;margin:0 6px;box-shadow:0 3px 0 var(--sea-dark)}.restart-btn:active{box-shadow:none;transform:translateY(2px)}.restart-btn.outline{background:#fff;border:1.5px solid var(--light-border);color:var(--storm);box-shadow:0 3px 0 var(--light-border)}
+.section-label{font-size:.78rem;font-weight:600;color:var(--storm);letter-spacing:.03em;margin-bottom:14px}
+.combined-quiz-btn{padding:14px 32px;background:var(--sea);color:#fff;border:none;border-radius:10px;font-family:-apple-system,sans-serif;font-size:.95rem;font-weight:600;cursor:pointer;box-shadow:0 3px 0 var(--sea-dark)}.combined-quiz-btn:active{box-shadow:none;transform:translateY(2px)}
+.letra-box{background:#fff;border:1px solid var(--light-border);border-radius:10px;padding:28px 24px;font-family:Georgia,serif;font-size:1.05rem;line-height:2.2;color:var(--dark)}
+.gernika-box{background:#fff;border:1px solid var(--light-border);border-radius:10px;padding:28px 24px;font-family:Georgia,serif;font-size:.95rem;line-height:2.2;color:var(--dark)}
+.loading{text-align:center;padding:80px 20px;color:var(--storm);font-size:1rem}
+@media(max-width:500px){.landing h1{font-size:2rem}.song-cards{flex-direction:column;align-items:center}.song-card{width:100%}.vocab-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="container" id="app"><div class="loading">Kargatzen... / Cargando...</div></div><script>
+let D=null;const wk=w=>D.lang==='eu'?w.eu:w.fr;
+const L={eu:{intro:'Sarrera',known:'Ezagunak',vocab:'Hitzak',letra:'Letra',phrases:'Esaldiak',praktika:'Praktika',quiz:'Azterketa',showAll:'Erakutsi denak',hideAll:'Ezkutatu',morphBtn:'Nondik dator? 🔍',antBtn:'Aurkakoa ↔',transHint:'itzulpena ↓',showAns:'Erantzuna ikusi',hideAns:'Ezkutatu',next:'Hurrengoa →',quizWords:'Hitzak',quizPhrases:'Esaldiak',qWhat:'Zer esan nahi du?',qHow:'Nola esaten da euskaraz?',qRemember:'Gogoratzen duzu?',qTranslate:'Itzuli',excellent:'Bikain!',good:'Ondo!',retry:'Saiatu berriro!',again:'Berriro',back:'Atzera',options:'Aukerak',answer:'Erantzuna',seen:'ikusi',allSeen:'Denak ikusi dituzu.',combined:'Azterketa orokorra',l1:'Oinarrizkoa',l2:'Ertaina',l3:'Aurreratua'},
+fr:{intro:'Intro',known:'Déjà vu',vocab:'Vocabulaire',letra:'Letra',phrases:'Phrases',praktika:'Pratique',quiz:'Examen',showAll:'Mostrar todas',hideAll:'Ocultar',morphBtn:"D'où vient-il? 🔍",antBtn:'Antonyme ↔',transHint:'traduction ↓',showAns:'Voir la réponse',hideAns:'Cacher',next:'Suivant →',quizWords:'Mots',quizPhrases:'Phrases',qWhat:'Que veut dire?',qHow:'En français?',qRemember:'Déjà vu?',qTranslate:'Traduis',excellent:'Excellent!',good:'Pas mal!',retry:'Courage!',again:'Réessayer',back:'Retour',options:'Options',answer:'Réponse',seen:'vues',allSeen:'Tout vu.',combined:'Examen combiné',l1:'Básico',l2:'Intermedio',l3:'Avanzado'}};
+let t;const state={view:'landing',song:null,tab:'intro',openGrammar:new Set,revP:new Set,revV:new Set,revPr:new Set,revA:new Set,revM:new Set,qType:null,qQs:[],qI:0,qS:0,qT:0,qAns:false,qDone:false,qMode:null,qSel:null,fcI:0,fcFlip:false,fcOrd:[]};
+function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+function getSong(){return D.songs[state.song];}
+function clearSets(){state.openGrammar.clear();state.revP.clear();state.revV.clear();state.revPr.clear();state.revA.clear();state.revM.clear();resetQ();}
+function resetQ(){state.qQs=[];state.qI=0;state.qS=0;state.qT=0;state.qAns=false;state.qDone=false;state.qMode=null;state.qSel=null;}
+
+function render(){const a=document.getElementById('app');
+if(!D){a.innerHTML='<div class="loading">Kargatzen... / Cargando...</div>';return;}
+t=L[D.lang]||L.eu;
+if(state.view==='landing')a.innerHTML=D.type==='repaso'?renderRepaso():renderLanding();
+else if(state.view==='gernika')a.innerHTML=renderGernika();
+else if(state.view==='combined')a.innerHTML=renderCombinedQ();
+else a.innerHTML=renderSong();
+bindEvents();}
+
+function renderLanding(){
+const isSpecial=D.type==='special';
+const songKeys=D.songs?Object.keys(D.songs):[];
+let h='';
+if(isSpecial)h+=`<div class="special-banner"><div class="sb-tag">Hamasei Puntu — Edizio Berezia</div><div class="sb-title">${D.title}</div></div>`;
+h+=`<div class="landing"><h1>${D.title}</h1><p class="sub">${D.subtitle||''}</p><div class="bio">${D.bio||''}</div>`;
+if(D.spotifyRec)h+=`<p style="font-size:.88rem;color:var(--mid);line-height:1.7;margin-bottom:24px;max-width:540px;margin-left:auto;margin-right:auto;text-align:left"><span style="font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--sea)">Gomendio berezia</span><br>${D.spotifyRec.text} <a href="${D.spotifyRec.url}" target="_blank" style="color:var(--sea);text-decoration:underline">Abrir en Spotify</a></p>`;
+if(D.mentions)h+=`<p style="font-size:.88rem;color:var(--mid);line-height:1.7;margin-bottom:24px;max-width:540px;margin-left:auto;margin-right:auto;text-align:left"><span style="color:var(--sea);font-weight:600">Aipamen bereziak:</span> ${D.mentions}</p>`;
+h+=`<div class="song-cards">${songKeys.map(k=>{const s=D.songs[k];return`<div class="song-card" data-song="${k}"><h3>${s.title}</h3><p>${s.cardDesc||s.introEs?.substring(0,80)+'...'||''}</p></div>`;}).join('')}</div>`;
+if(songKeys.length>1)h+=`<div style="text-align:center;margin-top:28px"><button class="combined-quiz-btn" data-action="combined-quiz">${t.combined}</button></div>`;
+if(D.gernika)h+=`<div style="margin-top:28px"><div class="song-card" style="width:100%;max-width:540px;margin:0 auto;border-left:4px solid var(--sea)" data-song="gernika"><h3>${D.gernika.title} <span style="font-family:-apple-system,sans-serif;font-size:.75rem;font-weight:500;color:var(--storm);margin-left:8px">EXTRA</span></h3><p>${D.gernika.introEs?.substring(0,80)||''}...</p></div></div>`;
+h+='</div>';return h;}
+
+function renderSong(){
+const s=getSong();if(!s)return'';
+const isSpecial=D.type==='special';
+const tabs=[{id:'intro',l:t.intro},{id:'known',l:t.known},{id:'vocab',l:t.vocab},{id:'letra',l:t.letra},{id:'phrases',l:t.phrases},{id:'praktika',l:t.praktika},{id:'quiz',l:t.quiz}];
+let c='';
+if(state.tab==='intro')c=rIntro(s);
+else if(state.tab==='known')c=rKnown(s);
+else if(state.tab==='vocab')c=rVocab(s);
+else if(state.tab==='letra')c=rLetra(s);
+else if(state.tab==='phrases')c=rPhrases(s);
+else if(state.tab==='praktika')c=rPraktika(s);
+else if(state.tab==='quiz')c=rQuiz(s);
+let h='';
+if(isSpecial)h+=`<div class="special-banner"><div class="sb-tag">Edizio Berezia</div><div class="sb-title">${D.title}</div></div>`;
+h+=`<div class="top-bar"><button class="back-btn" data-action="back">←</button><h2>${s.title}</h2></div>`;
+h+=`<div class="tabs">${tabs.map(tb=>`<button class="tab ${state.tab===tb.id?'active':''}" data-tab="${tb.id}">${tb.l}</button>`).join('')}</div>${c}`;
+return h;}
+
+function rIntro(s){return`<div class="intro-section"><h3>${s.artist?s.artist+' — ':''}${s.title}</h3><p>${s.introEs}</p></div>`;}
+
+function rKnown(s){const kw=s.known||[];if(!kw.length)return`<p style="color:var(--mid)">No hay palabras conocidas de canciones anteriores.</p>`;
+const knownLabel=D.lang==='eu'?'Hitz ezagunak — Palabras que ya viste':'Déjà vu — Palabras que ya viste';
+return`<p class="section-label">${knownLabel}</p>${kw.map(w=>`<div class="known-card"><div class="w">${wk(w)}</div><div class="es">${w.es}</div><div class="known-ctx"><div class="known-ctx-label orig">${w.origSong}</div><div class="known-ctx-phrase">${w.orig}</div><div class="known-ctx-trans">${w.origEs}</div></div><div class="known-arrow">↓</div><div class="known-ctx"><div class="known-ctx-label here">${s.title}</div><div class="known-ctx-phrase">${w.here}</div><div class="known-ctx-trans">${w.hereEs}</div></div></div>`).join('')}`;}
+
+function rVocab(s){const v=s.vocab||[];const allR=v.every((_,i)=>state.revV.has('v-'+i));
+const lvs=[{n:1,l:t.l1,c:'l1'},{n:2,l:t.l2,c:'l2'},{n:3,l:t.l3,c:'l3'}];
+let h=`<p class="section-label">${t.vocab}</p><button class="reveal-all-btn" data-action="reveal-all-vocab">${allR?t.hideAll:t.showAll}</button>`;
+lvs.forEach(lv=>{const ws=v.map((w,i)=>({...w,idx:i})).filter(w=>w.level===lv.n);if(!ws.length)return;
+h+=`<div class="level-header"><span class="level-badge ${lv.c}">${lv.n}</span><span class="level-text">${lv.l}</span></div><div class="vocab-grid">${ws.map(w=>{const r=state.revV.has('v-'+w.idx);const mr=state.revM.has('m-'+w.idx);const ar=state.revA.has('a-'+w.idx);
+const mH=w.morph?(mr?`<div class="vocab-morph-reveal"><div class="morph-main"><span class="morph-root">${w.morph}</span> = ${w.morphEs}</div></div>`:`<button class="vocab-morph-btn" data-show-morph="${w.idx}">${t.morphBtn}</button>`):'';
+const aH=w.ant?(ar?`<div class="vocab-ant-reveal"><div class="ant-word-big">${wk(w)} ↔ ${w.ant}</div><div class="ant-es">${w.es} ↔ ${w.antEs}</div></div>`:`<button class="vocab-ant-btn" data-show-ant="${w.idx}">${t.antBtn}</button>`):'';
+return`<div class="vocab-card" data-vocab="${w.idx}"><div class="w">${wk(w)}</div>${r?`<div class="es">${w.es}</div>${w.note?`<div class="note">${w.note}</div>`:''}`:''}${mH}${aH}${!r&&!w.ant&&!w.morph?`<div class="flip-hint">↓</div>`:!r&&(w.ant||w.morph)?`<div class="flip-hint" style="margin-top:6px">${t.transHint}</div>`:''}</div>`;}).join('')}</div>`;});return h;}
+
+function rLetra(s){return`<p class="section-label">${t.letra}</p><div class="letra-box">${(s.phrases||[]).map(p=>`<span style="background:#fef08a;padding:1px 4px;border-radius:3px">${(wk(p)||p.eu||p.fr||'').replace(/\n/g,'<br>')}</span> <span style="color:#2563eb;font-size:.85rem">(${p.es.replace(/\n/g,' / ')})</span><br>`).join('<br>')}</div>`;}
+
+function rPhrases(s){const ps=s.phrases||[];const allR=ps.every((_,i)=>state.revP.has('p-'+i));
+return`<p class="section-label">${t.phrases}</p><button class="reveal-all-btn" data-action="reveal-all-phrases">${allR?t.hideAll:t.showAll}</button>${ps.map((p,i)=>{const rev=state.revP.has('p-'+i);const gO=state.openGrammar.has('g-'+i);const hk=!!p.known;const txt=wk(p)||p.eu||p.fr||'';
+return`<div class="phrase-block ${hk?'has-known':''}" data-flip="${i}"><div class="phrase-w">${txt.replace(/\n/g,'<br>')}</div>${rev?`<div class="phrase-es">${p.es.replace(/\n/g,'<br>')}</div>${p.note?`<div class="phrase-note">${p.note}</div>`:''}${hk?`<span class="known-tag">${D.lang==='eu'?'Ezaguna':'Déjà vu'}: ${p.known}</span>`:''}${p.grammar?`<button class="grammar-toggle" data-grammar="${i}">${gO?'▾':'▸'} ${p.grammar.label}</button>${gO?`<div class="grammar-box">${p.grammar.rows.map(r=>`<span class="label">${r[0]}</span> → <span class="conj">${r[1]}</span> — ${r[2]}<br>`).join('')}</div>`:''}`:''}`:`<div class="flip-hint">↓</div>`}</div>`;}).join('')}`;}
+
+function rPraktika(s){return`<p class="section-label">${t.praktika}</p>${(s.praktika||[]).map((p,i)=>{const rv=state.revPr.has('pr-'+i);const txt=wk(p)||p.eu||p.fr||'';
+return`<div class="praktika-block"><div class="praktika-original">${txt}</div><div class="praktika-trans">${p.es}</div><div class="praktika-challenge">${p.challenge}</div><input class="praktika-input" type="text" placeholder="..." data-praktika="${i}"><button class="praktika-show" data-show-praktika="${i}">${rv?t.hideAns:t.showAns}</button>${rv?`<div class="praktika-answer"><div class="ans">${p.answer}</div><div class="exp">${p.explanation}</div></div>`:''}</div>`;}).join('')}`;}
+
+function genWQ(s){const qs=[];const v=s.vocab||[];const k=D.lang==='eu'?'eu':'fr';
+[...v].sort(()=>Math.random()-.5).slice(0,5).forEach(w=>{const wr=v.filter(x=>x[k]!==w[k]).sort(()=>Math.random()-.5).slice(0,3).map(x=>x.es);qs.push({prompt:w[k],promptLabel:t.qWhat,answer:w.es,options:shuffle([w.es,...wr])});});
+[...v].sort(()=>Math.random()-.5).slice(0,5).forEach(w=>{const wr=v.filter(x=>x[k]!==w[k]).sort(()=>Math.random()-.5).slice(0,3).map(x=>x[k]);qs.push({prompt:w.es,promptLabel:t.qHow,answer:w[k],options:shuffle([w[k],...wr])});});
+(s.known||[]).slice(0,3).forEach(w=>{const wr=v.sort(()=>Math.random()-.5).slice(0,3).map(x=>x.es);qs.push({prompt:w[k],promptLabel:t.qRemember,answer:w.es,options:shuffle([w.es,...wr])});});
+return shuffle(qs).slice(0,12);}
+function genPQ(s){const qs=[];const k=D.lang==='eu'?'eu':'fr';const ps=(s.phrases||[]).filter(p=>p.es.length<65);
+ps.sort(()=>Math.random()-.5).slice(0,5).forEach(p=>{const wr=ps.filter(x=>x.es!==p.es).sort(()=>Math.random()-.5).slice(0,3).map(x=>x.es);qs.push({prompt:(p[k]||'').replace(/\n/g,' / '),promptLabel:t.qTranslate,answer:p.es,options:shuffle([p.es,...wr])});});
+return shuffle(qs).slice(0,10);}
+function genCombinedQ(){const qs=[];const k=D.lang==='eu'?'eu':'fr';const allV=Object.values(D.songs).flatMap(s=>s.vocab||[]);
+[...allV].sort(()=>Math.random()-.5).slice(0,8).forEach(w=>{const wr=allV.filter(x=>x[k]!==w[k]).sort(()=>Math.random()-.5).slice(0,3).map(x=>x.es);qs.push({prompt:w[k],promptLabel:t.qWhat,answer:w.es,options:shuffle([w.es,...wr])});});
+[...allV].sort(()=>Math.random()-.5).slice(0,8).forEach(w=>{const wr=allV.filter(x=>x[k]!==w[k]).sort(()=>Math.random()-.5).slice(0,3).map(x=>x[k]);qs.push({prompt:w.es,promptLabel:t.qHow,answer:w[k],options:shuffle([w[k],...wr])});});
+return shuffle(qs).slice(0,16);}
+
+function rQB(q){if(state.qMode===null)return`<div class="quiz-mode-btns"><button class="quiz-mode-btn test" data-qmode="test">${t.options}</button><button class="quiz-mode-btn reveal" data-qmode="reveal">${t.answer}</button></div>`;
+if(state.qMode==='test')return`<div class="quiz-options">${q.options.map((o,i)=>{let c='quiz-opt';if(state.qAns){c+=' locked';if(o===q.answer)c+=' correct';else if(o===state.qSel&&o!==q.answer)c+=' wrong';else c+=' dim';}return`<button class="${c}" data-answer="${i}">${o}</button>`;}).join('')}</div>${state.qAns?`<button class="quiz-next" data-action="next-q">${t.next}</button>`:''}`;
+return`<div class="quiz-reveal-answer"><div class="ans-label">${t.answer}</div><div class="ans-text">${q.answer}</div></div><button class="quiz-next" data-action="next-q">${t.next}</button>`;}
+function rQuiz(s){if(!state.qType)return`<div class="quiz-header"><h3>${t.quiz}</h3></div><div class="quiz-type-btns"><div class="quiz-type-btn" data-quiztype="words"><div class="qt-icon">Aa</div>${t.quizWords}</div><div class="quiz-type-btn" data-quiztype="phrases"><div class="qt-icon">"</div>${t.quizPhrases}</div></div>`;
+if(state.qDone)return rQuizResult();
+if(!state.qQs.length){state.qQs=state.qType==='words'?genWQ(s):genPQ(s);state.qI=0;state.qS=0;state.qT=0;state.qAns=false;state.qMode=null;}
+const q=state.qQs[state.qI];const pr=(state.qI/state.qQs.length)*100;
+return`<div class="quiz-progress"><div class="quiz-progress-bar" style="width:${pr}%"></div></div><div class="quiz-question"><div class="quiz-prompt-label">${q.promptLabel}</div><div class="quiz-prompt">${q.prompt}</div>${rQB(q)}</div>`;}
+function renderCombinedQ(){if(state.qDone)return`<div class="top-bar"><button class="back-btn" data-action="back">←</button><h2>${t.combined}</h2></div>`+rQuizResult();
+if(!state.qQs.length){state.qQs=genCombinedQ();state.qI=0;state.qS=0;state.qT=0;state.qAns=false;state.qMode=null;}
+const q=state.qQs[state.qI];const pr=(state.qI/state.qQs.length)*100;
+return`<div class="top-bar"><button class="back-btn" data-action="back">←</button><h2>${t.combined}</h2></div><div class="quiz-progress"><div class="quiz-progress-bar" style="width:${pr}%"></div></div><div class="quiz-question"><div class="quiz-prompt-label">${q.promptLabel}</div><div class="quiz-prompt">${q.prompt}</div>${rQB(q)}</div>`;}
+function rQuizResult(){const p=state.qT>0?Math.round((state.qS/state.qT)*100):0;const m=state.qT===0?t.allSeen:p>=80?t.excellent:p>=50?t.good:t.retry;const sk=state.qQs.length-state.qT;
+return`<div class="quiz-result"><div class="score">${state.qT>0?state.qS+' / '+state.qT:'—'}</div><div class="msg">${m}${sk>0?'<br><span style="font-size:.82rem;color:var(--storm)">'+sk+' '+t.seen+'</span>':''}</div><button class="restart-btn" data-action="restart-quiz">${t.again}</button> <button class="restart-btn outline" data-action="quiz-menu">${t.back}</button></div>`;}
+
+function renderRepaso(){
+const tabs=[{id:'fc',l:'Flashcards'},{id:'shared',l:'Hitz partekatuak'},{id:'quiz',l:t.quiz}];
+let c='';
+if(state.tab==='fc')c=rFlashcards();
+else if(state.tab==='shared')c=rShared();
+else if(state.tab==='quiz')c=rRepasoQuiz();
+return`<div style="text-align:center;padding:24px 0 16px">
+<div style="font-size:.65rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--sea);margin-bottom:6px">1. Blokea — Errepasoa</div>
+<h1 style="font-family:Georgia,serif;font-size:2rem;color:var(--dark)">${D.title}</h1>
+<p style="font-size:.88rem;color:var(--storm);margin-top:6px">${D.allVocab.length} hitz · ${D.shared.length} partekatuak</p></div>
+<div class="tabs">${tabs.map(tb=>`<button class="tab ${state.tab===tb.id?'active':''}" data-tab="${tb.id}">${tb.l}</button>`).join('')}</div>${c}`;}
+
+function rFlashcards(){
+if(!state.fcOrd.length)state.fcOrd=shuffle(D.allVocab.map((_,i)=>i));
+const w=D.allVocab[state.fcOrd[state.fcI]];
+const inShared=D.shared.find(s=>s.eu===w.eu||(w.eu&&s.eu&&w.eu.includes(s.eu)));
+return`<div style="text-align:center;padding:20px 0">
+<div style="font-size:.82rem;color:var(--storm);margin-bottom:16px">${state.fcI+1} / ${D.allVocab.length}</div>
+<div style="background:#fff;border:1px solid var(--light-border);border-radius:14px;padding:50px 30px;min-height:220px;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 2px 0 var(--light-border)" data-action="fc-flip">
+<div style="font-family:Georgia,serif;font-size:2rem;color:var(--dark)">${w.eu}</div>
+${state.fcFlip?`<div style="font-size:1.1rem;color:var(--mid);margin-top:12px">${w.es}</div>${w.source?`<div style="font-size:.78rem;color:var(--sea-dark);margin-top:8px;font-style:italic">${w.source}</div>`:''}${inShared?`<div style="font-size:.78rem;color:var(--amber);margin-top:6px">${inShared.songs.join(' · ')}</div>`:''}`:`<div style="font-size:.75rem;color:var(--storm);opacity:.6;margin-top:8px">sakatu irabiatzeko</div>`}
+</div>
+<div style="display:flex;gap:12px;justify-content:center;margin-top:20px">
+<button style="padding:12px 28px;border-radius:8px;font-family:-apple-system,sans-serif;font-size:.9rem;font-weight:500;cursor:pointer;border:1.5px solid var(--light-border);background:#fff;color:var(--storm);box-shadow:0 3px 0 var(--light-border)" data-action="fc-shuffle">↻ Nahastu</button>
+<button style="padding:12px 28px;border-radius:8px;font-family:-apple-system,sans-serif;font-size:.9rem;font-weight:500;cursor:pointer;border:none;background:var(--sea);color:#fff;box-shadow:0 3px 0 var(--sea-dark)" data-action="fc-next">Hurrengoa →</button>
+</div></div>`;}
+
+function rShared(){
+return`<p class="section-label">Hitz partekatuak — Abesti bat baino gehiagotan agertzen diren hitzak</p>
+<p style="font-size:.88rem;color:var(--mid);margin-bottom:20px">${D.shared.length} hitz abesti desberdinen artean gurutzatzen dira. Testuinguru desberdinetan ikusi dituzulako, hobeto finkatzen dira.</p>
+${D.shared.map(w=>`<div style="background:#fff;border:1px solid var(--amber);border-left:4px solid var(--amber);border-radius:8px;padding:16px 18px;margin-bottom:12px">
+<div style="font-family:Georgia,serif;font-size:1.15rem;color:var(--dark)">${w.eu}</div>
+<div style="font-size:.85rem;color:var(--mid);margin-top:2px">${w.es}</div>
+<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px">${w.songs.map(s=>`<span style="font-size:.7rem;font-weight:600;padding:2px 8px;border-radius:10px;background:var(--sea-light);color:var(--sea-dark)">${s}</span>`).join('')}</div>
+</div>`).join('')}`;}
+
+function rRepasoQuiz(){
+if(!state.qType)return`<div class="quiz-header"><h3>${t.quiz}</h3><p>Bloke osoko hitzak eta esaldiak</p></div><div class="quiz-type-btns"><div class="quiz-type-btn" data-quiztype="words"><div class="qt-icon">Aa</div>${t.quizWords}<div class="qt-label">${D.allVocab.length} hitz</div></div><div class="quiz-type-btn" data-quiztype="phrases"><div class="qt-icon">"</div>${t.quizPhrases}<div class="qt-label">7 abesti</div></div></div>`;
+if(state.qDone)return rQuizResult();
+if(!state.qQs.length){
+  if(state.qType==='words'){const v=D.allVocab;const qs=[];
+    [...v].sort(()=>Math.random()-.5).slice(0,8).forEach(w=>{const wr=v.filter(x=>x.eu!==w.eu).sort(()=>Math.random()-.5).slice(0,3).map(x=>x.es);qs.push({prompt:w.eu,promptLabel:t.qWhat,answer:w.es,options:shuffle([w.es,...wr])});});
+    [...v].sort(()=>Math.random()-.5).slice(0,8).forEach(w=>{const wr=v.filter(x=>x.eu!==w.eu).sort(()=>Math.random()-.5).slice(0,3).map(x=>x.eu);qs.push({prompt:w.es,promptLabel:t.qHow,answer:w.eu,options:shuffle([w.eu,...wr])});});
+    state.qQs=shuffle(qs).slice(0,16);
+  }else{const ps=D.allPhrases.filter(p=>p.es.length<65);const qs=[];
+    ps.sort(()=>Math.random()-.5).slice(0,8).forEach(p=>{const wr=ps.filter(x=>x.es!==p.es).sort(()=>Math.random()-.5).slice(0,3).map(x=>x.es);qs.push({prompt:p.eu.replace(/\n/g,' / '),promptLabel:t.qTranslate,answer:p.es,options:shuffle([p.es,...wr])});});
+    state.qQs=shuffle(qs).slice(0,12);}
+  state.qI=0;state.qS=0;state.qT=0;state.qAns=false;state.qMode=null;}
+const q=state.qQs[state.qI];const pr=(state.qI/state.qQs.length)*100;
+return`<div class="quiz-progress"><div class="quiz-progress-bar" style="width:${pr}%"></div></div><div class="quiz-question"><div class="quiz-prompt-label">${q.promptLabel}</div><div class="quiz-prompt">${q.prompt}</div>${rQB(q)}</div>`;}
+
+function renderGernika(){const g=D.gernika;if(!g)return'';
+return`<div class="top-bar"><button class="back-btn" data-action="back">←</button><h2>${g.title}</h2></div><div class="intro-section" style="margin-bottom:24px"><h3>Ken Zazpi — ${g.title}</h3><p style="font-size:.92rem;color:var(--mid);line-height:1.7">${g.introEs}</p></div><div class="gernika-box">${g.lines.map(l=>{if(!l.text)return'<br>';if(l.eu)return`<span style="background:#fef08a;padding:1px 4px;border-radius:3px;font-weight:600">${l.text}</span> <span style="color:#2563eb;font-size:.85rem">(${l.es})</span><br>`;return l.text+'<br>';}).join('')}</div>`;}
+
+function bindEvents(){
+document.querySelectorAll('.song-card').forEach(el=>el.addEventListener('click',()=>{
+  if(el.dataset.song==='gernika'){state.view='gernika';render();return;}
+  state.view='song';state.song=el.dataset.song;state.tab='intro';clearSets();render();}));
+document.querySelectorAll('.tab').forEach(el=>el.addEventListener('click',()=>{state.tab=el.dataset.tab;if(el.dataset.tab==='quiz'){resetQ();state.qType=null;}if(el.dataset.tab==='fc'){state.fcI=0;state.fcFlip=false;state.fcOrd=shuffle((D.allVocab||[]).map((_,i)=>i));}render();}));
+document.querySelectorAll('[data-action="back"]').forEach(el=>el.addEventListener('click',()=>{state.view='landing';state.song=null;render();}));
+document.querySelectorAll('[data-action="fc-flip"]').forEach(el=>el.addEventListener('click',()=>{state.fcFlip=!state.fcFlip;render();}));
+document.querySelectorAll('[data-action="fc-next"]').forEach(el=>el.addEventListener('click',()=>{state.fcI=(state.fcI+1)%D.allVocab.length;state.fcFlip=false;render();}));
+document.querySelectorAll('[data-action="fc-shuffle"]').forEach(el=>el.addEventListener('click',()=>{state.fcOrd=shuffle(D.allVocab.map((_,i)=>i));state.fcI=0;state.fcFlip=false;render();}));
+document.querySelectorAll('.vocab-card[data-vocab]').forEach(el=>el.addEventListener('click',()=>{const k='v-'+el.dataset.vocab;state.revV.has(k)?state.revV.delete(k):state.revV.add(k);render();}));
+document.querySelectorAll('[data-action="reveal-all-vocab"]').forEach(el=>el.addEventListener('click',()=>{const s=getSong();const all=s.vocab.every((_,i)=>state.revV.has('v-'+i));s.vocab.forEach((_,i)=>{const k='v-'+i;all?state.revV.delete(k):state.revV.add(k);});render();}));
+document.querySelectorAll('.phrase-block[data-flip]').forEach(el=>el.addEventListener('click',(e)=>{if(e.target.closest('.grammar-toggle')||e.target.closest('.grammar-box'))return;const k='p-'+el.dataset.flip;state.revP.has(k)?state.revP.delete(k):state.revP.add(k);render();}));
+document.querySelectorAll('[data-action="reveal-all-phrases"]').forEach(el=>el.addEventListener('click',()=>{const s=getSong();const all=s.phrases.every((_,i)=>state.revP.has('p-'+i));s.phrases.forEach((_,i)=>{const k='p-'+i;all?state.revP.delete(k):state.revP.add(k);});render();}));
+document.querySelectorAll('.grammar-toggle').forEach(el=>el.addEventListener('click',(e)=>{e.stopPropagation();const k='g-'+el.dataset.grammar;state.openGrammar.has(k)?state.openGrammar.delete(k):state.openGrammar.add(k);render();}));
+document.querySelectorAll('[data-show-praktika]').forEach(el=>el.addEventListener('click',()=>{const k='pr-'+el.dataset.showPraktika;state.revPr.has(k)?state.revPr.delete(k):state.revPr.add(k);const inp={};document.querySelectorAll('.praktika-input').forEach(i=>{inp[i.dataset.praktika]=i.value;});render();document.querySelectorAll('.praktika-input').forEach(i=>{if(inp[i.dataset.praktika])i.value=inp[i.dataset.praktika];});}));
+document.querySelectorAll('[data-show-morph]').forEach(el=>el.addEventListener('click',(e)=>{e.stopPropagation();const k='m-'+el.dataset.showMorph;state.revM.has(k)?state.revM.delete(k):state.revM.add(k);render();}));
+document.querySelectorAll('.vocab-morph-reveal').forEach(el=>el.addEventListener('click',(e)=>{e.stopPropagation();const card=el.closest('.vocab-card');if(card){state.revM.delete('m-'+card.dataset.vocab);render();}}));
+document.querySelectorAll('[data-show-ant]').forEach(el=>el.addEventListener('click',(e)=>{e.stopPropagation();const k='a-'+el.dataset.showAnt;state.revA.has(k)?state.revA.delete(k):state.revA.add(k);render();}));
+document.querySelectorAll('.vocab-ant-reveal').forEach(el=>el.addEventListener('click',(e)=>{e.stopPropagation();const card=el.closest('.vocab-card');if(card){state.revA.delete('a-'+card.dataset.vocab);render();}}));
+document.querySelectorAll('[data-action="combined-quiz"]').forEach(el=>el.addEventListener('click',()=>{state.view='combined';resetQ();render();}));
+document.querySelectorAll('[data-quiztype]').forEach(el=>el.addEventListener('click',()=>{state.qType=el.dataset.quiztype;resetQ();render();}));
+document.querySelectorAll('[data-action="quiz-menu"]').forEach(el=>el.addEventListener('click',()=>{state.qType=null;resetQ();render();}));
+document.querySelectorAll('[data-qmode]').forEach(el=>el.addEventListener('click',()=>{state.qMode=el.dataset.qmode;if(state.qMode==='reveal')state.qAns=true;render();}));
+document.querySelectorAll('.quiz-opt:not(.locked)').forEach(el=>el.addEventListener('click',()=>{if(state.qAns)return;const q=state.qQs[state.qI];const sel=q.options[parseInt(el.dataset.answer)];state.qSel=sel;state.qAns=true;state.qT++;if(sel===q.answer)state.qS++;render();}));
+document.querySelectorAll('[data-action="next-q"]').forEach(el=>el.addEventListener('click',()=>{state.qI++;state.qAns=false;state.qSel=null;state.qMode=null;if(state.qI>=state.qQs.length)state.qDone=true;render();}));
+document.querySelectorAll('[data-action="restart-quiz"]').forEach(el=>el.addEventListener('click',()=>{const tt=state.qType;const s=state.view==='combined'?null:getSong();resetQ();state.qType=tt;state.qQs=state.view==='combined'?genCombinedQ():tt==='words'?genWQ(s):genPQ(s);render();}));}
+
+// ==================== DAILY PRACTICE ENGINE ====================
+let ENTREGAS={blocks:[],next:[]};let SONG_FILES=[];
+function setEntregas(e){ENTREGAS=e;SONG_FILES=[];(e.blocks||[]).forEach(b=>(b.items||[]).forEach(it=>{if(it.songs&&it.songs.length)SONG_FILES.push({id:it.id,name:it.name||it.title,songs:it.songs});}));}
+function loadEntregas(){return fetch('data/entregas.json').then(r=>{if(!r.ok)throw new Error(r.status);return r.json();}).then(setEntregas);}
+function entregasError(){document.getElementById('app').innerHTML='<div class="loading">No se encuentra: data/entregas.json</div>';}
+let pool={vocab:[],phrases:[],antonyms:[]};let usr=null;const USR_KEY='hp_user_v1';
+function loadUser(){try{const d=localStorage.getItem(USR_KEY);if(d)usr=JSON.parse(d);}catch(e){usr=null;}}
+function saveUser(){try{if(demo)localStorage.setItem(USR_KEY,JSON.stringify(usr));else localStorage.setItem('hp_prefs_v1',JSON.stringify({selectedSongs:usr.selectedSongs,knownSongs:usr.knownSongs}));}catch(e){}}
+function todayStr(){return new Date().toLocaleDateString('en-CA',{timeZone:'Europe/Madrid'});}
+const pState={view:'loading',items:[],idx:0,points:0,added:0,correct:0,total:0,currentAnswer:null,phase:'question',matchState:null};
+const POINTS_PER_TURN_MAX=16;const POINTS_DAILY_MAX=50;const COMPLETION_BONUS=0;
+
+function renderPraktika(){const a=document.getElementById('app');
+if(pState.view==='loading'){a.innerHTML='<div style="text-align:center;padding:80px 20px;color:var(--storm)">Kargatzen...</div>';loadAllData();}
+else if(pState.view==='boot'||pState.view==='saving')a.innerHTML=loadingHtml;
+else if(pState.view==='login')a.innerHTML=rLogin();
+else if(pState.view==='nick')a.innerHTML=rNick();
+else if(pState.view==='welcome')a.innerHTML=rPWelcome();
+else if(pState.view==='settings')a.innerHTML=rPSettings();
+else if(pState.view==='test')a.innerHTML=rPTest();
+else if(pState.view==='result')a.innerHTML=rPResult();
+bindPEvents();bindAEvents();}
+
+function rPWelcome(){if(!usr)return`<div style="text-align:center;padding:40px 20px;max-width:400px;margin:0 auto">
+<div style="font-size:.65rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--sea);margin-bottom:10px">HAMASEI PUNTU</div>
+<h2 style="font-family:Georgia,serif;font-size:1.8rem;color:var(--dark);margin-bottom:24px">Eguneroko praktika</h2>
+<p style="font-size:.92rem;color:var(--mid);margin-bottom:24px">Práctica diaria de vocabulario. ~3 minutos.</p>
+<div style="text-align:left;margin-bottom:20px"><label style="font-size:.85rem;color:var(--dark);font-weight:500">Tu nombre:</label>
+<input id="nick-in" type="text" placeholder="Ej: Ane, Mikel..." style="width:100%;margin-top:8px;padding:14px 16px;border:1.5px solid var(--light-border);border-radius:8px;font-family:-apple-system,sans-serif;font-size:1rem;outline:0"></div>
+<button data-action="create-user" style="width:100%;padding:16px;background:var(--sea);color:#fff;border:none;border-radius:10px;font-family:-apple-system,sans-serif;font-size:1rem;font-weight:600;cursor:pointer;box-shadow:0 3px 0 var(--sea-dark)">Hasi! / ¡Empezar!</button><a href="?mode=praktika&login=1" style="display:block;margin-top:16px;font-size:.85rem;color:var(--sea-dark)">Iniciar sesión con Google</a></div>`;
+const today=todayStr();const todayPts=(usr.points.byDay||{})[today]||0;
+return`<div style="text-align:center;padding:30px 20px;max-width:440px;margin:0 auto">
+<div style="font-size:.65rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--sea);margin-bottom:6px">EGUNEROKO PRAKTIKA</div>
+<h2 style="font-family:Georgia,serif;font-size:1.8rem;color:var(--dark);margin-bottom:6px">Kaixo, ${usr.nickname}!</h2>
+<div style="display:flex;justify-content:center;gap:20px;margin:20px 0">
+<div style="text-align:center"><div style="font-size:2rem;color:var(--dark);font-weight:700">${usr.streak.current} 🔥</div><div style="font-size:.75rem;color:var(--storm)">Racha</div></div>
+<div style="text-align:center"><div style="font-size:2rem;color:var(--dark);font-weight:700">${usr.points.total}</div><div style="font-size:.75rem;color:var(--storm)">Puntos</div></div>
+<div style="text-align:center"><div style="font-size:2rem;color:var(--dark);font-weight:700">${usr.level||1}</div><div style="font-size:.75rem;color:var(--storm)">Nivel</div></div></div>
+<div style="font-size:.85rem;color:var(--mid);margin-bottom:6px">Gaur / Hoy: ${todayPts} / ${POINTS_DAILY_MAX}</div>
+${todayPts>=POINTS_DAILY_MAX?`<div style="font-size:.85rem;color:var(--sea-dark);margin-bottom:6px">¡Máximo de hoy alcanzado! Puedes seguir practicando, pero ya no suma puntos.</div>`:''}
+<button data-action="start-test" style="width:100%;padding:18px;margin-top:16px;background:var(--sea);color:#fff;border:none;border-radius:10px;font-family:-apple-system,sans-serif;font-size:1.1rem;font-weight:700;cursor:pointer;box-shadow:0 4px 0 var(--sea-dark)">HASI PRAKTIKA →</button>
+<button data-action="open-settings" style="display:block;width:100%;margin-top:12px;padding:12px;background:none;border:1.5px solid var(--light-border);border-radius:8px;font-family:-apple-system,sans-serif;font-size:.85rem;color:var(--storm);cursor:pointer">⚙ Abestiak aukeratu / Elegir canciones</button>
+${usr.history&&usr.history.length>0?`<div style="margin-top:20px;padding:16px;background:#fff;border:1px solid var(--light-border);border-radius:10px;text-align:left">
+<div style="font-size:.78rem;font-weight:600;color:var(--storm);letter-spacing:.03em;margin-bottom:10px">NIRE ESTATISTIKAK</div>
+<div style="font-size:.85rem;color:var(--mid);line-height:1.8">
+Test-ak guztira: ${usr.history.length}<br>
+Racha luzeena: ${usr.streak.longest} egun 🔥<br>
+Puntuak guztira: ${usr.points.total}<br>
+Batezbestekoa: ${Math.round(usr.history.reduce((a,h)=>a+h.points,0)/usr.history.length)} pt/test
+</div></div>`:''}
+${rGroups()}${rGlobal()}
+<a href="?" style="display:block;margin-top:16px;font-size:.85rem;color:var(--storm);text-decoration:none">← Atzera / Volver</a>${demo?'':'<button data-action="logout" style="display:block;margin:12px auto 0;background:none;border:none;color:var(--storm);font-size:.8rem;text-decoration:underline;cursor:pointer">Irten / Cerrar sesión</button>'}</div>`;}
+
+function rPSettings(){const sel=usr.selectedSongs||SONG_FILES.map(s=>s.id);
+return`<div style="max-width:440px;margin:0 auto;padding:20px">
+<div style="display:flex;align-items:center;gap:12px;margin-bottom:24px"><button data-action="back-to-welcome" style="background:none;border:none;font-size:1.4rem;color:var(--storm);cursor:pointer">←</button><h2 style="font-family:Georgia,serif;font-size:1.3rem;color:var(--dark)">Abestiak aukeratu</h2></div>
+<p style="font-size:.88rem;color:var(--mid);margin-bottom:16px">Marca de qué entregas quieres practicar. Nuevas canciones se añaden automáticamente.</p>
+${SONG_FILES.map(sf=>`<label style="display:flex;align-items:center;gap:12px;padding:14px 16px;background:#fff;border:1px solid var(--light-border);border-radius:8px;margin-bottom:8px;cursor:pointer">
+<input type="checkbox" class="song-check" data-sid="${sf.id}" ${sel.includes(sf.id)?'checked':''} style="width:20px;height:20px;accent-color:var(--sea)">
+<div><strong>${sf.name}</strong><br><span style="font-size:.82rem;color:var(--mid)">${sf.songs.join(' + ')}</span></div></label>`).join('')}
+<button data-action="save-settings" style="width:100%;margin-top:16px;padding:14px;background:var(--sea);color:#fff;border:none;border-radius:8px;font-family:-apple-system,sans-serif;font-size:.9rem;font-weight:600;cursor:pointer;box-shadow:0 3px 0 var(--sea-dark)">Gorde / Guardar</button></div>`;}
+
+function rPTest(){if(!pState.items.length)return'';const item=pState.items[pState.idx];const pr=(pState.idx/pState.items.length)*100;let c='';
+if(item.type==='fillBlank')c=rFill(item);else if(item.type==='flashcard')c=rFC(item);else if(item.type==='antonym')c=rAnt(item);else if(item.type==='matching')c=rMatch(item);
+return`<div style="max-width:500px;margin:0 auto;padding:20px"><div style="display:flex;justify-content:space-between;margin-bottom:16px"><span style="font-size:.82rem;color:var(--storm)">${pState.idx+1}/${pState.items.length}</span><span style="font-size:.82rem;color:var(--sea-dark);font-weight:600">${pState.points.toFixed(1).replace('.0','')} pt</span></div><div class="quiz-progress"><div class="quiz-progress-bar" style="width:${pr}%"></div></div>${c}</div>`;}
+
+function rFill(it){const ph=it.phrase.replace(new RegExp('\\b'+it.word.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'\\b','i'),`<span style="background:var(--amber-light);padding:2px 12px;border-radius:4px;font-weight:700">____</span>`);
+if(pState.phase==='answered'){const ok=pState.currentAnswer===it.word;return`<div class="quiz-question"><div class="quiz-prompt-label">Osatu / Completa</div><div style="font-family:Georgia,serif;font-size:1.1rem;color:var(--dark);margin-bottom:6px;line-height:1.5">${it.phrase}</div><div style="font-size:.82rem;color:var(--mid);margin-bottom:16px">${it.phraseEs}</div><div style="padding:12px;border-radius:8px;text-align:center;font-weight:600;${ok?'background:var(--sea-light);color:var(--sea-dark)':'background:var(--coral-light);color:var(--coral)'}">${ok?'✓ Zuzen! +1 pt':'✗ → '+it.word+' +0 pt'}</div><button class="quiz-next" data-action="p-next">→</button></div>`;}
+return`<div class="quiz-question"><div class="quiz-prompt-label">Osatu / Completa</div><div style="font-family:Georgia,serif;font-size:1.1rem;color:var(--dark);margin-bottom:20px;line-height:1.5">${ph}</div><div class="quiz-options">${it.options.map(o=>`<button class="quiz-opt" data-panswer="${o}">${o}</button>`).join('')}</div></div>`;}
+
+function rFC(it){if(pState.phase==='answered')return`<div class="quiz-question"><div class="quiz-prompt-label">Gogoratzen duzu?</div><div style="font-family:Georgia,serif;font-size:${it.long?'1.3rem':'1.8rem'};line-height:1.4;color:var(--dark);margin-bottom:8px">${it.eu}</div><div style="font-size:1.1rem;color:var(--mid);padding-top:12px;border-top:1px solid var(--light-border)">${it.es}</div>${it.source?`<div style="font-size:.75rem;color:var(--sea-dark);font-style:italic;margin-top:4px">${it.source}</div>`:''}
+<div style="display:flex;gap:8px;margin-top:20px"><button class="quiz-opt" data-pfc="${it.long?2:1}" style="flex:1;text-align:center;background:var(--sea-light);border-color:var(--sea);color:var(--sea-dark);font-weight:600">✓ Bagenekien<br><span style="font-size:.7rem;font-weight:400">+${it.long?2:1} pt</span></button><button class="quiz-opt" data-pfc="${it.long?1:0.5}" style="flex:1;text-align:center;background:var(--amber-light);border-color:var(--amber);color:#92750c;font-weight:600">🤔<br><span style="font-size:.7rem;font-weight:400">+${it.long?1:0.5} pt</span></button><button class="quiz-opt" data-pfc="0" style="flex:1;text-align:center;background:var(--coral-light);border-color:var(--coral);color:var(--coral);font-weight:600">✗ Ez<br><span style="font-size:.7rem;font-weight:400">+0 pt</span></button></div></div>`;
+return`<div class="quiz-question" data-action="p-flip" style="cursor:pointer;min-height:200px"><div class="quiz-prompt-label">Gogoratzen duzu?</div><div style="font-family:Georgia,serif;font-size:${it.long?'1.4rem':'2rem'};line-height:1.4;color:var(--dark);margin-bottom:16px">${it.eu}</div><div style="font-size:.85rem;color:var(--amber);font-weight:500;line-height:1.5;padding:0 10px">Piensa cuál es la traducción y cuando lo tengas, <span style="background:#fef08a;padding:2px 6px;border-radius:4px;color:#92750c">pulsa para ver la respuesta</span></div></div>`;}
+
+function rAnt(it){if(pState.phase==='answered'){const ok=pState.currentAnswer===it.answer;return`<div class="quiz-question"><div class="quiz-prompt-label">Aurkakoa / Antónimo</div><div style="font-family:Georgia,serif;font-size:1.4rem;color:var(--dark);margin-bottom:6px">${it.eu} ↔ ${it.answer}</div><div style="font-size:.85rem;color:var(--mid);margin-bottom:16px">${it.es} ↔ ${it.answerEs}</div><div style="padding:12px;border-radius:8px;text-align:center;font-weight:600;${ok?'background:var(--sea-light);color:var(--sea-dark)':'background:var(--coral-light);color:var(--coral)'}">${ok?'✓ Zuzen! +1 pt':'✗ → '+it.answer+' +0 pt'}</div><button class="quiz-next" data-action="p-next">→</button></div>`;}
+return`<div class="quiz-question"><div class="quiz-prompt-label">Aurkakoa / Antónimo</div><div style="font-family:Georgia,serif;font-size:1.4rem;color:var(--dark);margin-bottom:20px">${it.eu} ↔ ?</div><div class="quiz-options">${it.options.map(o=>`<button class="quiz-opt" data-panswer="${o}">${o}</button>`).join('')}</div></div>`;}
+
+function rMatch(it){const ms=pState.matchState||{sel:null,matched:[],wrong:null};
+if(ms.matched.length===it.pairs.length)return`<div class="quiz-question"><div class="quiz-prompt-label">Lotu / Empareja</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:16px">${it.pairs.map(p=>`<div style="padding:10px;background:var(--sea-light);border:1.5px solid var(--sea);border-radius:6px;text-align:center;font-weight:600;color:var(--sea-dark)">${p.eu}</div><div style="padding:10px;background:var(--sea-light);border:1.5px solid var(--sea);border-radius:6px;text-align:center;color:var(--sea-dark)">${p.es}</div>`).join('')}</div><div style="padding:10px;border-radius:8px;text-align:center;font-weight:600;background:var(--sea-light);color:var(--sea-dark);margin-bottom:12px">✓ Zuzen! +1 pt</div><button class="quiz-next" data-action="p-next">→</button></div>`;
+const esShuf=it._esShuf||(it._esShuf=shuffle(it.pairs.map(p=>p.es)));
+return`<div class="quiz-question"><div class="quiz-prompt-label">Lotu / Empareja</div><div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+${it.pairs.map(p=>{const m=ms.matched.find(x=>x.eu===p.eu);return`<button class="quiz-opt ${m?'correct locked':ms.sel===p.eu?'correct':''}" data-pmu="${p.eu}" style="text-align:center">${p.eu}</button>`;}).join('')}
+${esShuf.map(w=>{const m=ms.matched.find(x=>x.es===w);return`<button class="quiz-opt ${m?'correct locked':ms.wrong===w?'wrong':''}" data-pme="${w}" style="text-align:center">${w}</button>`;}).join('')}</div></div>`;}
+
+function rPResult(){const today=todayStr();const todayPts=(usr.points.byDay||{})[today]||0;
+const fmt=n=>(Math.round(n*10)/10).toString();const added=pState.added||0;let capNote='';
+if(todayPts>=POINTS_DAILY_MAX&&added<pState.points){capNote=`<div style="font-size:.85rem;color:var(--sea-dark);background:var(--sea-light);border-radius:8px;padding:12px 14px;margin-bottom:14px;line-height:1.5">${added>0?`Gaur ${fmt(added)} puntu bakarrik gehitu dira (eguneko gehienekoa), baina nahi baduzu praktikatzen jarraitu dezakezu.<br><span style="opacity:.85">Hoy solo has sumado ${fmt(added)} puntos, que es el máximo diario, pero puedes seguir practicando si quieres.</span>`:`Gaurko gehienekoa lortu duzu, beraz txanda honek ez du punturik gehitzen, baina nahi baduzu praktikatzen jarraitu dezakezu.<br><span style="opacity:.85">Hoy ya has alcanzado el máximo diario, así que este turno no suma puntos, pero puedes seguir practicando si quieres.</span>`}</div>`;}
+return`<div style="text-align:center;padding:40px 20px;max-width:400px;margin:0 auto">
+<div style="font-size:3rem;color:var(--dark);font-family:Georgia,serif">${pState.points.toFixed(1).replace('.0','')}</div>
+<div style="font-size:.9rem;color:var(--storm);margin-bottom:24px">puntu turno honetan</div>
+<div style="display:flex;justify-content:center;gap:20px;margin-bottom:24px">
+<div style="text-align:center"><div style="font-size:1.4rem;color:var(--dark);font-weight:700">${usr.streak.current} 🔥</div><div style="font-size:.75rem;color:var(--storm)">Racha</div></div>
+<div style="text-align:center"><div style="font-size:1.4rem;color:var(--dark);font-weight:700">${todayPts}/${POINTS_DAILY_MAX}</div><div style="font-size:.75rem;color:var(--storm)">Gaur</div></div>
+<div style="text-align:center"><div style="font-size:1.4rem;color:var(--dark);font-weight:700">${usr.points.total}</div><div style="font-size:.75rem;color:var(--storm)">Guztira</div></div></div>
+${errNote()}${capNote}<button data-action="start-test" style="width:100%;padding:16px;background:var(--sea);color:#fff;border:none;border-radius:10px;font-size:1rem;font-weight:600;cursor:pointer;box-shadow:0 3px 0 var(--sea-dark);font-family:-apple-system,sans-serif">Errepikatu →</button><a href="?mode=praktika" style="display:block;margin-top:16px;font-size:.85rem;color:var(--storm);text-decoration:none">← Volver</a></div>`;}
+
+function syncKnownSongs(){if(!usr)return;const ids=SONG_FILES.map(x=>x.id);if(!usr.knownSongs){usr.knownSongs=ids.slice();}else{const nw=ids.filter(i=>!usr.knownSongs.includes(i));if(nw.length){if(usr.selectedSongs)nw.forEach(i=>{if(!usr.selectedSongs.includes(i))usr.selectedSongs.push(i);});usr.knownSongs=ids.slice();}}saveUser();}
+function dedupeBy(arr,keyf,better){const m=new Map();arr.forEach(x=>{const k=keyf(x);if(!m.has(k))m.set(k,x);else if(better&&better(x,m.get(k)))m.set(k,x);});return [...m.values()];}
+function dedupePool(){pool.vocab=dedupeBy(pool.vocab,w=>w.eu.trim().toLowerCase(),(n,o)=>n.ant&&!o.ant);pool.phrases=dedupeBy(pool.phrases,p=>p.eu.trim().toLowerCase());}
+async function loadAllData(){syncKnownSongs();const sel=usr?usr.selectedSongs||SONG_FILES.map(s=>s.id):SONG_FILES.map(s=>s.id);pool={vocab:[],phrases:[],antonyms:[]};
+for(const sf of SONG_FILES){if(!sel.includes(sf.id))continue;try{const r=await fetch('data/'+sf.id+'.json');if(!r.ok)continue;const d=await r.json();
+Object.values(d.songs||{}).forEach(s=>{(s.vocab||[]).forEach(v=>{if(v.eu&&v.es)pool.vocab.push({...v,source:s.title});});(s.phrases||[]).forEach(p=>{if(p.eu&&p.es)pool.phrases.push({...p,source:s.title});});});
+if(d.antonyms)d.antonyms.forEach(a=>pool.antonyms.push(a));}catch(e){}}dedupePool();pState.view='welcome';renderPraktika();if(!demo){loadGroups();loadGlobal();}}
+
+function pickPairs(v,n){const out=[],eu=new Set(),es=new Set();for(const w of shuffle(v)){const e=w.es.trim().toLowerCase();if(eu.has(w.eu)||es.has(e))continue;eu.add(w.eu);es.add(e);out.push({eu:w.eu,es:w.es});if(out.length===n)break;}return out;}
+function generateTest(){const items=[];const v=pool.vocab;const ants=v.filter(w=>w.ant);
+const gP=pool.phrases.filter(p=>p.eu&&!p.eu.includes('\n')&&p.eu.split(' ').length>=3&&p.eu.split(' ').length<=10);
+const gPs=shuffle(gP);gPs.slice(0,3).forEach(p=>{const ws=p.eu.replace(/[.,!?;:]/g,'').split(' ').filter(w=>w.length>2);if(!ws.length)return;const w=ws[Math.floor(Math.random()*ws.length)];const dist=shuffle(v.filter(x=>x.eu.toLowerCase()!==w.toLowerCase())).slice(0,3).map(x=>x.eu);items.push({type:'fillBlank',phrase:p.eu,phraseEs:p.es,word:w,options:shuffle([w,...dist]),pts:1});});
+shuffle([...v]).slice(0,4).forEach(w=>{items.push({type:'flashcard',eu:w.eu,es:w.es,source:w.source,pts:1});});
+if(ants.length>=2)shuffle([...ants]).slice(0,2).forEach(w=>{const d=[...new Set(shuffle(ants.filter(x=>x.ant!==w.ant)).map(x=>x.ant))].slice(0,3);items.push({type:'antonym',eu:w.eu,es:w.es,answer:w.ant,answerEs:w.antEs,options:shuffle([w.ant,...d]),pts:1});});
+const mp1=pickPairs(v,4);if(mp1.length===4)items.push({type:'matching',pairs:mp1,pts:1});
+const usedPh=new Set(gPs.slice(0,3).map(p=>p.eu));
+shuffle(pool.phrases.filter(p=>p.eu&&p.es&&!usedPh.has(p.eu)&&!p.eu.includes('\n')&&p.eu.split(' ').length>=3&&p.eu.split(' ').length<=10)).slice(0,3).forEach(p=>items.push({type:'flashcard',long:true,eu:p.eu,es:p.es,source:p.source,pts:2}));
+return shuffle(items);}
+
+function finishTestLocal(){pState.points+=COMPLETION_BONUS;const today=todayStr();if(!usr.points.byDay)usr.points.byDay={};const prev=usr.points.byDay[today]||0;const nw=Math.min(prev+pState.points,POINTS_DAILY_MAX);
+usr.points.byDay[today]=nw;usr.points.total+=(nw-prev);pState.added=nw-prev;
+if(usr.streak.lastTestDate!==today){const y=new Date(Date.now()-86400000).toLocaleDateString('en-CA',{timeZone:'Europe/Madrid'});
+usr.streak.current=(usr.streak.lastTestDate===y||usr.streak.current===0)?usr.streak.current+1:1;
+usr.streak.lastTestDate=today;if(usr.streak.current>usr.streak.longest)usr.streak.longest=usr.streak.current;}
+if(!usr.history)usr.history=[];usr.history.push({date:today,points:pState.points,added:pState.added,correct:pState.correct,total:pState.total});
+saveUser();pState.view='result';renderPraktika();}
+
+function bindPEvents(){
+document.querySelectorAll('[data-action="create-user"]').forEach(el=>el.addEventListener('click',()=>{const n=(document.getElementById('nick-in')||{}).value?.trim();if(!n)return;
+usr={version:1,nickname:n,level:1,streak:{current:0,longest:0,lastTestDate:null},points:{total:0,byDay:{}},selectedSongs:SONG_FILES.map(s=>s.id),knownSongs:SONG_FILES.map(s=>s.id),history:[]};saveUser();pState.view='welcome';renderPraktika();}));
+document.querySelectorAll('[data-action="start-test"]').forEach(el=>el.addEventListener('click',()=>{pState.items=generateTest();pState.idx=0;pState.points=0;pState.added=0;pState.correct=0;pState.total=0;pState.phase='question';pState.matchState=null;pState.currentAnswer=null;pState.view='test';renderPraktika();}));
+document.querySelectorAll('[data-action="open-settings"]').forEach(el=>el.addEventListener('click',()=>{pState.view='settings';renderPraktika();}));
+document.querySelectorAll('[data-action="back-to-welcome"]').forEach(el=>el.addEventListener('click',()=>{pState.view='welcome';renderPraktika();}));
+document.querySelectorAll('[data-action="save-settings"]').forEach(el=>el.addEventListener('click',()=>{usr.selectedSongs=[];document.querySelectorAll('.song-check').forEach(c=>{if(c.checked)usr.selectedSongs.push(c.dataset.sid);});saveUser();pState.view='loading';renderPraktika();}));
+document.querySelectorAll('[data-panswer]').forEach(el=>el.addEventListener('click',()=>{if(pState.phase==='answered')return;const it=pState.items[pState.idx];pState.currentAnswer=el.dataset.panswer;pState.phase='answered';const ok=el.dataset.panswer===(it.answer||it.word);if(ok){pState.points+=it.pts;pState.correct++;}pState.total++;renderPraktika();}));
+document.querySelectorAll('[data-action="p-flip"]').forEach(el=>el.addEventListener('click',()=>{pState.phase='answered';renderPraktika();}));
+document.querySelectorAll('[data-pfc]').forEach(el=>el.addEventListener('click',()=>{const pts=parseFloat(el.dataset.pfc);pState.points+=pts;if(pts>0)pState.correct++;pState.total++;pState.idx++;pState.phase='question';pState.currentAnswer=null;if(pState.idx>=pState.items.length)finishTest();else renderPraktika();}));
+document.querySelectorAll('[data-pmu]').forEach(el=>el.addEventListener('click',()=>{if(!pState.matchState)pState.matchState={sel:null,matched:[],wrong:null};pState.matchState.sel=el.dataset.pmu;pState.matchState.wrong=null;renderPraktika();}));
+document.querySelectorAll('[data-pme]').forEach(el=>el.addEventListener('click',()=>{if(!pState.matchState||!pState.matchState.sel)return;const it=pState.items[pState.idx];const pair=it.pairs.find(p=>p.eu===pState.matchState.sel&&p.es===el.dataset.pme);
+if(pair){pState.matchState.matched.push(pair);pState.matchState.sel=null;if(pState.matchState.matched.length===it.pairs.length){pState.points+=it.pts;pState.correct++;pState.total++;pState.phase='answered';}}else{pState.matchState.wrong=el.dataset.pme;pState.matchState.sel=null;}renderPraktika();}));
+document.querySelectorAll('[data-action="p-next"]').forEach(el=>el.addEventListener('click',()=>{pState.idx++;pState.phase='question';pState.currentAnswer=null;pState.matchState=null;if(pState.idx>=pState.items.length)finishTest();else renderPraktika();}));}
+
+// ===== AUTH / SUPABASE / GRUPOS =====
+const SUPABASE_URL='https://utrxpbzzpjxsjfgqnqub.supabase.co';
+const SUPABASE_KEY='sb_publishable_K_oLG0XyeU9p2eVHjOliHg_fMar2e45';
+const DEMO_KEY='hp_demo',PREFS_KEY='hp_prefs_v1';
+const NICK_RE=/^[A-Za-z0-9_ñÑ.-]{3,20}$/;
+let sb=null,session=null,demo=false,groups=null,groupErr='';
+let glob={period:'week',rows:null,err:false};
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmt1=n=>(Math.round(Number(n)*10)/10).toString();
+const IN_APP=/FBAN|FBAV|Instagram|MicroMessenger|Line\/|Twitter|TikTok|Snapchat/i.test(navigator.userAgent);
+const BTN='width:100%;padding:16px;background:var(--sea);color:#fff;border:none;border-radius:10px;font-family:-apple-system,sans-serif;font-size:1rem;font-weight:600;cursor:pointer;box-shadow:0 3px 0 var(--sea-dark)';
+const BTN2='display:block;width:100%;margin-top:12px;padding:12px;background:none;border:1.5px solid var(--light-border);border-radius:8px;font-family:-apple-system,sans-serif;font-size:.85rem;color:var(--storm);cursor:pointer';
+const BOX='margin-top:16px;padding:16px;background:#fff;border:1px solid var(--light-border);border-radius:10px;text-align:left';
+const INPUT='width:100%;padding:14px 16px;border:1.5px solid var(--light-border);border-radius:8px;font-family:-apple-system,sans-serif;font-size:1rem;outline:0';
+
+function loadSb(){return new Promise((res,rej)=>{if(window.supabase)return res();const s=document.createElement('script');s.src='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2';s.onload=res;s.onerror=rej;document.head.appendChild(s);});}
+function loadPrefs(){try{return JSON.parse(localStorage.getItem(PREFS_KEY))||{};}catch(e){return {};}}
+function fatal(m){document.getElementById('app').innerHTML='<div style="text-align:center;padding:60px 20px;color:var(--mid)">'+esc(m)+'<br><br><a href="?mode=praktika">Recargar</a></div>';}
+const loadingHtml='<div style="text-align:center;padding:80px 20px;color:var(--storm)">Kargatzen...</div>';
+
+async function bootPraktika(){
+  if(params.get('login')){try{localStorage.removeItem(DEMO_KEY);}catch(e){}}
+  let d=false;try{d=localStorage.getItem(DEMO_KEY)==='1';}catch(e){}
+  if(d){demo=true;loadUser();pState.view='loading';renderPraktika();return;}
+  pState.view='boot';renderPraktika();
+  try{
+    await loadSb();
+    sb=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY,{auth:{flowType:'pkce'}});
+    const r=await sb.auth.getSession();
+    session=r.data.session;
+  }catch(e){fatal('No se pudo conectar con el servidor. Comprueba tu conexión y recarga.');return;}
+  if(!session){pState.view='login';renderPraktika();return;}
+  await loadProfileAndStats();
+}
+
+async function loadProfileAndStats(){
+  const uid=session.user.id;
+  const p=await sb.from('profiles').select('nickname').eq('id',uid).maybeSingle();
+  if(p.error){fatal('Error al cargar tu perfil. Recarga la página.');return;}
+  if(!p.data){pState.view='nick';renderPraktika();return;}
+  const [ss,st]=await Promise.all([sb.from('sessions').select('day,points').order('completed_at'),sb.rpc('my_streak')]);
+  if(ss.error){fatal('Error al cargar tus sesiones. Recarga la página.');return;}
+  const byDay={},history=[];let total=0;
+  (ss.data||[]).forEach(r=>{const n=Number(r.points);byDay[r.day]=(byDay[r.day]||0)+n;total+=n;history.push({date:r.day,points:n,added:n});});
+  const s0=(st.data&&st.data[0])||{current_streak:0,best_streak:0};
+  const pref=loadPrefs(),all=SONG_FILES.map(s=>s.id);
+  usr={version:2,nickname:p.data.nickname,level:1,streak:{current:s0.current_streak,longest:s0.best_streak,lastTestDate:null},points:{total,byDay},selectedSongs:pref.selectedSongs||all,knownSongs:pref.knownSongs||all.slice(),history};
+  pState.view='loading';renderPraktika();
+}
+
+async function loginGoogle(){
+  try{localStorage.removeItem(DEMO_KEY);}catch(e){}
+  const r=await sb.auth.signInWithOAuth({provider:'google',options:{redirectTo:location.origin+location.pathname+'?mode=praktika',queryParams:{prompt:'select_account'}}});
+  if(r.error){pState.loginErr='No se pudo iniciar sesión. Inténtalo de nuevo.';renderPraktika();}
+}
+async function logout(){try{await sb.auth.signOut();}catch(e){}session=null;usr=null;groups=null;pState.view='login';renderPraktika();}
+
+async function saveNick(){
+  const n=((document.getElementById('nick-in')||{}).value||'').trim();
+  if(!NICK_RE.test(n)){pState.nickErr='3-20 caracteres: letras, números, _ . - (sin espacios).';renderPraktika();return;}
+  const r=await sb.from('profiles').insert({id:session.user.id,nickname:n});
+  if(r.error){pState.nickErr=r.error.code==='23505'?'Ese apodo ya está en uso.':'No se pudo guardar el apodo.';renderPraktika();return;}
+  pState.nickErr='';await loadProfileAndStats();
+}
+
+// ----- Guardado de sesión (servidor aplica tope 16/sesión y 50/día) -----
+async function saveSession(){
+  if(pState.saving)return;
+  pState.saving=true;pState.saveErr=false;pState.view='saving';renderPraktika();
+  const pts=Math.max(0,Math.min(pState.points,POINTS_PER_TURN_MAX));
+  try{
+    const r=await sb.rpc('complete_session',{p_points:pts});
+    if(r.error)throw r.error;
+    const x=r.data[0],today=todayStr(),added=Number(x.awarded);
+    usr.points.byDay[today]=Number(x.total_today);usr.points.total+=added;pState.added=added;
+    usr.history.push({date:today,points:pState.points,added,correct:pState.correct,total:pState.total});
+    const st=await sb.rpc('my_streak');
+    if(!st.error&&st.data&&st.data[0]){usr.streak.current=st.data[0].current_streak;usr.streak.longest=st.data[0].best_streak;}
+  }catch(e){pState.saveErr=true;}
+  pState.saving=false;pState.view='result';renderPraktika();
+  if(!pState.saveErr){loadGroups();loadGlobal();}
+}
+async function finishTest(){
+  if(demo){finishTestLocal();return;}
+  if(pState.saving)return;
+  pState.points+=COMPLETION_BONUS;
+  await saveSession();
+}
+function errNote(){return pState.saveErr?`<div style="font-size:.85rem;color:var(--coral);background:var(--coral-light);border-radius:8px;padding:12px 14px;margin-bottom:14px;line-height:1.5">No se han podido guardar los puntos (sin conexión o sesión caducada). No cierres esta pantalla.<br><button data-action="retry-save" style="margin-top:8px;padding:8px 14px;border:1.5px solid var(--coral);background:#fff;color:var(--coral);border-radius:8px;font-weight:600;cursor:pointer">Berriro saiatu / Reintentar</button></div>`:'';}
+
+// ----- Grupos -----
+async function loadGroups(){
+  if(demo||!sb)return;
+  groups=null;
+  const m=await sb.from('group_members').select('group_id,study_groups(id,name)').is('left_at',null);
+  if(m.error){groups=[];groupErr='No se pudieron cargar los grupos.';}
+  else{
+    groups=await Promise.all((m.data||[]).map(async g=>{
+      const [r,w]=await Promise.all([sb.rpc('weekly_ranking',{p_group:g.group_id}),sb.rpc('weeks_won',{p_group:g.group_id})]);
+      return {id:g.group_id,name:(g.study_groups&&g.study_groups.name)||'Grupo',ranking:r.data||[],won:w.data||[]};
+    }));
+  }
+  if(pState.view==='welcome')renderPraktika();
+}
+async function joinGroup(){
+  const code=((document.getElementById('code-in')||{}).value||'').trim();
+  if(!code)return;
+  const r=await sb.rpc('join_group',{p_code:code});
+  if(r.error){groupErr=String(r.error.message).includes('invalid_code')?'Código no válido.':'No se pudo unir al grupo.';renderPraktika();return;}
+  groupErr='';loadGroups();
+}
+async function leaveGroup(id){
+  if(!confirm('¿Salir del grupo? Tus puntos anteriores dejarán de contar en su ranking.'))return;
+  await sb.rpc('leave_group',{p_group:id});
+  loadGroups();
+}
+
+// ----- Vistas -----
+function rLogin(){return `<div style="text-align:center;padding:40px 20px;max-width:400px;margin:0 auto">
+<div style="font-size:.65rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--sea);margin-bottom:10px">HAMASEI PUNTU</div>
+<h2 style="font-family:Georgia,serif;font-size:1.8rem;color:var(--dark);margin-bottom:16px">Eguneroko praktika</h2>
+<p style="font-size:.92rem;color:var(--mid);margin-bottom:24px">Para practicar y sumar puntos necesitas una cuenta de Google. Solo guardamos tu correo y el apodo que elijas.</p>
+${pState.loginErr?`<div style="font-size:.85rem;color:var(--coral);margin-bottom:12px">${esc(pState.loginErr)}</div>`:''}
+<button data-action="login-google" style="${BTN}">Google-rekin hasi / Entrar con Google</button>
+<div style="font-size:.78rem;color:${IN_APP?'var(--coral)':'var(--storm)'};margin-top:14px;line-height:1.5">${IN_APP?'<b>Estás en un navegador integrado.</b> ':''}Si no funciona desde WhatsApp o Instagram, abre esta página en Chrome o Safari: Google bloquea los navegadores integrados.</div>
+<button data-action="start-demo" style="${BTN2};margin-top:24px">Probar sin cuenta (demo, solo en este navegador)</button>
+<a href="privacy.html" style="display:block;margin-top:16px;font-size:.78rem;color:var(--storm)">Privacidad</a>
+<a href="?" style="display:block;margin-top:8px;font-size:.85rem;color:var(--storm);text-decoration:none">← Atzera / Volver</a></div>`;}
+
+function rNick(){return `<div style="text-align:center;padding:40px 20px;max-width:400px;margin:0 auto">
+<div style="font-size:.65rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--sea);margin-bottom:10px">HAMASEI PUNTU</div>
+<h2 style="font-family:Georgia,serif;font-size:1.8rem;color:var(--dark);margin-bottom:16px">Aukeratu zure ezizena</h2>
+<p style="font-size:.92rem;color:var(--mid);margin-bottom:20px">Elige un apodo. Es lo que verán los demás usuarios en los rankings (no usamos tu nombre de Google).</p>
+<div style="text-align:left;margin-bottom:12px"><input id="nick-in" type="text" maxlength="20" autocomplete="off" placeholder="Ej: Ane_91" style="${INPUT}"></div>
+${pState.nickErr?`<div style="font-size:.85rem;color:var(--coral);margin-bottom:12px;text-align:left">${esc(pState.nickErr)}</div>`:''}
+<button data-action="save-nick" style="${BTN}">Hasi! / ¡Empezar!</button>
+<button data-action="logout" style="${BTN2}">Irten / Cerrar sesión</button></div>`;}
+
+function rGroups(){
+  if(demo)return `<div style="${BOX}"><div style="font-size:.85rem;color:var(--mid);margin-bottom:10px">🏆 Los grupos y rankings necesitan cuenta. En modo demo tus puntos solo se guardan en este navegador.</div><button data-action="go-login" style="${BTN};padding:12px;font-size:.9rem">Iniciar sesión con Google</button></div>`;
+  if(groups===null)return `<div style="${BOX};color:var(--storm);font-size:.85rem">Kargatzen... / Cargando grupos...</div>`;
+  if(!groups.length)return `<div style="${BOX}"><div style="font-size:.78rem;font-weight:600;color:var(--storm);letter-spacing:.03em;margin-bottom:10px">TALDEA / GRUPO</div>
+<div style="font-size:.85rem;color:var(--mid);margin-bottom:10px">Introduce el código de invitación de tu grupo.</div>
+<div style="display:flex;gap:8px"><input id="code-in" type="text" autocapitalize="characters" autocomplete="off" placeholder="ABCD1234" style="${INPUT};flex:1"><button data-action="join-group" style="padding:0 18px;background:var(--sea);color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer">Sartu</button></div>
+${groupErr?`<div style="font-size:.82rem;color:var(--coral);margin-top:8px">${esc(groupErr)}</div>`:''}</div>`;
+  const uid=session.user.id;
+  return groups.map(g=>{
+    const rows=g.ranking.length?g.ranking.map(r=>`<div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--light-border);font-size:.9rem;${r.user_id===uid?'font-weight:700;color:var(--sea-dark)':'color:var(--mid)'}"><span>${r.rank}. ${esc(r.nickname)}</span><span>${fmt1(r.points)} pt</span></div>`).join(''):'<div style="font-size:.85rem;color:var(--storm)">Todavía nadie ha sumado puntos esta semana.</div>';
+    const won=g.won.length?`<div style="font-size:.78rem;font-weight:600;color:var(--storm);letter-spacing:.03em;margin:14px 0 6px">ASTEAK IRABAZIRIK / SEMANAS GANADAS</div>`+g.won.map(w=>`<div style="display:flex;justify-content:space-between;font-size:.88rem;color:var(--mid);padding:3px 0"><span>🏅 ${esc(w.nickname)}</span><span>${w.weeks_won}</span></div>`).join(''):'';
+    return `<div style="${BOX}"><div style="font-size:.78rem;font-weight:600;color:var(--storm);letter-spacing:.03em;margin-bottom:2px">${esc(String(g.name).toUpperCase())}</div>
+<div style="font-size:.75rem;color:var(--storm);margin-bottom:10px">Aste honetako rankinga / Ranking de esta semana</div>${rows}${won}
+<button data-action="leave-group" data-gid="${g.id}" style="margin-top:14px;background:none;border:none;color:var(--storm);font-size:.78rem;text-decoration:underline;cursor:pointer;padding:0">Taldea utzi / Salir del grupo</button></div>`;
+  }).join('');
+}
+
+// ----- Ranking general -----
+async function loadGlobal(){
+  if(demo||!sb)return;
+  glob.rows=null;
+  const r=await sb.rpc('global_ranking',{p_period:glob.period,p_limit:10});
+  if(r.error){glob.err=true;glob.rows=[];}else{glob.err=false;glob.rows=r.data||[];}
+  if(pState.view==='welcome')renderPraktika();
+}
+function rGlobal(){
+  if(demo||!session)return '';
+  const tab=(p,l)=>`<button data-action="gl-${p}" style="padding:6px 12px;border-radius:999px;border:1.5px solid ${glob.period===p?'var(--sea)':'var(--light-border)'};background:${glob.period===p?'var(--sea-light)':'#fff'};color:${glob.period===p?'var(--sea-dark)':'var(--storm)'};font-size:.78rem;font-weight:600;cursor:pointer">${l}</button>`;
+  let body;
+  if(glob.rows===null)body='<div style="font-size:.85rem;color:var(--storm)">Kargatzen... / Cargando...</div>';
+  else if(glob.err)body='<div style="font-size:.85rem;color:var(--coral)">No se pudo cargar el ranking.</div>';
+  else if(!glob.rows.length)body='<div style="font-size:.85rem;color:var(--storm)">Todavía nadie ha sumado puntos'+(glob.period==='week'?' esta semana':'')+'.</div>';
+  else body=glob.rows.map((r,i)=>{
+    const gap=r.is_me&&r.rank>10&&(i===0||glob.rows[i-1].rank<=10)?'<div style="text-align:center;color:var(--storm);font-size:.8rem;padding:2px 0">···</div>':'';
+    return gap+`<div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--light-border);font-size:.9rem;${r.is_me?'font-weight:700;color:var(--sea-dark)':'color:var(--mid)'}"><span>${r.rank}. ${esc(r.nickname)}</span><span>${fmt1(r.points)} pt</span></div>`;
+  }).join('');
+  return `<div style="${BOX}"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;gap:8px"><div style="font-size:.78rem;font-weight:600;color:var(--storm);letter-spacing:.03em">MUNDUKO RANKINGA / RANKING GENERAL</div><div style="display:flex;gap:6px">${tab('week','Astea')}${tab('all','Guztira')}</div></div>${body}</div>`;
+}
+
+function bindAEvents(){
+  const on=(sel,fn)=>document.querySelectorAll(sel).forEach(el=>el.addEventListener('click',()=>fn(el)));
+  on('[data-action="login-google"]',loginGoogle);
+  on('[data-action="start-demo"]',()=>{try{localStorage.setItem(DEMO_KEY,'1');}catch(e){}demo=true;loadUser();pState.view='loading';renderPraktika();});
+  on('[data-action="go-login"]',()=>{try{localStorage.removeItem(DEMO_KEY);}catch(e){}location.href='?mode=praktika';});
+  on('[data-action="save-nick"]',saveNick);
+  on('[data-action="logout"]',logout);
+  on('[data-action="join-group"]',joinGroup);
+  on('[data-action="leave-group"]',el=>leaveGroup(el.dataset.gid));
+  on('[data-action="retry-save"]',saveSession);
+  on('[data-action="gl-week"]',()=>{glob.period='week';loadGlobal();});
+  on('[data-action="gl-all"]',()=>{glob.period='all';loadGlobal();});
+}
+
+// LOAD DATA
+const params=new URLSearchParams(window.location.search);
+const mode=params.get('mode');
+if(mode==='praktika'){loadEntregas().then(bootPraktika).catch(entregasError);}
+else{
+const songId=params.get('song')||params.get('s');
+if(songId){
+  fetch('data/'+songId+'.json').then(r=>{if(!r.ok)throw new Error(r.status);return r.json();}).then(d=>{
+    D=d;if(D.type==='special')document.body.classList.add('special');if(D.type==='repaso')state.tab='fc';render();
+  }).catch(e=>{document.getElementById('app').innerHTML=`<div class="loading">No se encuentra: data/${songId}.json</div>`;});
+}else{
+  let idxTab='entregas';
+  function renderIdx(){
+    const tabs=[{id:'entregas',l:'Entregas'},{id:'nola',l:'Cómo funciona'},{id:'programa',l:'Programa'}];
+    let c='';
+    if(idxTab==='entregas'){
+      const card=l=>l.special?`<a href="?song=${l.s}" style="display:flex;align-items:center;justify-content:space-between;padding:14px 18px;margin-bottom:8px;background:linear-gradient(135deg,#e85d26,#d44a1c);border:none;border-radius:8px;text-decoration:none;color:#fff"><div><strong>${l.t}</strong><br><span style="font-size:.85rem;opacity:.85">${l.d}</span></div><span style="display:flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.25);font-size:1.1rem;flex-shrink:0">→</span></a>`:l.repaso?`<a href="?song=${l.s}" style="display:flex;align-items:center;justify-content:space-between;padding:14px 18px;margin-bottom:8px;background:linear-gradient(135deg,#58cc02,#46a302);border:none;border-radius:8px;text-decoration:none;color:#fff"><div><strong>${l.t}</strong><br><span style="font-size:.85rem;opacity:.85">${l.d}</span></div><span style="display:flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.25);font-size:1.1rem;flex-shrink:0">→</span></a>`:`<a href="?song=${l.s}" style="display:flex;align-items:center;justify-content:space-between;padding:14px 18px;margin-bottom:8px;background:#fff;border:1px solid #e5e5e5;border-radius:8px;text-decoration:none;color:#3c3c3c"><div><strong>${l.t}</strong><br><span style="font-size:.85rem;color:#777">${l.d}</span></div><span style="display:flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:#e5f8cc;color:#46a302;font-size:1.1rem;flex-shrink:0">→</span></a>`;
+      const head=(b,bi)=>`<div style="${bi?'margin-top:32px;':''}margin-bottom:16px;padding:16px 18px;background:#e5f8cc;border-radius:10px;border-left:5px solid #58cc02"><div style="font-size:1.1rem;font-weight:800;letter-spacing:.06em;color:#46a302">${b.title}</div><div style="font-size:.92rem;color:#3c3c3c;margin-top:2px">${b.subtitle||''}</div></div>\n`;
+      const blocks=(ENTREGAS.blocks||[]).map((b,bi)=>head(b,bi)+(b.items||[]).map(it=>card({s:it.id,t:it.title,d:it.desc,special:it.kind==='special',repaso:it.kind==='repaso'})).join('')).join('');
+      const nxt=(ENTREGAS.next&&ENTREGAS.next.length)?`<div style="margin-top:16px;padding:16px 18px;background:#fff;border:1px solid #e5e5e5;border-radius:8px;border-left:3px solid #58cc02"><div style="font-size:.82rem;color:#3c3c3c;line-height:1.6"><strong>Hurrengoa / Próximamente:</strong><br>${ENTREGAS.next.map(n=>`<span style="color:#777">${n.date}</span> — ${n.label}`).join('<br>')}</div></div>`:'';
+      c=blocks+nxt;
+    } else if(idxTab==='nola'){
+      c=`<div style="background:#fff;border:1px solid #e5e5e5;border-radius:10px;padding:24px;font-size:.92rem;color:#777;line-height:1.8">
+        <h3 style="font-family:Georgia,serif;font-weight:400;font-size:1.3rem;color:#3c3c3c;margin-bottom:16px">¿Cómo funciona?</h3>
+        <p>Cada entrega tiene un grupo o una temática. Una vez dentro, puedes elegir la canción que quieras practicar.</p>
+        <p style="margin-top:12px">Cada canción tiene varias pestañas, pensadas para ir de izquierda a derecha (empezando por la explicación de la canción, siguiendo con el vocabulario y terminando con el examen), pero el orden es completamente libre.</p>
+        <p style="margin-top:12px;font-weight:500;color:#3c3c3c">Las pestañas:</p>
+        <p style="margin:8px 0 4px 12px"><strong>Sarrera</strong> — De qué va la canción.</p>
+        <p style="margin:4px 0 4px 12px"><strong>Ezagunak</strong> — Palabras que ya aparecieron en canciones anteriores, con la frase donde estaban y la frase donde aparecen ahora.</p>
+        <p style="margin:4px 0 4px 12px"><strong>Hitzak</strong> — Vocabulario por niveles. Toca una tarjeta para ver la traducción. Algunas tienen botones extra:</p>
+        <p style="margin:4px 0 4px 24px"><span style="background:#fef9e7;border:1.5px solid #f0d060;padding:2px 8px;border-radius:4px;font-size:.8rem;font-weight:600;color:#92750c">Nondik dator? 🔍</span> — La raíz de la palabra.</p>
+        <p style="margin:4px 0 4px 24px"><span style="background:#f0ebff;border:1.5px solid #8b5cf6;padding:2px 8px;border-radius:4px;font-size:.8rem;font-weight:600;color:#8b5cf6">Aurkakoa ↔</span> — El antónimo.</p>
+        <p style="margin:4px 0 4px 12px"><strong>Letra</strong> — La canción completa con traducción en <span style="color:#2563eb">azul</span> al lado.</p>
+        <p style="margin:4px 0 4px 12px"><strong>Esaldiak</strong> — Frases para estudiar una a una. Toca para ver la traducción.</p>
+        <p style="margin:4px 0 4px 12px"><strong>Praktika</strong> — Ejercicios: transforma la frase (cambio de persona, tiempo verbal, etc.).</p>
+        <p style="margin:4px 0 4px 12px"><strong>Azterketa</strong> — Quiz de palabras y frases con dos modos: test con opciones o ver la respuesta directamente.</p>
+        <p style="margin-top:16px">Tanto el orden dentro de cada canción como el orden en el que trabajes las canciones es libre. El programa está pensado para servir como introducción a la cultura musical euskaldun, más allá de servir únicamente como trabajo de vocabulario. Dicho esto, cada uno a su ritmo.</p>
+        <p style="margin-top:20px;font-weight:500;color:#3c3c3c">Práctica diaria:</p>
+        <p style="margin-top:8px">Además de las entregas semanales, tienes la <strong>Eguneroko praktika</strong> (el botón de arriba). Es un test diario de ~3 minutos con vocabulario de todas las canciones que lleves: completar frases, flashcards, antónimos y emparejar palabras. Acumulas puntos (máx 16/turno, 50/día) y mantienes tu racha de días consecutivos. Puedes elegir de qué canciones quieres practicar en los ajustes.</p>
+        <p style="margin-top:16px;font-style:italic;color:#afafaf">Cada jueves una entrega nueva.</p>
+      </div>`;
+    } else if(idxTab==='programa'){
+      c=`<div style="background:linear-gradient(135deg,#1a1a2e,#16213e);border-radius:12px;padding:28px 22px;color:#fff">
+        <div style="text-align:center;margin-bottom:24px">
+          <div style="font-size:.65rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#58cc02;margin-bottom:6px">HAMASEI PUNTU</div>
+          <div style="font-family:Georgia,serif;font-size:1.5rem;line-height:1.2">Euskera kantekin</div>
+          <div style="font-size:.8rem;color:#afafaf;margin-top:4px">2026-2027 Denboraldia</div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <div style="display:flex;align-items:center;gap:12px;padding:12px 14px;background:rgba(88,204,2,.15);border-left:3px solid #58cc02;border-radius:6px">
+            <div style="min-width:36px;font-size:.7rem;font-weight:700;color:#58cc02;text-transform:uppercase">IRA<br>SEP</div>
+            <div><div style="font-size:.9rem;font-weight:600">Canon rock 90-00</div><div style="font-size:.75rem;color:#afafaf;margin-top:2px">Sorotan Bele · Zea Mays · Ken Zazpi</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;padding:12px 14px;background:rgba(255,255,255,.05);border-left:3px solid #afafaf;border-radius:6px">
+            <div style="min-width:36px;font-size:.7rem;font-weight:700;color:#afafaf;text-transform:uppercase">URR<br>OCT</div>
+            <div><div style="font-size:.9rem;font-weight:600">Mainstream aktuala</div><div style="font-size:.75rem;color:#afafaf;margin-top:2px">Zetak · Izaro · Bulego · ETS</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;padding:12px 14px;background:rgba(255,255,255,.05);border-left:3px solid #afafaf;border-radius:6px">
+            <div style="min-width:36px;font-size:.7rem;font-weight:700;color:#afafaf;text-transform:uppercase">AZA<br>NOV</div>
+            <div><div style="font-size:.9rem;font-weight:600">Klasikoak</div><div style="font-size:.75rem;color:#afafaf;margin-top:2px">Mikel Laboa · Oskorri · Mikel Urdangarin</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;padding:12px 14px;background:rgba(232,93,38,.15);border-left:3px solid #e85d26;border-radius:6px">
+            <div style="min-width:36px;font-size:.7rem;font-weight:700;color:#e85d26;text-transform:uppercase">ABE<br>DIC</div>
+            <div><div style="font-size:.9rem;font-weight:600">Edizio Berezia</div><div style="font-size:.75rem;color:#afafaf;margin-top:2px">Gorka Urbizu</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;padding:12px 14px;background:rgba(255,255,255,.05);border-left:3px solid #afafaf;border-radius:6px">
+            <div style="min-width:36px;font-size:.7rem;font-weight:700;color:#afafaf;text-transform:uppercase">URT<br>ENE</div>
+            <div><div style="font-size:.9rem;font-weight:600">Moderneo</div><div style="font-size:.75rem;color:#afafaf;margin-top:2px">Chill Mafia · Glaukoma · Dupla</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;padding:12px 14px;background:rgba(255,255,255,.05);border-left:3px solid #afafaf;border-radius:6px">
+            <div style="min-width:36px;font-size:.7rem;font-weight:700;color:#afafaf;text-transform:uppercase">OTS<br>FEB</div>
+            <div><div style="font-size:.9rem;font-weight:600">Kokteleo que te veo</div><div style="font-size:.75rem;color:#afafaf;margin-top:2px">Kortatu · Rotten XIII</div></div>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;padding:12px 14px;background:rgba(255,255,255,.05);border-left:3px solid #afafaf;border-radius:6px">
+            <div style="min-width:36px;font-size:.7rem;font-weight:700;color:#afafaf;text-transform:uppercase">MAR<br>MAR</div>
+            <div><div style="font-size:.9rem;font-weight:600">Denboraldi amaiera</div><div style="font-size:.75rem;color:#afafaf;margin-top:2px">Final de temporada</div></div>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:20px;font-size:.75rem;color:#afafaf">Ostegunero entrega berri bat + sorpresak</div>
+      </div>`;
+    }
+    document.getElementById('app').innerHTML=`<div style="text-align:center;padding:30px 0 20px">
+      <div style="font-size:.65rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#58cc02;margin-bottom:6px">HAMASEI PUNTU</div>
+      <h1 style="font-family:Georgia,serif;font-size:2.2rem;color:#3c3c3c">Euskera kantekin</h1>
+      <p style="font-size:.92rem;color:#afafaf;margin-top:6px">Aprende euskera con canciones</p>
+    </div>
+    <a href="?mode=praktika" style="display:block;margin-bottom:20px;padding:18px 20px;background:linear-gradient(135deg,#1a1a2e,#16213e);border-radius:12px;text-decoration:none;text-align:center;color:#fff">
+      <div style="font-size:1.1rem;font-weight:700">🔥 EGUNEROKO PRAKTIKA</div>
+      <div style="font-size:.82rem;opacity:.7;margin-top:4px">Práctica diaria · ~3 min · Puntos + racha</div></a>
+    <div class="tabs" style="margin-bottom:24px">${tabs.map(tb=>`<button class="tab idx-tab ${idxTab===tb.id?'active':''}" data-idx="${tb.id}" style="font-size:.82rem;font-weight:600;padding:12px 4px">${tb.l}</button>`).join('')}</div>
+    <div id="idx-content">${c}</div>`;
+    document.querySelectorAll('.idx-tab').forEach(el=>el.addEventListener('click',()=>{idxTab=el.dataset.idx;renderIdx();}));
+  }
+  loadEntregas().then(renderIdx).catch(entregasError);
+}}
+</script>
+</body>
+</html>
