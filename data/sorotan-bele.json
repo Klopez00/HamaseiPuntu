@@ -1,0 +1,694 @@
+{
+  "type": "multi",
+  "lang": "eu",
+  "title": "Sorotan Bele",
+  "subtitle": "Aprende euskera con canciones de Sorotan Bele",
+  "bio": "Sorotan Bele fue un grupo de Hondarribia formado en 1991. Solo sacaron dos discos en los 90 y desaparecieron sin dejar rastro. Pop-rock en euskera con letras entre lo narrativo y lo poético. Atalaia cuenta la historia de una ballena; Mariñelaren zai es una despedida en el puerto. Canon del rock vasco de los 90.",
+  "songs": {
+    "atalaia": {
+      "title": "Atalaia",
+      "cardDesc": "Balleneros, mar, mañana oscura. Narrativa.",
+      "introEs": "Una canción narrativa. Una mañana oscura salen a la mar, divisan un ballenero, aparece una cría de ballena. El vigía grita desde la atalaya. La historia se cuenta como si la vivieras: olores, gritos, lluvia en el rostro. Hondarribia y el mar como escenario.",
+      "known": [],
+      "vocab": [
+        {
+          "eu": "esnatu",
+          "es": "despertar(se)",
+          "level": 2
+        },
+        {
+          "eu": "atalaia",
+          "es": "atalaya, torre de vigía",
+          "level": 2
+        },
+        {
+          "eu": "itsasoa",
+          "es": "el mar",
+          "level": 1,
+          "note": "itsasoruntz = hacia el mar"
+        },
+        {
+          "eu": "balea",
+          "es": "ballena",
+          "level": 2
+        },
+        {
+          "eu": "trainera",
+          "es": "trainera (canoa de remo)",
+          "level": 2
+        },
+        {
+          "eu": "olatua",
+          "es": "ola",
+          "level": 2
+        },
+        {
+          "eu": "aurpegia",
+          "es": "el rostro",
+          "level": 2
+        },
+        {
+          "eu": "euria",
+          "es": "la lluvia",
+          "level": 1,
+          "note": "euriz = con lluvia (instrumental)"
+        },
+        {
+          "eu": "herria",
+          "es": "pueblo",
+          "level": 1
+        },
+        {
+          "eu": "gizona",
+          "es": "hombre",
+          "level": 1
+        },
+        {
+          "eu": "mutila",
+          "es": "muchacho, chico",
+          "level": 1
+        },
+        {
+          "eu": "arpoia",
+          "es": "arpón",
+          "level": 2
+        },
+        {
+          "eu": "soka",
+          "es": "cuerda, soga",
+          "level": 1
+        },
+        {
+          "eu": "bihotza",
+          "es": "corazón",
+          "level": 1
+        },
+        {
+          "eu": "kaia",
+          "es": "muelle",
+          "level": 2
+        },
+        {
+          "eu": "saria",
+          "es": "premio, recompensa",
+          "level": 2
+        },
+        {
+          "eu": "kumea",
+          "es": "cría",
+          "level": 2
+        },
+        {
+          "eu": "algaraka",
+          "es": "jaleo, alboroto",
+          "level": 3
+        },
+        {
+          "eu": "gupida",
+          "es": "clemencia, compasión",
+          "level": 3
+        }
+      ],
+      "phrases": [
+        {
+          "eu": "Goiza baten esnatu nintzen",
+          "es": "Una mañana me desperté",
+          "grammar": {
+            "label": "Conjugar: esnatu (nor, iragana)",
+            "rows": [
+              [
+                "ni",
+                "esnatu nintzen",
+                "me desperté"
+              ],
+              [
+                "zu",
+                "esnatu zinen",
+                "te despertaste"
+              ],
+              [
+                "hura",
+                "esnatu zen",
+                "se despertó"
+              ],
+              [
+                "gu",
+                "esnatu ginen",
+                "nos despertamos"
+              ],
+              [
+                "haiek",
+                "esnatu ziren",
+                "se despertaron"
+              ]
+            ]
+          }
+        },
+        {
+          "eu": "Atalaiaren gainean",
+          "es": "En lo alto de la atalaya",
+          "grammar": {
+            "label": "-aren gainean = encima de",
+            "rows": [
+              [
+                "etxea",
+                "etxearen gainean",
+                "encima de la casa"
+              ],
+              [
+                "mendia",
+                "mendiaren gainean",
+                "encima del monte"
+              ],
+              [
+                "mahaia",
+                "mahaiaren gainean",
+                "encima de la mesa"
+              ]
+            ]
+          }
+        },
+        {
+          "eu": "Itsasoruntz begiratu nun",
+          "es": "Miré hacia el mar",
+          "grammar": {
+            "label": "Conjugar: begiratu (nork, iragana)",
+            "rows": [
+              [
+                "nik",
+                "begiratu nuen",
+                "yo miré"
+              ],
+              [
+                "zuk",
+                "begiratu zenuen",
+                "tú miraste"
+              ],
+              [
+                "hark",
+                "begiratu zuen",
+                "él/ella miró"
+              ],
+              [
+                "guk",
+                "begiratu genuen",
+                "nosotros miramos"
+              ]
+            ]
+          }
+        },
+        {
+          "eu": "Hantxe zegoen balea",
+          "es": "Allí estaba la ballena"
+        },
+        {
+          "eu": "Ohiu garraxix hasi nintzen",
+          "es": "Empecé a gritar a voces",
+          "note": "Redundancia expresiva: ohiu = grito, garraxika = a gritos. Sería correcto decir solo \"ohiuka hasi nintzen\" o \"garraxika hasi nintzen\". Juntos dan más fuerza."
+        },
+        {
+          "eu": "Sorbaldan hartuz trainera",
+          "es": "Cogiendo la trainera al hombro"
+        },
+        {
+          "eu": "Balearuntz bota genuen",
+          "es": "Nos lanzamos hacia la ballena",
+          "grammar": {
+            "label": "-runtz = hacia (dirección)",
+            "rows": [
+              [
+                "itsasoa",
+                "itsasoruntz",
+                "hacia el mar"
+              ],
+              [
+                "etxea",
+                "etxeruntz",
+                "hacia casa"
+              ],
+              [
+                "mendia",
+                "mendiruntz",
+                "hacia el monte"
+              ]
+            ]
+          }
+        },
+        {
+          "eu": "Olatu ginen gainean",
+          "es": "Sobre las olas",
+          "note": "Forma inusual. Lo esperable sería \"olatu gainean ginen\" (estuvimos sobre las olas)."
+        },
+        {
+          "eu": "Atalaiaren gainean\nAurpegia euriz bustia",
+          "es": "En lo alto de la atalaya\nEl rostro mojado por la lluvia"
+        },
+        {
+          "eu": "Goiz ilun hartan irten ginen\nherri hartan ziren",
+          "es": "Aquella mañana oscura salimos,\nlos que había en aquel pueblo"
+        },
+        {
+          "eu": "Gizonarik indartsuena\neta mutilik gazteenak",
+          "es": "El hombre más fuerte\ny los muchachos más jóvenes",
+          "grammar": {
+            "label": "Superlativo: -rik + -ena / -enak",
+            "rows": [
+              [
+                "indartsua (fuerte)",
+                "indartsuena",
+                "el más fuerte"
+              ],
+              [
+                "gaztea (joven)",
+                "gazteenak",
+                "los más jóvenes"
+              ],
+              [
+                "polita (bonito/a)",
+                "politena",
+                "el/la más bonito/a"
+              ],
+              [
+                "handia (grande)",
+                "handiena",
+                "el más grande"
+              ]
+            ]
+          }
+        },
+        {
+          "eu": "Amorru biziz bota genun\nsokaz loturik arpoia",
+          "es": "Con rabia viva lanzamos\nel arpón atado con soga"
+        },
+        {
+          "eu": "Guk gupidarik ezgenun izan",
+          "es": "No tuvimos clemencia"
+        },
+        {
+          "eu": "Haren bizitza akatzean",
+          "es": "Al acabar su vida"
+        },
+        {
+          "eu": "Kaian algaraka hasi ginan\ngeure saria ikustean",
+          "es": "En el muelle empezamos a montar jaleo\nal ver nuestra recompensa"
+        },
+        {
+          "eu": "Bale kume bat agertu zan",
+          "es": "Apareció una cría de ballena"
+        },
+        {
+          "eu": "Ta erre zizkigun bihotzak",
+          "es": "Y nos quemó los corazones"
+        }
+      ],
+      "praktika": [
+        {
+          "eu": "Esnatu nintzen",
+          "es": "(me desperté)",
+          "challenge": "¿Cómo dirías \"se despertó\" (hura)?",
+          "answer": "Esnatu zen",
+          "explanation": "nor iragana: nintzen (ni) → zen (hura)"
+        },
+        {
+          "eu": "Itsasoruntz begiratu nun",
+          "es": "(miré hacia el mar)",
+          "challenge": "¿Y si miramos nosotros (gu)?",
+          "answer": "Itsasoruntz begiratu genuen",
+          "explanation": "nork iragana: nuen (nik) → genuen (guk)"
+        },
+        {
+          "eu": "Hasi nintzen",
+          "es": "(empecé)",
+          "challenge": "¿En presente? (empiezo)",
+          "answer": "Hasten naiz",
+          "explanation": "Presente habitual: -ten + nor oraina. nintzen → naiz"
+        },
+        {
+          "eu": "Bale kume bat agertu zan",
+          "es": "(apareció una cría)",
+          "challenge": "¿Y si aparecieron varias crías?",
+          "answer": "Bale kume batzuk agertu ziren",
+          "explanation": "bat → batzuk, zen → ziren (plural)"
+        },
+        {
+          "eu": "Kaian algaraka hasi ginan",
+          "es": "(empezamos a montar jaleo en el muelle)",
+          "challenge": "¿Y si fuiste tú solo/a?",
+          "answer": "Kaian algaraka hasi nintzen",
+          "explanation": "ginan (gu) → nintzen (ni)"
+        }
+      ]
+    },
+    "marinelaren": {
+      "title": "Mariñelaren zai",
+      "cardDesc": "Despedida en el puerto. Marinero, padre, baile.",
+      "introEs": "Una canción de despedida. El marinero se va a Irlanda y alguien le espera. Mientras tanto, todos bailan alegres en el puerto. Habla con su padre: amo al marinero. La espera, el mar, la fiesta que intenta tapar la ausencia.",
+      "known": [],
+      "vocab": [
+        {
+          "eu": "arotza",
+          "es": "carpintero",
+          "level": 3
+        },
+        {
+          "eu": "alaba",
+          "es": "hija",
+          "level": 1
+        },
+        {
+          "eu": "marinela",
+          "es": "marinero",
+          "level": 1
+        },
+        {
+          "eu": "aita",
+          "es": "padre",
+          "level": 1
+        },
+        {
+          "eu": "maite",
+          "es": "querido/a, amar",
+          "level": 1,
+          "note": "maite dut = le/lo amo"
+        },
+        {
+          "eu": "jauntxoa",
+          "es": "señorito, terrateniente",
+          "level": 2
+        },
+        {
+          "eu": "bihotza",
+          "es": "corazón",
+          "level": 1
+        },
+        {
+          "eu": "emaztea",
+          "es": "esposa",
+          "level": 1
+        },
+        {
+          "eu": "ezkontza",
+          "es": "boda, matrimonio",
+          "level": 2
+        },
+        {
+          "eu": "eskua",
+          "es": "mano",
+          "level": 1
+        },
+        {
+          "eu": "dantza",
+          "es": "baile",
+          "level": 1
+        },
+        {
+          "eu": "leihoa",
+          "es": "ventana",
+          "level": 1
+        },
+        {
+          "eu": "itxaropena",
+          "es": "esperanza",
+          "level": 2
+        },
+        {
+          "eu": "maitasuna",
+          "es": "el amor",
+          "level": 1
+        },
+        {
+          "eu": "egarria",
+          "es": "sed, ansia",
+          "level": 2
+        },
+        {
+          "eu": "xarmangarria",
+          "es": "encantador/a",
+          "level": 3
+        }
+      ],
+      "phrases": [
+        {
+          "eu": "Arotzak zuen alaba bat:",
+          "es": "El carpintero tenía una hija:"
+        },
+        {
+          "eu": "zan herriko xarmangarriena.",
+          "es": "era la más encantadora del pueblo."
+        },
+        {
+          "eu": "Bi gizonek nahi zuten jabe izan\nharen bihotzaz... nola esan?",
+          "es": "Dos hombres querían ser dueños\nde su corazón... ¿cómo decirlo?"
+        },
+        {
+          "eu": "Zer dun, zer dun, ene alaba?",
+          "es": "¿Qué tienes, qué tienes, hija mía?",
+          "grammar": {
+            "label": "hika (tuteo): dun = duzu en forma familiar",
+            "rows": [
+              [
+                "zuka (neutro)",
+                "zer duzu?",
+                "¿qué tienes?"
+              ],
+              [
+                "hika (masc.)",
+                "zer duk?",
+                "¿qué tienes? (a chico)"
+              ],
+              [
+                "hika (fem.)",
+                "zer dun?",
+                "¿qué tienes? (a chica)"
+              ]
+            ]
+          }
+        },
+        {
+          "eu": "Marinela maite dut, aita.",
+          "es": "Amo al marinero, padre.",
+          "grammar": {
+            "label": "Conjugar: maite (nork-nor, oraina)",
+            "rows": [
+              [
+                "nik",
+                "maite dut",
+                "yo amo"
+              ],
+              [
+                "zuk",
+                "maite duzu",
+                "tú amas"
+              ],
+              [
+                "hark",
+                "maite du",
+                "él/ella ama"
+              ],
+              [
+                "guk",
+                "maite dugu",
+                "nosotros amamos"
+              ],
+              [
+                "haiek",
+                "maite dute",
+                "ellos aman"
+              ]
+            ]
+          }
+        },
+        {
+          "eu": "Ez al dun ulertzen? Ezinezkoa da!",
+          "es": "¿No lo entiendes? ¡Es imposible!",
+          "grammar": {
+            "label": "Negación: ez + aditz laguntzailea",
+            "rows": [
+              [
+                "bai",
+                "ulertzen dut",
+                "lo entiendo"
+              ],
+              [
+                "ez",
+                "ez dut ulertzen",
+                "no lo entiendo"
+              ],
+              [
+                "galdera",
+                "ulertzen al duzu?",
+                "¿lo entiendes?"
+              ],
+              [
+                "ez + galdera",
+                "ez al duzu ulertzen?",
+                "¿no lo entiendes?"
+              ]
+            ]
+          }
+        },
+        {
+          "eu": "Jauntxoa da hiretzat maitia.",
+          "es": "El señorito es el amor para ti.",
+          "grammar": {
+            "label": "-entzat = para (destinatario)",
+            "rows": [
+              [
+                "hi (hika)",
+                "hiretzat",
+                "para ti"
+              ],
+              [
+                "zu",
+                "zuretzat",
+                "para ti/usted"
+              ],
+              [
+                "ni",
+                "niretzat",
+                "para mí"
+              ],
+              [
+                "gu",
+                "guretzat",
+                "para nosotros"
+              ]
+            ]
+          }
+        },
+        {
+          "eu": "Orduan egarriak denak ziren bat\nmaitasun ukatuarentzat.",
+          "es": "Entonces las ansias eran una sola\npara el amor negado."
+        },
+        {
+          "eu": "Jauntxoa dator hire esku bila.",
+          "es": "El señorito viene a buscar tu mano.",
+          "grammar": {
+            "label": "-en bila = en busca de",
+            "rows": [
+              [
+                "eskua",
+                "esku bila",
+                "en busca de la mano"
+              ],
+              [
+                "lana",
+                "lan bila",
+                "en busca de trabajo"
+              ],
+              [
+                "laguna",
+                "lagun bila",
+                "en busca del amigo"
+              ]
+            ]
+          }
+        },
+        {
+          "eu": "Marinela Irlandara doa.",
+          "es": "El marinero se va a Irlanda."
+        },
+        {
+          "eu": "Hala izan tzan, ezkontz behartua.",
+          "es": "Así fue, boda obligada."
+        },
+        {
+          "eu": "Aberatsik ez ziren han.",
+          "es": "Ricos no había allí."
+        },
+        {
+          "eu": "Ta guztiak dantzan, guztiak alai.\nMail ezberdinak ahaztuaz.",
+          "es": "Y todos bailando, todos alegres.\nOlvidando las diferentes clases."
+        },
+        {
+          "eu": "Jauntxoaren emaztea zara!",
+          "es": "¡Eres la esposa del señorito!",
+          "grammar": {
+            "label": "Conjugar: izan (nor, oraina)",
+            "rows": [
+              [
+                "ni",
+                "naiz",
+                "soy"
+              ],
+              [
+                "zu",
+                "zara",
+                "eres"
+              ],
+              [
+                "hura",
+                "da",
+                "es"
+              ],
+              [
+                "gu",
+                "gara",
+                "somos"
+              ],
+              [
+                "zuek",
+                "zarete",
+                "sois"
+              ],
+              [
+                "haiek",
+                "dira",
+                "son"
+              ]
+            ]
+          }
+        },
+        {
+          "eu": "Gaur egun oraindik ikus dezakegu\nalaba hura leihoan",
+          "es": "Hoy en día aún podemos ver\naquella hija en la ventana"
+        },
+        {
+          "eu": "marinelaren zai, zai.",
+          "es": "esperando al marinero, esperando."
+        },
+        {
+          "eu": "Itsasoan du itxaropena.",
+          "es": "En el mar tiene su esperanza."
+        }
+      ],
+      "praktika": [
+        {
+          "eu": "Marinela maite dut, aita.",
+          "es": "(amo al marinero, padre)",
+          "challenge": "¿En pasado? (amaba/amé)",
+          "answer": "Marinela maite nuen, aita.",
+          "explanation": "nork-nor iragana: dut (nik, oraina) → nuen (nik, iragana)"
+        },
+        {
+          "eu": "Marinela Irlandara doa.",
+          "es": "(el marinero se va a Irlanda)",
+          "challenge": "¿Si se van varios (haiek)?",
+          "answer": "Marinelak Irlandara doaz.",
+          "explanation": "doa (hura) → doaz (haiek). Marinela → marinelak (plural ergatibo)"
+        },
+        {
+          "eu": "Jauntxoaren emaztea zara!",
+          "es": "(¡eres la esposa del señorito!)",
+          "challenge": "¿Si hablamos de ella (hura)?",
+          "answer": "Jauntxoaren emaztea da!",
+          "explanation": "izan oraina: zara (zu) → da (hura)"
+        },
+        {
+          "eu": "Gaur egun oraindik ikus dezakegu",
+          "es": "(hoy en día aún podemos ver)",
+          "challenge": "¿Si puedes ver tú solo/a (zuk)?",
+          "answer": "Gaur egun oraindik ikus dezakezu",
+          "explanation": "ahal nork: dezakegu (guk) → dezakezu (zuk)"
+        },
+        {
+          "eu": "Arotzak zuen alaba bat.",
+          "es": "(el carpintero tenía una hija)",
+          "challenge": "¿En presente? (tiene)",
+          "answer": "Arotzak alaba bat du.",
+          "explanation": "nork-nor: zuen (iragana) → du (oraina)"
+        }
+      ]
+    }
+  }
+}
