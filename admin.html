@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Hamasei Puntu · Admin</title>
+<style>
+:root{--bg:#f6f7f8;--card:#fff;--text:#1d2329;--mid:#566069;--line:#e3e6e9;--sea:#1f6f8b;--sea-l:#e3f1f6;--ok:#2e7d32;--ok-l:#e5f3e6;--warn:#9a5b00;--warn-l:#fdf0d8;--off:#6b747c;--off-l:#eceff1}
+@media (prefers-color-scheme:dark){:root{--bg:#14181b;--card:#1c2226;--text:#e8ecef;--mid:#a2adb6;--line:#2c353b;--sea:#6bc1de;--sea-l:#1d3540;--ok:#7fd18a;--ok-l:#1d3322;--warn:#f0b45a;--warn-l:#3a2e17;--off:#9aa4ac;--off-l:#262e33}}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,sans-serif;line-height:1.45}
+.wrap{max-width:720px;margin:0 auto;padding:16px 14px 40px}
+header{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:14px}
+h1{font-size:1.15rem;margin:0}
+.btn{padding:8px 12px;border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:8px;font-size:.82rem;cursor:pointer}
+.btn.primary{background:var(--sea);border-color:var(--sea);color:#fff;font-weight:600;padding:12px 18px;font-size:.95rem}
+.sum{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:14px}
+.sum div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 8px;text-align:center}
+.sum b{display:block;font-size:1.4rem}
+.sum span{font-size:.68rem;color:var(--mid)}
+.tools{display:flex;gap:8px;margin-bottom:12px}
+.tools input,.tools select{flex:1;min-width:0;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--text);font-size:.9rem}
+.row{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:8px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.nick{font-weight:700;overflow-wrap:anywhere}
+.chip{font-size:.72rem;font-weight:600;padding:3px 9px;border-radius:999px;white-space:nowrap}
+.c-ok{background:var(--ok-l);color:var(--ok)}.c-warn{background:var(--warn-l);color:var(--warn)}.c-off{background:var(--off-l);color:var(--off)}
+.meta{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:6px;font-size:.82rem;color:var(--mid)}
+.meta b{color:var(--text)}
+.tag{font-size:.7rem;color:var(--mid);margin-top:6px}
+.center{text-align:center;padding:60px 16px;color:var(--mid)}
+.err{color:var(--warn)}
+</style>
+<link rel="icon" type="image/png" href="icon-admin-512.png">
+<link rel="apple-touch-icon" href="icon-admin-512.png">
+</head>
+<body>
+<div class="wrap" id="app"><div class="center">Cargando...</div></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+const SUPABASE_URL='https://utrxpbzzpjxsjfgqnqub.supabase.co';
+const SUPABASE_KEY='sb_publishable_K_oLG0XyeU9p2eVHjOliHg_fMar2e45';
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmt=n=>(Math.round(Number(n)*10)/10).toString();
+const app=document.getElementById('app');
+let sb=null,rows=[],sort='cs',q='';
+
+const todayStr=()=>new Date().toLocaleDateString('sv-SE',{timeZone:'Europe/Berlin'});
+function daysAgo(d){if(!d)return null;const [a,b,c]=d.split('-').map(Number),[x,y,z]=todayStr().split('-').map(Number);return Math.round((Date.UTC(x,y-1,z)-Date.UTC(a,b-1,c))/864e5);}
+function status(d){const n=daysAgo(d);
+  if(n===null)return ['sin sesiones','c-off'];
+  if(n===0)return ['hoy','c-ok'];
+  if(n===1)return ['ayer','c-ok'];
+  if(n<=6)return ['hace '+n+' d','c-warn'];
+  return ['hace '+n+' d','c-off'];}
+
+const SORTS={cs:['Racha actual',(a,b)=>b.current_streak-a.current_streak||b.best_streak-a.best_streak],
+ bs:['Mejor racha',(a,b)=>b.best_streak-a.best_streak],
+ last:['Última actividad',(a,b)=>(b.last_day||'').localeCompare(a.last_day||'')],
+ wk:['Puntos de la semana',(a,b)=>Number(b.points_week)-Number(a.points_week)],
+ tot:['Puntos totales',(a,b)=>Number(b.points_total)-Number(a.points_total)],
+ nick:['Apodo',(a,b)=>a.nickname.localeCompare(b.nickname)]};
+
+function viewHTML(){
+  const n=rows.length,hoy=rows.filter(r=>daysAgo(r.last_day)===0).length,sem=rows.filter(r=>{const d=daysAgo(r.last_day);return d!==null&&d<=6;}).length,rach=rows.filter(r=>r.current_streak>=3).length;
+  const list=rows.filter(r=>r.nickname.toLowerCase().includes(q.toLowerCase())).sort(SORTS[sort][1]);
+  const cards=list.map(r=>{const [lab,cls]=status(r.last_day);
+    return `<div class="row"><div class="top"><span class="nick">${esc(r.nickname)}</span><span class="chip ${cls}">${lab}</span></div>
+<div class="meta"><span>🔥 <b>${r.current_streak}</b> (mejor ${r.best_streak})</span><span><b>${fmt(r.points_week)}</b> pt semana</span><span><b>${fmt(r.points_total)}</b> pt total</span><span><b>${r.sessions}</b> sesiones</span></div>
+<div class="tag">Alta: ${esc(r.member_since)}${r.groups?' · Grupo: '+esc(r.groups):' · Sin grupo'}${r.in_global?'':' · Oculto del ranking general'}</div></div>`;}).join('')||'<div class="center">Sin resultados.</div>';
+  return `<header><h1>Hamasei Puntu · Admin</h1><div><button class="btn" id="b-ref">Actualizar</button> <button class="btn" id="b-out">Salir</button></div></header>
+<div class="sum"><div><b>${n}</b><span>usuarios</span></div><div><b>${hoy}</b><span>activos hoy</span></div><div><b>${sem}</b><span>últimos 7 días</span></div><div><b>${rach}</b><span>racha ≥ 3</span></div></div>
+<div class="tools"><input id="q" type="search" placeholder="Buscar apodo" value="${esc(q)}"><select id="s">${Object.entries(SORTS).map(([k,v])=>`<option value="${k}"${k===sort?' selected':''}>${v[0]}</option>`).join('')}</select></div>${cards}`;
+}
+function bind(){
+  const g=id=>document.getElementById(id);
+  if(g('b-ref'))g('b-ref').onclick=load;
+  if(g('b-out'))g('b-out').onclick=async()=>{await sb.auth.signOut();showLogin();};
+  if(g('s'))g('s').onchange=e=>{sort=e.target.value;render();};
+  if(g('q'))g('q').oninput=e=>{q=e.target.value;const pos=e.target.selectionStart;render();const i=g('q');i.focus();i.setSelectionRange(pos,pos);};
+}
+function render(){app.innerHTML=viewHTML();bind();}
+function showMsg(m,withOut){app.innerHTML=`<div class="center ${withOut?'err':''}">${esc(m)}${withOut?'<br><br><button class="btn" id="b-out">Salir</button>':''}</div>`;bind();}
+function showLogin(){app.innerHTML='<div class="center"><h1>Hamasei Puntu · Admin</h1><p>Entra con la cuenta de administrador.</p><button class="btn primary" id="b-in">Entrar con Google</button></div>';
+  document.getElementById('b-in').onclick=()=>sb.auth.signInWithOAuth({provider:'google',options:{redirectTo:location.origin+location.pathname,queryParams:{prompt:'select_account'}}});}
+async function load(){
+  showMsg('Cargando...');
+  const r=await sb.rpc('admin_overview');
+  if(r.error){showMsg(String(r.error.message).includes('not_admin')?'Esta cuenta no tiene permiso de administrador.':'Error al cargar los datos. Recarga la página.',true);return;}
+  rows=(r.data||[]).map(x=>({...x,sessions:Number(x.sessions)}));render();
+}
+(async()=>{
+  try{
+    sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY,{auth:{flowType:'pkce'}});
+    const s=await sb.auth.getSession();
+    if(!s.data.session){showLogin();return;}
+    await load();
+  }catch(e){showMsg('No se pudo conectar con el servidor.',false);}
+})();
+</script>
+</body>
+</html>
