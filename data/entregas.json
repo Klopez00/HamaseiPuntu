@@ -94,6 +94,17 @@
             "Kantu bat",
             "Hegan"
           ]
+        },
+        {
+          "id": "marrazki-bizunak",
+          "title": "Edizio Berezia: Marrazki bizunak",
+          "desc": "Doraemon + Shin-chan",
+          "kind": "special",
+          "name": "Marrazki bizunak",
+          "songs": [
+            "Doraemon",
+            "Shin-chan"
+          ]
         }
       ]
     }
