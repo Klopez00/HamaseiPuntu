@@ -1,0 +1,130 @@
+{
+  "type": "special",
+  "lang": "eu",
+  "title": "Marrazki bizunak",
+  "subtitle": "Dibujos animados: las sintonías de nuestra infancia",
+  "bio": "Esta edición especial deja la música de siempre y vuelve a la tele de la infancia: las sintonías en euskera de dos clásicos de los dibujos animados, Doraemon y Shin-chan. Son canciones cortas, repetitivas y pensadas para niños, perfectas para pillar estructuras básicas: saludos, partes del día, presentaciones y descripciones. Marrazki bizunak significa literalmente 'dibujos animados' (marrazkia, dibujo + bizunak, animados).",
+  "songs": {
+    "doraemon": {
+      "title": "Doraemon",
+      "cardDesc": "Buenos días por la mañana, buenas noches por la noche, y un gato cósmico que también es mago.",
+      "introEs": "La sintonía en euskera de Doraemon, el gato cósmico que vive con Nobita. Es una canción de saludo y de amistad: empieza dando los buenos días y las buenas noches y presenta a dos personajes que viven felices pasando de un sueño a otro junto a sus amigos. Fíjate en el plural locativo -etan (goizetan, gauetan: por las mañanas, por las noches), en la repetición goiz goizetan, que refuerza (muy de mañana), en -ko para decir 'de la luna' (Ilargiko lehioan), en batetik bestera (de uno a otro) y en batera / -ekin batera (junto con).",
+      "lyrics": {
+        "eu": "Goiz goizetan egunon\nEta gauetan gabon.\nIlargiko lehioan Nobita eta Doraemon.\nZein pozik bizi diren\nAmets batetik bestera\nBere lagun eta adiskideekin batera.\nKatu kosmikoa magoa ere bada!\n\"Bai! Egia da hori!\"\nGora eta gora beti Doraemon!",
+        "es": "A las mañanas-mañanas buenos días\nY a las noches buenas noches.\nEn la ventana de la luna Nobita y Doraemon.\nQué felices viven\nDe un sueño a otro\nJunto con sus amigos y amistades.\n¡El gato cósmico también es mago!\n\"¡Sí! ¡Eso es cierto!\"\n¡Viva y viva siempre Doraemon!"
+      },
+      "known": [
+        {"eu": "ilargia", "es": "luna", "orig": "Elektrizitatea", "origEs": "", "here": "Ilargiko lehioan", "hereEs": "En la ventana de la luna"},
+        {"eu": "gaua", "es": "noche", "orig": "Ilargia", "origEs": "", "here": "gauetan", "hereEs": "a las noches"},
+        {"eu": "ametsak", "es": "sueños", "orig": "Ilargia", "origEs": "", "here": "Amets batetik bestera", "hereEs": "De un sueño a otro"},
+        {"eu": "laguna", "es": "amigo/a", "orig": "Zapalduen olerkia", "origEs": "", "here": "Bere lagun eta adiskideekin", "hereEs": "Con sus amigos y amistades"},
+        {"eu": "egia", "es": "verdad", "orig": "Zapalduen olerkia", "origEs": "", "here": "Egia da hori!", "hereEs": "¡Eso es cierto!"},
+        {"eu": "betirako", "es": "para siempre", "orig": "Zeinen ederra izango den", "origEs": "", "here": "beti Doraemon!", "hereEs": "siempre Doraemon!"}
+      ],
+      "vocab": [
+        {"eu": "goiza", "es": "mañana (parte del día)", "level": 1, "ant": "gaua", "antEs": "noche", "note": "goiz goizetan = muy de mañana (la repetición intensifica)"},
+        {"eu": "egunon", "es": "buenos días", "level": 1, "ant": "gabon", "antEs": "buenas noches", "morph": "egun + on", "morphEs": "día + bueno"},
+        {"eu": "gabon", "es": "buenas noches", "level": 1, "morph": "gau + on", "morphEs": "noche + bueno"},
+        {"eu": "gaua", "es": "noche", "level": 1, "ant": "eguna", "antEs": "día", "note": "gauetan = por las noches (plural locativo -etan)"},
+        {"eu": "ilargia", "es": "luna", "level": 1, "note": "ilargiko = de la luna (-ko: de + lugar/tiempo)"},
+        {"eu": "lehioa", "es": "ventana", "level": 2},
+        {"eu": "pozik", "es": "contento/a, feliz", "level": 2, "ant": "triste", "antEs": "triste", "morph": "poza", "morphEs": "alegría (+ -ik, estado)", "note": "pozik bizi = vivir contentos"},
+        {"eu": "bizi", "es": "vivir", "level": 1, "note": "diren: forma de 'ser' con zein (zein pozik bizi diren = qué felices viven)"},
+        {"eu": "ametsa", "es": "sueño", "level": 2, "note": "batetik bestera = de uno a otro"},
+        {"eu": "lagun", "es": "amigo/a", "level": 1, "note": "bere lagun eta adiskideekin batera = junto con sus amigos y amistades"},
+        {"eu": "adiskidea", "es": "amigo/a (de confianza)", "level": 2, "note": "amigo/a; algo más formal que lagun"},
+        {"eu": "batera", "es": "junto con, a la vez", "level": 2, "morph": "bat", "morphEs": "uno"},
+        {"eu": "katua", "es": "gato", "level": 1},
+        {"eu": "kosmikoa", "es": "cósmico/a", "level": 3, "note": "cognado de cosmos"},
+        {"eu": "magoa", "es": "mago", "level": 2, "note": "magoa ere bada = también es mago"},
+        {"eu": "egia", "es": "verdad", "level": 1, "ant": "gezurra", "antEs": "mentira", "note": "egia da hori = eso es cierto"},
+        {"eu": "gora", "es": "arriba; viva (grito)", "level": 1, "ant": "behera", "antEs": "abajo", "note": "gora eta gora beti = ¡viva y viva siempre!"},
+        {"eu": "beti", "es": "siempre", "level": 1, "ant": "inoiz ez", "antEs": "nunca"}
+      ],
+      "phrases": [
+        {"eu": "Goiz goizetan egunon", "es": "A las mañanas-mañanas buenos días", "note": "Goiz goizetan: la reduplicación intensifica 'muy de mañana'. Egunon = egun (día) + on (bueno)."},
+        {"eu": "Eta gauetan gabon.", "es": "Y a las noches buenas noches.", "note": "Gabon = gau (noche) + on (buena). -etan es el sufijo de plural locativo (en las)."},
+        {"eu": "Ilargiko lehioan Nobita eta Doraemon.", "es": "En la ventana de la luna Nobita y Doraemon.", "note": "-ko es el genitivo locativo (de la luna). Lehioan = en la ventana (-an)."},
+        {"eu": "Zein pozik bizi diren", "es": "Qué felices viven", "note": "Zein = qué (exclamativo). Pozik = contento (estado con -ik). Diren = que viven (relativo de dira)."},
+        {"eu": "Amets batetik bestera", "es": "De un sueño a otro", "note": "Batetik bestera = de uno a otro (estructura muy común en euskera)."},
+        {"eu": "Bere lagun eta adiskideekin batera.", "es": "Junto con sus amigos y amistades.", "note": "-ekin = con. Batera = juntos/a la vez. '-ekin batera' = junto con."},
+        {"eu": "Katu kosmikoa magoa ere bada!", "es": "¡El gato cósmico también es mago!", "note": "Ere = también. Bada = da (es) con la partícula enfática ba-."},
+        {"eu": "Bai! Egia da hori!", "es": "¡Sí! ¡Eso es cierto!", "note": "Egia da = es verdad. Hori = eso."},
+        {"eu": "Gora eta gora beti Doraemon!", "es": "¡Viva y viva siempre Doraemon!", "note": "Gora = arriba, usado como grito de ánimo o celebración ('¡viva!')."}
+      ],
+      "praktika": [
+        {"eu": "Goizetan kafea hartzen dut", "es": "(por las mañanas tomo café)", "challenge": "¿Y 'por las noches leo'?", "answer": "Gauetan irakurtzen dut", "explanation": "-etan = plural locativo: goizetan, gauetan, asteburuetan"},
+        {"eu": "Ilargiko argia ederra da", "es": "(la luz de la luna es bonita)", "challenge": "¿Cómo dirías 'la ventana de la casa'?", "answer": "Etxeko leihoa", "explanation": "-ko genitivo locativo: ilargiko, etxeko, mendiko"},
+        {"eu": "Lagunekin batera bizi naiz", "es": "(vivo junto con mis amigos)", "challenge": "¿Cómo dirías 'junto con mi hermano'?", "answer": "Nire anaiarekin batera", "explanation": "-rekin batera = junto con"},
+        {"eu": "Pozik bizi dira", "es": "(viven contentos)", "challenge": "¿Cómo dirías 'viven en la casa'?", "answer": "Etxean bizi dira", "explanation": "-an / -ean = en: etxean, leihoan, ilargian"},
+        {"eu": "Egia da hori!", "es": "(¡eso es verdad!)", "challenge": "¿Cómo dirías 'eso es mentira'?", "answer": "Gezurra da hori!", "explanation": "egia ↔ gezurra"}
+      ]
+    },
+    "shin-chan": {
+      "title": "Shin-chan",
+      "cardDesc": "Un niño travieso y presumido que no deja en paz a nadie, y no soporta el pimiento.",
+      "introEs": "La sintonía en euskera de Shin-chan, el niño más travieso de la tele. Empieza contando hasta cuatro y es un autorretrato descarado: alegre, bihurri (travieso), listo con las chicas, enemigo del pimiento y sabiendo que su sola aparición pone nerviosa a toda la gente. Fíjate en ez da geldirik egoten (no se está quieto: egon habitual + -rik), en ez zaitu uzten bakean (no te deja en paz), en ni azaltzen naizenean (-nean, cuando), en pasatzeko (-tzeko, para) y en los imperativos zatoz / etorri nirekin. El humor viene del contraste entre un niño pequeño y el tono de galán que usa.",
+      "lyrics": {
+        "eu": "Bat, bi, hiru, lau!\nShinnosuke da mutiko\nAlai-alaia bihurri\nEta azkarra\nEz da geldirik egoten\nEz zaitu uzten bakean.\nMaitasun kontuetan\nArgia naiz benetan\nNeska gazte guztiak\nNik ditut atseginak.\nZatoz txiki, zatoz nirekin,\nEz dut piper atsegin.\nBegira zer trompa, elefante trompa\nMutiko bihurria, shin-chan.\nJende guztia oso\nUrduri jartzen da\nNi azaltzen naizenean\nEtorri nirekin pasatzeko primeran\nNire izena da shin-chan.",
+        "es": "¡Uno, dos, tres, cuatro!\nShinnosuke es un niño\nmuy alegre, travieso\ny rápido/listo.\nNo se queda quieto.\nNo te deja en paz.\nEn las cuestiones de amor\nsoy bien listo de verdad.\nTodas las chicas jóvenes\nme gustan a mí.\nVen pequeña, ven conmigo,\nno me gusta el pimiento.\nMira qué trompa, trompa de elefante.\nNiño travieso, Shin-chan.\nToda la gente se pone\nmuy nerviosa\ncuando yo aparezco.\nVen conmigo para pasarlo genial.\nMi nombre es Shin-chan."
+      },
+      "known": [
+        {"eu": "azkarra", "es": "rápido/a; listo/a", "orig": "Ez dakit zenbat denbora daramadan hemen", "origEs": "", "here": "Eta azkarra", "hereEs": "Y rápido/listo"},
+        {"eu": "geldi", "es": "quieto/a, parado/a", "orig": "Ez dakit zenbat denbora daramadan hemen", "origEs": "", "here": "geldirik egoten", "hereEs": "se queda quieto"},
+        {"eu": "maitasuna", "es": "el amor", "orig": "Mariñelaren zai", "origEs": "", "here": "Maitasun kontuetan", "hereEs": "En las cuestiones de amor"},
+        {"eu": "argia", "es": "luz; listo/a", "orig": "Ilargia", "origEs": "", "here": "Argia naiz benetan", "hereEs": "soy bien listo de verdad"},
+        {"eu": "mutila", "es": "muchacho, chico", "orig": "Atalaia", "origEs": "", "here": "Shinnosuke da mutiko", "hereEs": "Shinnosuke es un niño"},
+        {"eu": "jendea", "es": "gente", "orig": "Korrika", "origEs": "", "here": "Jende guztia", "hereEs": "Toda la gente"},
+        {"eu": "etorri", "es": "venir", "orig": "Iparraldera", "origEs": "", "here": "Etorri nirekin", "hereEs": "Ven conmigo"},
+        {"eu": "begira", "es": "mirando", "orig": "Ez dakit zenbat denbora daramadan hemen", "origEs": "", "here": "Begira zer trompa", "hereEs": "Mira qué trompa"}
+      ],
+      "vocab": [
+        {"eu": "mutikoa", "es": "niño, chico", "level": 1, "ant": "neskatoa", "antEs": "niña", "note": "mutiko = chico/niño; neskatoa = niña"},
+        {"eu": "alaia", "es": "alegre", "level": 2, "ant": "goibela", "antEs": "triste, sombrío", "note": "alai-alaia: la repetición intensifica (muy alegre)"},
+        {"eu": "bihurria", "es": "travieso, rebelde", "level": 3, "note": "mutiko bihurria = niño travieso"},
+        {"eu": "azkarra", "es": "rápido; listo", "level": 2, "ant": "motela", "antEs": "lento"},
+        {"eu": "geldirik", "es": "quieto, parado", "level": 2, "ant": "mugitzen", "antEs": "moviéndose", "morph": "geldi", "morphEs": "quieto (+ -rik, estado)", "note": "ez da geldirik egoten = no está nunca quieto"},
+        {"eu": "bakea", "es": "paz", "level": 2, "note": "bakean utzi = dejar en paz"},
+        {"eu": "uzten", "es": "dejando", "level": 1, "morph": "utzi", "morphEs": "dejar (forma -ten, habitual)"},
+        {"eu": "maitasuna", "es": "el amor", "level": 2, "note": "maitasun kontuetan = en cuestiones de amor"},
+        {"eu": "kontua", "es": "asunto, cuestión; cuenta", "level": 2, "morph": "kontatu", "morphEs": "contar"},
+        {"eu": "argia", "es": "listo, lúcido; luz", "level": 2, "note": "aquí en sentido de 'listo, espabilado' (también significa luz)"},
+        {"eu": "neska", "es": "chica", "level": 1, "ant": "mutila", "antEs": "chico"},
+        {"eu": "gaztea", "es": "joven", "level": 1, "ant": "zaharra", "antEs": "viejo, mayor"},
+        {"eu": "atsegin", "es": "grato; gustar", "level": 3, "note": "atsegin ditut / ez dut atsegin = me agradan / no me gusta; más formal que gustatu"},
+        {"eu": "txikia", "es": "pequeño", "level": 1, "ant": "handia", "antEs": "grande"},
+        {"eu": "pipera", "es": "pimiento; pimienta", "level": 2},
+        {"eu": "trompa", "es": "trompa", "level": 2, "note": "cognado"},
+        {"eu": "jendea", "es": "gente", "level": 1},
+        {"eu": "urduri", "es": "nervioso/a", "level": 2, "ant": "lasai", "antEs": "tranquilo/a"},
+        {"eu": "azaldu", "es": "aparecer; explicar", "level": 3, "note": "ni azaltzen naizenean = cuando yo aparezco"},
+        {"eu": "primeran", "es": "estupendamente, genial", "level": 2, "note": "pasatzeko primeran = para pasarlo genial"},
+        {"eu": "izena", "es": "nombre", "level": 1, "note": "nire izena da ... = mi nombre es ..."},
+        {"eu": "zatoz", "es": "ven (imperativo de etorri)", "level": 2, "note": "zatoz = ven (a ti, hi/zu); etorri es el verbo, zatoz el imperativo"}
+      ],
+      "phrases": [
+        {"eu": "Bat, bi, hiru, lau!", "es": "¡Uno, dos, tres, cuatro!", "note": "Conteo básico del 1 al 4."},
+        {"eu": "Shinnosuke da mutiko / Alai-alaia bihurri / Eta azkarra", "es": "Shinnosuke es un niño / muy alegre, travieso / y rápido/listo", "note": "Alai-alaia: reduplicación para intensificar ('muy alegre'). Bihurri = travieso/rebelde."},
+        {"eu": "Ez da geldirik egoten", "es": "No se queda quieto", "note": "Geldirik egon = estar quieto. La negación con el aspecto habitual (-ten) indica que 'nunca se está quieto'."},
+        {"eu": "Ez zaitu uzten bakean.", "es": "No te deja en paz.", "note": "Zaitu = te (a ti, objeto directo). Bakean utzi = dejar en paz."},
+        {"eu": "Maitasun kontuetan / Argia naiz benetan", "es": "En las cuestiones de amor / soy bien listo de verdad", "note": "Kontuetan = en los asuntos/cuestiones. Benetan = de verdad, en serio."},
+        {"eu": "Neska gazte guztiak / Nik ditut atseginak.", "es": "Todas las chicas jóvenes / me gustan a mí.", "note": "Construcción con 'atsegin': el que siente es el sujeto ergativo (Nik), y lo sentido es el objeto directo (ditut)."},
+        {"eu": "Zatoz txiki, zatoz nirekin,", "es": "Ven pequeña, ven conmigo,", "note": "Zatoz = imperativo de etorri (ven tú). Nirekin = conmigo."},
+        {"eu": "Ez dut piper atsegin.", "es": "No me gusta el pimiento.", "note": "Piper = pimiento o pimienta. Ez dut atsegin = no me gusta."},
+        {"eu": "Begira zer trompa, elefante trompa", "es": "Mira qué trompa, trompa de elefante", "note": "Zer = qué (exclamativo). Juega con la rima y el absurdo típico de Shin-chan."},
+        {"eu": "Mutiko bihurria, shin-chan.", "es": "Niño travieso, Shin-chan.", "note": "Resumen de su personalidad."},
+        {"eu": "Jende guztia oso / Urduri jartzen da", "es": "Toda la gente se pone / muy nerviosa", "note": "Jartzen da = se pone (verbo de cambio de estado). Oso = muy."},
+        {"eu": "Ni azaltzen naizenean", "es": "Cuando yo aparezco", "note": "-nean = cuando (sufijo temporal). Azaldu = aparecer (también 'explicar')."},
+        {"eu": "Etorri nirekin pasatzeko primeran", "es": "Ven conmigo para pasarlo genial", "note": "-tzeko = para (finalidad). Primeran = estupendamente, de maravilla."},
+        {"eu": "Nire izena da shin-chan.", "es": "Mi nombre es Shin-chan.", "note": "Fórmula básica de presentación: Nire izena da..."}
+      ],
+      "praktika": [
+        {"eu": "Ez da geldirik egoten", "es": "(no se está nunca quieto)", "challenge": "¿Cómo dirías 'no estoy nunca tranquilo'?", "answer": "Ez nago lasai inoiz", "explanation": "ez ... inoiz = nunca; geldirik / lasai: estados con -rik / adjetivo"},
+        {"eu": "Ni azaltzen naizenean, denak urduri jartzen dira", "es": "(cuando aparezco, todos se ponen nerviosos)", "challenge": "¿Cómo dirías 'cuando llegues'?", "answer": "Heltzen zarenean", "explanation": "verbo conjugado + -(e)nean = cuando"},
+        {"eu": "Zatoz nirekin pasatzeko", "es": "(ven conmigo para pasarlo bien)", "challenge": "¿Cómo dirías 'ven con ella'?", "answer": "Zatoz berarekin", "explanation": "-rekin = con: nirekin, zurekin, berarekin"},
+        {"eu": "Ez dut piper atsegin", "es": "(no me gusta el pimiento)", "challenge": "¿Y 'me gustan las chicas jóvenes'?", "answer": "Neska gazteak atsegin ditut", "explanation": "atsegin + izan/ukan: un objeto dut / varios ditut"},
+        {"eu": "Nire izena da Shin-chan", "es": "(mi nombre es Shin-chan)", "challenge": "¿Cómo dirías 'su nombre es Nobita'?", "answer": "Bere izena Nobita da", "explanation": "bere = su (de él/ella); izena + da"}
+      ]
+    }
+  }
+}
