@@ -14,15 +14,15 @@
         "es": "al verano que no olvidaremos\nEres como los colores de allí/aquel.\nonce salidas, once carcajadas\njuntos\nverde marrón blanco\ncon una de tus miradas\nse me derriten todas las dudas\nsúbitamente\nMe lo dijiste muy suave al oído.\nhasta conseguir arreglar el mundo\nsigamos bailando\nSigamos soñando\ntú y yo juntos, somos imparables\nun canto a todo lo vivido\nuna canción a lo que tenemos por delante\nhay algo en el aire\ncuando el corazón se pone por delante\nal hablar desde lo más hondo\nsomos nosotros\nQuizá lo sepas.\nhoy no nos pueden parar\nhemos dejado atrás el miedo\npara siempre\nun canto desde el centro del corazón\nsi tuviéramos que volver atrás\nYo sin ti, no voy a ninguna parte.\ncrear todo de cero juntos\ny absolutamente todo a nuestra manera"
       },
       "known": [
-        {"eu": "algara", "es": "carcajada", "orig": "Ohiu egin zuen atalaiak", "origEs": "Gritó la atalaya", "origSong": "Atalaia", "here": "hamaika algara", "hereEs": "once carcajadas"},
-        {"eu": "bapatean", "es": "de repente", "orig": "Bapatean agertu zen", "origEs": "Apareció de repente", "origSong": "Hileta kantu nafarra", "here": "bapatean", "hereEs": "súbitamente"},
+        {"eu": "algara", "es": "carcajada", "orig": "Gazte odola duenak festa eta algara", "origEs": "Los que tienen sangre joven tienen fiesta y carcajada", "origSong": "Zortzi Orduko Ekaitza", "here": "hamaika algara", "hereEs": "once carcajadas"},
+        {"eu": "bapatean", "es": "de repente", "orig": "Bapatean esnatu nintzen nire logelan", "origEs": "De repente me desperté en mi habitación", "origSong": "Irix nait", "here": "bapatean", "hereEs": "súbitamente"},
         {"eu": "belarria", "es": "oído, oreja", "orig": "Belarriekin ikusteko nire begiek entzuten ez dutena", "origEs": "Para ver con los oídos lo que mis ojos no oyen", "origSong": "Negua joan da ta", "here": "belarrira", "hereEs": "al oído"},
-        {"eu": "dantza", "es": "baile", "orig": "Ta guztiak dantzan, guztiak alai", "origEs": "Y todos bailando, todos alegres", "origSong": "Mariñelaren zai", "here": "dantzan", "hereEs": "bailando"},
-        {"eu": "ametsak", "es": "sueños", "orig": "Ametsak sortu zizkidana galtzen dituena", "origEs": "La que me creó los sueños y la que los pierde", "origSong": "Ilargia", "here": "ametsetan", "hereEs": "soñando"},
+        {"eu": "dantza", "es": "baile", "orig": "Belar artean, bakardadean bilusik dantzan", "origEs": "Entre la hierba, desnuda bailando en soledad", "origSong": "Elektrizitatea", "here": "dantzan", "hereEs": "bailando"},
+        {"eu": "ametsak", "es": "sueños", "orig": "Ametsak sortu zizkidana, galtzen dituena", "origEs": "La que me creó los sueños y la que los pierde", "origSong": "Ilargia", "here": "ametsetan", "hereEs": "soñando"},
         {"eu": "kantua", "es": "canción", "orig": "Baina kantatu nahi dut zapalduen olerkia", "origEs": "Pero quiero cantar el poema de los oprimidos", "origSong": "Zapalduen olerkia", "here": "kantu bat", "hereEs": "un canto"},
-        {"eu": "bihotza", "es": "corazón", "orig": "Bihotza itsasoruntz", "origEs": "El corazón hacia el mar", "origSong": "Atalaia", "here": "bihotza aurretik", "hereEs": "el corazón por delante"},
-        {"eu": "beldurra", "es": "miedo", "orig": "Aitaren beldurrei", "origEs": "A los miedos del padre", "origSong": "Zapalduen olerkia", "here": "beldurra atzean", "hereEs": "el miedo atrás"},
-        {"eu": "betirako", "es": "para siempre", "orig": "Betirako itzali zinela zioen unean", "origEs": "En el momento que decía que te habías apagado para siempre", "origSong": "Hileta kantu nafarra", "here": "betirako", "hereEs": "para siempre"}
+        {"eu": "bihotza", "es": "corazón", "orig": "Bi gizonek nahi zuten jabe izan haren bihotzaz", "origEs": "Dos hombres querían ser dueños de su corazón", "origSong": "Mariñelaren zai", "here": "bihotza aurretik", "hereEs": "el corazón por delante"},
+        {"eu": "beldurra", "es": "miedo", "orig": "Burdin hotsei, aitaren beldurrei", "origEs": "A los sonidos del metal, a los miedos del padre", "origSong": "Zapalduen olerkia", "here": "beldurra atzean", "hereEs": "el miedo atrás"},
+        {"eu": "betirako", "es": "para siempre", "orig": "Lurrean betirako idatzirik geldituko naiz", "origEs": "Quedaré escrita en la tierra para siempre", "origSong": "Elektrizitatea", "here": "betirako", "hereEs": "para siempre"}
       ],
       "vocab": [
         {"eu": "udara", "es": "verano", "level": 1, "ant": "negua", "antEs": "invierno"},
@@ -108,17 +108,12 @@
         "es": "Me he puesto a mirar hacia arriba\ny de repente\nEntre las formas de las nubes\nHe perdido en el reloj\nla carga que ponemos\nDándome cuenta de que soy tan pequeño\nLos cansancios olvidados de una vez por todas\nOlvidé los problemas\nque nosotros alimentamos\nY volando\nempecé de repente\nEn la falda del horizonte\nY hemos nacido creando mares en un vaso\nHasta que sentimos que nos estamos ahogando\nDame un segundo\nTú también eres un instante\nTan fugaz como hermoso\nEs tu mundo"
       },
       "known": [
-        {"eu": "bapatean", "es": "de repente", "orig": "Ohiu egin zuen atalaiak", "origEs": "Gritó la atalaya", "origSong": "Atalaia", "here": "Ta bapatean", "hereEs": "y de repente"},
+        {"eu": "bapatean", "es": "de repente", "orig": "Bapatean esnatu nintzen nire logelan", "origEs": "De repente me desperté en mi habitación", "origSong": "Irix nait", "here": "Ta bapatean", "hereEs": "y de repente"},
         {"eu": "ahaztu", "es": "olvidar", "orig": "Mail ezberdinak ahaztuaz", "origEs": "Olvidando las diferentes clases", "origSong": "Mariñelaren zai", "here": "ahaztuta", "hereEs": "olvidados"},
         {"eu": "begirada", "es": "mirada", "orig": "Itsasoruntz begiratu nun", "origEs": "Miré hacia el mar", "origSong": "Atalaia", "here": "begira", "hereEs": "mirando"},
-        {"eu": "sortu", "es": "crear; nacer", "orig": "Ametsak sortu zizkidana galtzen dituena", "origEs": "La que me creó los sueños y la que los pierde", "origSong": "Ilargia", "here": "Sortzen", "hereEs": "creando"},
-        {"eu": "lainoa", "es": "nube, niebla", "orig": "Negua joan da ta", "origEs": "Porque el invierno se ha ido", "origSong": "Negua joan da ta", "here": "Lainoen", "hereEs": "de las nubes"},
-        {"eu": "itsasoa", "es": "el mar", "orig": "Bihotza itsasoruntz", "origEs": "El corazón hacia el mar", "origSong": "Atalaia", "here": "Itsasoak", "hereEs": "mares"},
-        {"eu": "hasiera", "es": "inicio, principio", "orig": "Goiz ilun hartan irten ginen", "origEs": "Salimos aquella mañana oscura", "origSong": "Atalaia", "here": "Hasi naiz", "hereEs": "empecé"},
-        {"eu": "galdu", "es": "perder", "orig": "Ametsak sortu zizkidana galtzen dituena", "origEs": "La que me creó los sueños y la que los pierde", "origSong": "Ilargia", "here": "Galdu dut", "hereEs": "He perdido"},
-        {"eu": "sentitu", "es": "sentir", "orig": "Irrifarrez gero minez eragin didazu negarra", "origEs": "Con sonrisas primero, con dolor me has hecho llorar", "origSong": "Ilargia", "here": "Sentitu arte", "hereEs": "Hasta que sentimos"},
-        {"eu": "mundua", "es": "mundo", "orig": "Munduak ahazten banau", "origEs": "Si el mundo me olvida", "origSong": "Elektrizitatea", "here": "zure mundua", "hereEs": "tu mundo"},
-        {"eu": "ederra", "es": "bonito/a", "orig": "Zeinen ederra izango den", "origEs": "Qué bonito va a ser", "origSong": "Zeinen ederra izango den", "here": "ederra", "hereEs": "hermoso"}
+        {"eu": "sortu", "es": "crear; nacer", "orig": "Ametsak sortu zizkidana, galtzen dituena", "origEs": "La que me creó los sueños y la que los pierde", "origSong": "Ilargia", "here": "Sortzen", "hereEs": "creando"},
+        {"eu": "galdu", "es": "perder", "orig": "Ametsak sortu zizkidana, galtzen dituena", "origEs": "La que me creó los sueños y la que los pierde", "origSong": "Ilargia", "here": "Galdu dut", "hereEs": "He perdido"},
+        {"eu": "mundua", "es": "mundo", "orig": "Munduak ahazten banau", "origEs": "Si el mundo me olvida", "origSong": "Elektrizitatea", "here": "zure mundua", "hereEs": "tu mundo"}
       ],
       "vocab": [
         {"eu": "gora", "es": "arriba; hacia arriba", "level": 1, "ant": "behera", "antEs": "abajo; hacia abajo"},
