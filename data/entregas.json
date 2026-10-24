@@ -83,14 +83,25 @@
             "Iparraldera",
             "Ez dakit zenbat denbora daramadan hemen"
           ]
+        },
+        {
+          "id": "bulego",
+          "title": "03. Bulego",
+          "desc": "Kantu bat + Hegan",
+          "kind": "song",
+          "name": "Bulego",
+          "songs": [
+            "Kantu bat",
+            "Hegan"
+          ]
         }
       ]
     }
   ],
   "next": [
     {
-      "date": "29 urria",
-      "label": "Bulego"
+      "date": "Laster",
+      "label": "ETS"
     }
   ]
 }
