@@ -9,6 +9,10 @@
       "title": "Zero",
       "cardDesc": "Abre el disco: el campamento base, el punto cero antes de empezar a subir.",
       "introEs": "Abre 'cerodenero' y es el campamento base de la expedición: el punto cero desde el que empieza la subida. Es una pieza breve y atmosférica que marca el tono del disco: mirar hacia dentro en lugar de exponerse. La clave está en la pareja itxaron / espero: el castellano las funde en un solo verbo, pero itxaron es aguardar y espero es desear, tener esperanza. Fíjate en la estructura ez X ta ez Y (ni X ni Y), en hasiera (de hasi, empezar) y en los pares hotza/beroa e ipar/hego.",
+      "lyrics": {
+        "eu": "Hasiera edo\nEz hotza ta ez bero\nZulo efimero\nZero\nAdi egonez gero\nEz ipar ta ez hego\nItxaron baina ez espero",
+        "es": "Cero\nInicio o\nNi frío ni calor\nOrificio efímero\nCero\nSi está atento\nNi norte ni sur\nEsperar (wait) pero no esperar (wish)"
+      },
       "known": [
         {"eu": "zuloa", "es": "agujero", "orig": "Korrika", "origEs": "", "here": "Zulo efimero", "hereEs": "Orificio efímero"},
         {"eu": "hotza", "es": "frío", "orig": "Negua joan da ta", "origEs": "", "here": "Ez hotza ta ez bero", "hereEs": "Ni frío ni calor"},
@@ -29,9 +33,13 @@
         {"eu": "efimeroa", "es": "efímero/a", "level": 3, "note": "cognado"}
       ],
       "phrases": [
+        {"eu": "Hasiera edo", "es": "Inicio o", "note": "Hasiera = inicio, principio (de hasi = empezar)."},
         {"eu": "Ez hotza ta ez bero", "es": "Ni frío ni calor", "note": "Estructura ez X ta ez Y = ni X ni Y."},
-        {"eu": "Itxaron baina ez espero", "es": "Esperar (aguardar) pero no esperar (desear)", "note": "Juego de palabras clave: itxaron (aguardar físicamente) vs. espero (tener esperanza o deseo)."},
-        {"eu": "Adi egonez gero", "es": "Si se está atento", "note": "Adi egon = estar atento; el sufijo -ez gero indica condición ('si...', 'en caso de...')."}
+        {"eu": "Zulo efimero", "es": "Orificio efímero", "note": "Zulo = agujero, orificio."},
+        {"eu": "Zero", "es": "Cero", "note": "Punto de partida, campamento base."},
+        {"eu": "Adi egonez gero", "es": "Si se está atento", "note": "Adi egon = estar atento; el sufijo -ez gero indica condición ('si...', 'en caso de...')."},
+        {"eu": "Ez ipar ta ez hego", "es": "Ni norte ni sur", "note": "Ipar = norte, hego = sur. Ausencia de orientación fija."},
+        {"eu": "Itxaron baina ez espero", "es": "Esperar (aguardar) pero no esperar (desear)", "note": "Juego de palabras clave: itxaron (aguardar físicamente) vs. espero (tener esperanza o deseo)."}
       ],
       "praktika": [
         {"eu": "Ez zuria ta ez beltza", "es": "(ni blanco ni negro)", "challenge": "¿Cómo dirías 'ni aquí ni allí'?", "answer": "Ez hemen ta ez han", "explanation": "patrón ez X ta ez Y = ni X ni Y"},
@@ -45,6 +53,10 @@
       "title": "Iparraldera",
       "cardDesc": "La bienvenida a la expedición: una invitación al norte, a un lugar donde encontrar casa.",
       "introEs": "Fue el cuarto adelanto del disco. Izaro la presentó como la canción de bienvenida a la expedición: una invitación a un lugar místico donde cualquiera puede encontrar casa. Es la más cálida y folk del arranque, cercana a sus discos anteriores, y habla de cambiar de rumbo sin perder el norte. El título significa 'hacia el norte': ipar (norte) + aldera (hacia el lado). Iparralde, sin -ra, es además el nombre del País Vasco continental. Fíjate en el patrón urtaroz urtaro (X-z X = de X en X), en los imperativos zatoz, emaidazu y nazazu, y en el futuro con dizut.",
+      "lyrics": {
+        "eu": "Bizitza oso bat eraikita\nTokatu denaren gainean\nUrteak aurrerantza doazte\nEz dakit joan nahi dudan\nNorabide berean\nUrtaroz urtaro egunak igaro\nAspaldi ez dakit ze argi den sartzen iluntzean\nIluntzean\nEmaidazu eskua ta etorri iparraldera\nArima guztiak zuzentzen diren norabidera\nZatoz iparraldera\nGordeko dizut etxe bat\nEraman nazazu zuk orain\nOraindik iparralderago\nMunduari buelta emateko\nSekula iparra galdu barik, hobeto\nEdozein lekutan nintzake\nBertako bertan jaio banintz\nTa ikusi nahi ditut guztiak\nSentitzeko nire bertsio anitz\nZatoz iparraldera\nGordeko dizut etxe bat\nZatoz iparraldera\nGordeko dizut etxe bat\nZatoz iparraldera\nGordeko dizut etxe bat",
+        "es": "Toda una vida construida\nSobre lo que ha tocado\nLos años avanzan\nNo sé si quiero ir\nen la misma dirección\nDe estación a estación pasan los días\nHace tiempo que no sé qué luz entra al anochecer\nAl anochecer\nDame la mano y ven al norte.\nHacia la dirección en que se dirigen todas las almas\nVen al norte.\nTe guardaré una casa.\nLlévame tú ahora\nAún más al norte\nPara dar la vuelta al mundo\nSin perder nunca el norte, mejor\nPodría estar en cualquier sitio.\nSi hubiera nacido allí mismo\nY quiero ver a todos.\nPara sentir mis múltiples versiones\nVen al norte.\nTe guardaré una casa.\nVen al norte.\nTe guardaré una casa.\nVen al norte.\nTe guardaré una casa."
+      },
       "known": [
         {"eu": "arima", "es": "alma", "orig": "Elektrizitatea", "origEs": "", "here": "Arima guztiak", "hereEs": "Todas las almas"},
         {"eu": "eskua", "es": "mano", "orig": "Mariñelaren zai", "origEs": "", "here": "Emaidazu eskua", "hereEs": "Dame la mano"},
@@ -76,10 +88,26 @@
         {"eu": "bertsioa", "es": "versión", "level": 3}
       ],
       "phrases": [
-        {"eu": "Emaidazu eskua ta etorri iparraldera", "es": "Dame la mano y ven al norte", "note": "Emaidazu = eman (dar) + i (vocal de enlace) + azu (te lo, a ti)."},
-        {"eu": "Gordeko dizut etxe bat", "es": "Te guardaré una casa", "note": "Futuro con auxiliar dizut: egin (hacer) + ko (futuro) + dizut (te lo haré a ti)."},
+        {"eu": "Bizitza oso bat eraikita", "es": "Toda una vida construida", "note": "Eraiki = construir."},
+        {"eu": "Tokatu denaren gainean", "es": "Sobre lo que ha tocado", "note": "Tokatu = tocar en suerte, corresponder."},
+        {"eu": "Urteak aurrerantza doazte", "es": "Los años avanzan", "note": "Aurrerantza = hacia adelante."},
+        {"eu": "Ez dakit joan nahi dudan", "es": "No sé si quiero ir", "note": "Dudan = que quiero (subjuntivo/relativo de nahi dut)."},
+        {"eu": "Norabide berean", "es": "En la misma dirección", "note": "Berean = en el mismo/a."},
         {"eu": "Urtaroz urtaro egunak igaro", "es": "De estación a estación pasan los días", "note": "Patrón X-z X = de X en X (distributivo, paso del tiempo)."},
-        {"eu": "Munduari buelta emateko", "es": "Para dar la vuelta al mundo", "note": "Buelta eman = dar la vuelta; -ko = para (finalidad)."}
+        {"eu": "Aspaldi ez dakit ze argi den sartzen iluntzean", "es": "Hace tiempo que no sé qué luz entra al anochecer", "note": "Iluntzean = al anochecer (de ilun = oscuro)."},
+        {"eu": "Iluntzean", "es": "Al anochecer", "note": "Repetición con valor poético/enfático."},
+        {"eu": "Emaidazu eskua ta etorri iparraldera", "es": "Dame la mano y ven al norte", "note": "Emaidazu = eman (dar) + i (vocal de enlace) + azu (te lo, a ti)."},
+        {"eu": "Arima guztiak zuzentzen diren norabidera", "es": "Hacia la dirección en que se dirigen todas las almas", "note": "Zuzentzen = se dirigen, encaminan."},
+        {"eu": "Zatoz iparraldera", "es": "Ven al norte", "note": "Zatoz = imperativo de etorri para 'zu' (tú)."},
+        {"eu": "Gordeko dizut etxe bat", "es": "Te guardaré una casa", "note": "Futuro con auxiliar dizut: gorde (guardar) + ko (futuro) + dizut (te lo haré a ti)."},
+        {"eu": "Eraman nazazu zuk orain", "es": "Llévame tú ahora", "note": "Eraman = llevar; nazazu = me lleva a mí (a mí)."},
+        {"eu": "Oraindik iparralderago", "es": "Aún más al norte", "note": "-rago = sufijo comparativo de superioridad (más)."},
+        {"eu": "Munduari buelta emateko", "es": "Para dar la vuelta al mundo", "note": "Buelta eman = dar la vuelta; -ko = para (finalidad)."},
+        {"eu": "Sekula iparra galdu barik, hobeto", "es": "Sin perder nunca el norte, mejor", "note": "Sekula = nunca; barik = sin."},
+        {"eu": "Edozein lekutan nintzake", "es": "Podría estar en cualquier sitio", "note": "Nintzake = condicional de izan (yo podría estar)."},
+        {"eu": "Bertako bertan jaio banintz", "es": "Si hubiera nacido allí mismo", "note": "Jaio banintz = condicional irreal (si yo hubiera nacido)."},
+        {"eu": "Ta ikusi nahi ditut guztiak", "es": "Y quiero ver a todos", "note": "Ditut = los quiero (transitivo, plural)."},
+        {"eu": "Sentitzeko nire bertsio anitz", "es": "Para sentir mis múltiples versiones", "note": "Anitz = múltiples, muchos."}
       ],
       "praktika": [
         {"eu": "Lagundu nazazu", "es": "(ayúdame)", "challenge": "¿Si se lo pides a varias personas (zuek)?", "answer": "Lagundu nazazue", "explanation": "imperativo: nazazu (zuk) → nazazue (zuek)"},
@@ -93,6 +121,10 @@
       "title": "Ez dakit zenbat denbora daramadan",
       "cardDesc": "Todos corren, ella se queda quieta. La rabia convertida en calma, antes de la parte electrónica.",
       "introEs": "El título más largo del disco, abreviado en la portada como edzddh. Es una canción de piano en la que Izaro suelta una rabia enraizada y la convierte en una respuesta pacífica; da paso a la parte electrónica del disco. El tema es quedarse quieta mientras el mundo corre y llevar un tiempo que ya no sabes contar. Mezcla euskera con un verso en castellano ('Son de mentira / Mentira'). Fíjate en ezin + verbo (no poder), en inor con ez (nadie), en el verbo eraman para decir cuánto tiempo llevas haciendo algo (daramadan: el que llevo) y en el contraste hemen/han (aquí/allí).",
+      "lyrics": {
+        "eu": "Badirudi\nMundu guztiak\nDakiela\nNora doan\nHain azkar korrika\nEta\nNi hemen\nGaur ere berriro\nGeldi\nEzin segi\nAbiaduraren haria\nBaina denek\nEspero dute\nMiraria\nEta ni\nBeste egun batez isilik\nDenok\nBegira\nBestearen atarira\nZenbat dira,\nZer da,\nZertan ari dira?\nEta ezin egin zuk inon zure kabia\nZe zuhaitz guztiak gezurrezkoak dira\nDira\nSon de mentira\nMentira\nEz dakit zenbat denbora daramadan hemen\nEz da inor etorriko ta eseri zaitez\nEz dakit zenbat denbora daramadan hemen\nEz da inoiz inor etorri ta eseri zaitez\nEz dakit zenbat denbora daramadan hemen",
+        "es": "Parece que\nTodo el mundo\nSabe\nA dónde va\nCorriendo tan rápido\nY\nYo aquí.\nDe nuevo hoy\nQuieta\nNo puede seguir\nEl hilo de la velocidad\nPero todos\nEsperan\nEl milagro\nY yo\nUn día más en silencio\nTodos\nMira.\nAl portal del otro\nCuántos son,\nQué es,\n¿Qué están haciendo?\nY no puedes hacer tu nido en ninguna parte.\nPorque todos los árboles son falsos\nSon\nSon de mentira\nMentira\nNo sé cuánto tiempo llevo aquí.\nNo vendrá nadie y siéntate\nNo sé cuánto tiempo llevo aquí.\nNunca ha venido nadie y siéntate\nNo sé cuánto tiempo llevo aquí."
+      },
       "known": [
         {"eu": "korrika", "es": "corriendo, a la carrera", "orig": "Korrika", "origEs": "", "here": "Hain azkar korrika", "hereEs": "Corriendo tan rápido"},
         {"eu": "ezin", "es": "no poder, imposible", "orig": "Korrika", "origEs": "", "here": "Ezin segi", "hereEs": "No puede seguir"},
@@ -123,11 +155,22 @@
         {"eu": "gezurrezkoa", "es": "falso/a, de mentira", "level": 3, "morph": "gezur", "morphEs": "mentira", "note": "-zko = hecho de, propio de"}
       ],
       "phrases": [
+        {"eu": "Badirudi", "es": "Parece que", "note": "De eman (dar) + irudi (parecer) = badirudi (parece que)."},
+        {"eu": "Mundu guztiak / Dakiela / Nora doan", "es": "Todo el mundo / Sabe / A dónde va", "note": "Dakiela = daki (sabe) + ela (que); doan = va (relativo de doa)."},
         {"eu": "Hain azkar korrika", "es": "Corriendo tan rápido", "note": "Korrika funciona aquí como adverbio de modo: a la carrera."},
-        {"eu": "Ezin segi abiaduraren haria", "es": "No puede seguir el hilo de la velocidad", "note": "Ezin + verbo (infinitivo) = imposibilidad. Hari = hilo (metafórico: perder el hilo)."},
+        {"eu": "Eta ni hemen", "es": "Y yo aquí", "note": "Contraste entre el movimiento del mundo y la quietud del yo."},
+        {"eu": "Gaur ere berriro / Geldi", "es": "De nuevo hoy / Quieta", "note": "Geldi = quieto/a, parado/a."},
+        {"eu": "Ezin segi / Abiaduraren haria", "es": "No puede seguir / El hilo de la velocidad", "note": "Ezin + infinitivo = imposibilidad. Hari = hilo (metafórico: perder el hilo)."},
+        {"eu": "Baina denek / Espero dute / Miraria", "es": "Pero todos / Esperan / El milagro", "note": "Denek = todos (ergativo); dute = ellos/ellas tienen/esperan."},
+        {"eu": "Eta ni / Beste egun batez isilik", "es": "Y yo / Un día más en silencio", "note": "Isilik = en silencio (adverbio de isil)."},
+        {"eu": "Denok / Begira / Bestearen atarira", "es": "Todos / Mira / Al portal del otro", "note": "Begira = mirando (de begiratu); atari = portal, entrada."},
+        {"eu": "Zenbat dira, / Zer da, / Zertan ari dira?", "es": "Cuántos son, / Qué es, / ¿Qué están haciendo?", "note": "Zertan ari = en qué está ocupado/haciendo algo."},
+        {"eu": "Eta ezin egin zuk inon zure kabia", "es": "Y no puedes hacer tu nido en ninguna parte", "note": "Kabia = nido; inon = en ninguna parte (cuando va con negación)."},
+        {"eu": "Ze zuhaitz guztiak gezurrezkoak dira", "es": "Porque todos los árboles son falsos", "note": "Ze = porque/ya que (coloquial); gezurrezkoak = de mentira, falsos (-zko = hecho de)."},
+        {"eu": "Dira / Son de mentira / Mentira", "es": "Son / Son de mentira / Mentira", "note": "Cambio deliberado al castellano en la letra original para enfatizar la falsedad."},
         {"eu": "Ez dakit zenbat denbora daramadan hemen", "es": "No sé cuánto tiempo llevo aquí", "note": "Daramadan = relativo del verbo eraman (llevar tiempo) + dan (que yo llevo)."},
-        {"eu": "Ez da inor etorriko ta eseri zaitez", "es": "No vendrá nadie, así que siéntate", "note": "Inor + negación (ez) = nadie. Ta = y/así que (conector coloquial). Eseri zaitez = siéntate (imperativo)."},
-        {"eu": "Zuhaitz guztiak gezurrezkoak dira", "es": "Todos los árboles son falsos", "note": "Gezurrezkoak = de mentira, falsos. Sufijo -zko = hecho de, propio de."}
+        {"eu": "Ez da inor etorriko ta eseri zaitez", "es": "No vendrá nadie y siéntate", "note": "Inor + negación (ez) = nadie. Ta = y/así que (conector coloquial). Eseri zaitez = siéntate (imperativo)."},
+        {"eu": "Ez da inoiz inor etorri ta eseri zaitez", "es": "Nunca ha venido nadie y siéntate", "note": "Inoiz = nunca (refuerza la negación)."}
       ],
       "praktika": [
         {"eu": "Urte bat darama hemen", "es": "(lleva un año aquí)", "challenge": "¿Si soy yo (nik)?", "answer": "Urte bat daramat hemen", "explanation": "eraman = llevar (tiempo); nork-nor: darama (hark) → daramat (nik)"},
