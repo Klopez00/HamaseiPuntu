@@ -97,22 +97,28 @@
         },
         {
           "id": "marrazki-bizidunak",
-          "title": "Edizio Berezia: Marrazki bizunak",
+          "title": "Edizio Berezia: Marrazki bizidunak",
           "desc": "Doraemon + Shin-chan",
           "kind": "special",
-          "name": "Marrazki bizunak",
+          "name": "Marrazki bizidunak",
           "songs": [
             "Doraemon",
             "Shin-chan"
+          ]
+        },
+        {
+          "id": "ets",
+          "title": "04. ETS",
+          "desc": "Zurekin batera + Sumendiak",
+          "kind": "song",
+          "name": "ETS",
+          "songs": [
+            "Zurekin batera",
+            "Sumendiak"
           ]
         }
       ]
     }
   ],
-  "next": [
-    {
-      "date": "Laster",
-      "label": "ETS"
-    }
-  ]
+  "next": []
 }
