@@ -584,7 +584,7 @@ if(songId){
   const SPOTIFY_PLAYLIST_URL='https://open.spotify.com/playlist/6pNYtKbul4nJAtrqPpc7pI';  // pega aquí el enlace de la lista de Spotify
   let idxTab='entregas';
   function renderIdx(){
-    const tabs=[{id:'entregas',l:'Entregas'},{id:'nola',l:'Cómo funciona'},{id:'programa',l:'Programa'}];
+    const tabs=[{id:'entregas',l:'Entregas'},{id:'nola',l:'Cómo funciona'},{id:'programa',l:'Programa'},{id:'contacto',l:'Contacto'}];
     let c='';
     if(idxTab==='entregas'){
       const LEVELS={'sorotan-bele':2,'zea-mays':3,'korrika':3,'ken-zazpi':3,'zetak':4,'izaro':2,'bulego':2,'marrazki-bizidunak':1,'ets':2,'ezkontza-kantak':3,'olaia-inziarte':3,'oskorri':2};
@@ -654,6 +654,12 @@ if(songId){
           </div>
         </div>
         <div style="text-align:center;margin-top:20px;font-size:.75rem;color:#afafaf">Ostegunero entrega berri bat + sorpresak</div>
+      </div>`;
+    } else if(idxTab==='contacto'){
+      c=`<div style="background:#fff;border:1px solid #e5e5e5;border-radius:10px;padding:24px;font-size:.92rem;color:#777;line-height:1.8;text-align:center">
+        <h3 style="font-family:Georgia,serif;font-weight:400;font-size:1.3rem;color:#3c3c3c;margin-bottom:12px">Harremana / Contacto</h3>
+        <p>¿Has encontrado un error, tienes una duda o quieres proponer una canción? Escríbeme.</p>
+        <a href="mailto:lopezguridi93@gmail.com" style="display:inline-block;margin-top:16px;padding:12px 20px;background:#58cc02;color:#fff;border-radius:10px;text-decoration:none;font-weight:700;font-size:.95rem">✉ lopezguridi93@gmail.com</a>
       </div>`;
     }
     document.getElementById('app').innerHTML=`<div style="text-align:center;padding:30px 0 20px">
