@@ -1,0 +1,169 @@
+{
+  "blocks": [
+    {
+      "id": 1,
+      "title": "1. BLOKEA",
+      "subtitle": "Canon rock 90-00",
+      "items": [
+        {
+          "id": "sorotan-bele",
+          "title": "01. Sorotan Bele",
+          "desc": "Atalaia + Mariñelaren zai",
+          "kind": "song",
+          "name": "Sorotan Bele",
+          "songs": [
+            "Atalaia",
+            "Mariñelaren zai"
+          ]
+        },
+        {
+          "id": "zea-mays",
+          "title": "02. Zea Mays",
+          "desc": "Elektrizitatea + Negua joan da ta",
+          "kind": "song",
+          "name": "Zea Mays",
+          "songs": [
+            "Elektrizitatea",
+            "Negua joan da ta"
+          ]
+        },
+        {
+          "id": "korrika",
+          "title": "Edizio Berezia: Korrika",
+          "desc": "Fermín Muguruza (2021)",
+          "kind": "special",
+          "name": "Korrika",
+          "songs": [
+            "Korrika"
+          ]
+        },
+        {
+          "id": "ken-zazpi",
+          "title": "03. Ken Zazpi",
+          "desc": "Zapalduen olerkia + Ilargia + Gernika",
+          "kind": "song",
+          "name": "Ken Zazpi",
+          "songs": [
+            "Zapalduen olerkia",
+            "Ilargia"
+          ]
+        },
+        {
+          "id": "repaso-1",
+          "title": "1. Blokearen errepasoa",
+          "desc": "Flashcardak + hitz partekatuak + azterketa",
+          "kind": "repaso"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "2. BLOKEA",
+      "subtitle": "Mainstream aktuala",
+      "items": [
+        {
+          "id": "zetak",
+          "title": "01. Zetak",
+          "desc": "Hileta kantu nafarra + Zeinen ederra izango den",
+          "kind": "song",
+          "name": "Zetak",
+          "songs": [
+            "Zeinen ederra izango den",
+            "Hileta kantu nafarra"
+          ]
+        },
+        {
+          "id": "izaro",
+          "title": "02. Izaro",
+          "desc": "Zero + Iparraldera + Ez dakit zenbat denbora daramadan hemen",
+          "kind": "song",
+          "name": "Izaro",
+          "songs": [
+            "Zero",
+            "Iparraldera",
+            "Ez dakit zenbat denbora daramadan hemen"
+          ]
+        },
+        {
+          "id": "bulego",
+          "title": "03. Bulego",
+          "desc": "Kantu bat + Hegan",
+          "kind": "song",
+          "name": "Bulego",
+          "songs": [
+            "Kantu bat",
+            "Hegan"
+          ]
+        },
+        {
+          "id": "marrazki-bizidunak",
+          "title": "Edizio Berezia: Marrazki bizidunak",
+          "desc": "Doraemon + Shin-chan",
+          "kind": "special",
+          "name": "Marrazki bizidunak",
+          "songs": [
+            "Doraemon",
+            "Shin-chan"
+          ]
+        },
+        {
+          "id": "ets",
+          "title": "04. ETS",
+          "desc": "Zurekin batera + Sumendiak",
+          "kind": "song",
+          "name": "ETS",
+          "songs": [
+            "Zurekin batera",
+            "Sumendiak"
+          ]
+        },
+        {
+          "id": "ezkontza-kantak",
+          "title": "Edizio Berezia: Ezkontzako kantak",
+          "desc": "Ikusi mendizaleak + Xalbadorren heriotza",
+          "kind": "special",
+          "name": "Ezkontzako kantak",
+          "songs": [
+            "Ikusi mendizaleak",
+            "Xalbadorren heriotza"
+          ]
+        },
+        {
+          "id": "olaia-inziarte",
+          "title": "05. Olaia Inziarte",
+          "desc": "Beldurrik gabe",
+          "kind": "song",
+          "name": "Olaia Inziarte",
+          "songs": [
+            "Beldurrik gabe"
+          ]
+        },
+        {
+          "id": "repaso-2",
+          "title": "2. Blokearen errepasoa",
+          "desc": "Flashcardak + hitz partekatuak + azterketa",
+          "kind": "repaso"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "3. BLOKEA",
+      "subtitle": "Klasikoak",
+      "items": [
+        {
+          "id": "oskorri",
+          "title": "01. Oskorri",
+          "desc": "Euskaldun berriaren balada + Aita semeak",
+          "kind": "song",
+          "name": "Oskorri",
+          "songs": [
+            "Euskaldun berriaren balada",
+            "Aita semeak"
+          ]
+        }
+      ]
+    }
+  ],
+  "next": []
+}
