@@ -16,6 +16,7 @@ h1,h2,h3{font-family:Georgia,'Times New Roman',serif;font-weight:400}
 .special-banner .sb-title{font-family:Georgia,serif;font-size:1.6rem}
 .landing{text-align:center;padding:30px 20px 40px}.landing h1{font-size:2.6rem;color:var(--dark);line-height:1.1;margin-bottom:8px}.landing .sub{font-size:1.05rem;color:var(--storm);margin-bottom:30px}.landing .bio{max-width:540px;margin:0 auto 24px;font-size:.92rem;color:var(--mid);line-height:1.7;text-align:left}
 .song-cards{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}.song-card{background:#fff;border:1px solid var(--light-border);border-radius:10px;padding:28px 24px;width:260px;cursor:pointer;transition:all .2s;text-align:left;box-shadow:0 2px 0 var(--light-border)}.song-card:hover{border-color:var(--sea);box-shadow:0 2px 0 var(--sea);transform:translateY(-1px)}.song-card h3{font-size:1.4rem;color:var(--dark);margin-bottom:6px}.song-card p{font-size:.85rem;color:var(--storm);line-height:1.5}
+.home-bar{padding:14px 0 0;text-align:left}.home-link{display:inline-block;font-size:.85rem;font-weight:600;color:var(--sea-dark);text-decoration:none;background:var(--sea-light);padding:7px 14px;border-radius:8px}.home-btn{margin-left:auto;flex-shrink:0;font-size:.8rem;font-weight:600;color:var(--sea-dark);text-decoration:none;background:var(--sea-light);padding:7px 12px;border-radius:8px;white-space:nowrap}
 .top-bar{display:flex;align-items:center;gap:12px;padding:16px 0;border-bottom:1px solid var(--light-border);margin-bottom:24px}.back-btn{background:0 0;border:none;cursor:pointer;font-size:1.4rem;color:var(--storm);padding:4px 8px;border-radius:6px}.back-btn:hover{background:rgba(0,0,0,.05)}.top-bar h2{font-size:1.5rem;color:var(--dark)}
 .tabs{display:flex;gap:4px;background:#fff;border-radius:10px;padding:4px;border:1px solid var(--light-border);margin-bottom:28px}.tab{flex:1;padding:10px 3px;border:none;background:0 0;border-radius:8px;font-family:-apple-system,sans-serif;font-size:.66rem;font-weight:500;color:var(--storm);cursor:pointer;transition:all .15s}.tab.active{background:var(--sea);color:#fff}
 .intro-section{background:#fff;border-radius:10px;padding:28px 24px;border:1px solid var(--light-border)}.intro-section h3{font-size:1.3rem;color:var(--dark);margin-bottom:12px}.intro-section p{font-size:.92rem;color:var(--mid);line-height:1.7}.intro-section .rec{margin-top:14px;padding:12px 16px;background:#f0f7ff;border-radius:8px;font-size:.85rem;color:#2563eb}
@@ -64,6 +65,8 @@ if(state.view==='landing')a.innerHTML=D.type==='repaso'?renderRepaso():renderLan
 else if(state.view==='gernika')a.innerHTML=renderGernika();
 else if(state.view==='combined')a.innerHTML=renderCombinedQ();
 else a.innerHTML=renderSong();
+if(state.view==='landing')a.insertAdjacentHTML('afterbegin','<div class="home-bar"><a href="?" class="home-link">← Hasiera / Inicio</a></div>');
+else a.querySelectorAll('.top-bar').forEach(tb=>tb.insertAdjacentHTML('beforeend','<a href="?" class="home-btn">⌂ Hasiera</a>'));
 bindEvents();}
 
 function renderLanding(){
