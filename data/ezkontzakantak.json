@@ -1,0 +1,147 @@
+{
+  "type": "special",
+  "lang": "eu",
+  "title": "Ezkontzako kantak",
+  "subtitle": "Canciones de boda y de vuelta en autobús",
+  "bio": "En las bodas españolas, cuando se acaba la música, es normal ponerse a cantar algo como Un beso y una flor. Estas son dos canciones que podrían cantar euskaldunes en el mismo momento, y también de las clásicas de vuelta en autobús. La primera, Ikusi mendizaleak, es mucho más fácil: un himno de montaña con vocabulario sencillo y visual. La segunda, Xalbadorren heriotza, es una letra bastante difícil, pero merece la pena aunque sea solo por la melodía. Se canta como homenaje a Xalbador, el bertsolari de Urepel, muerto el 7 de noviembre de 1976: este año se cumplen 50 años.",
+  "songs": {
+    "ikusi-mendizaleak": {
+      "title": "Ikusi mendizaleak",
+      "cardDesc": "El himno de montaña por excelencia: subir a la cima, ver Euskal Herria y gritar gora.",
+      "introEs": "La canción más fácil de la edición y un clásico de montaña, de los que se cantan al llegar a la cima, en las comidas populares o de vuelta en el autobús. El vocabulario es muy visual (mendi, baso, zelai, tontor, bide) y la estructura, muy simple: mandatos y descripciones cortas. Fíjate en mendizalea (mendi + zale: 'aficionado al monte'), en euskaldunak (euskal + dun: 'el que tiene euskera'), en igo behar dugu (behar + auxiliar: hay que / tenemos que), en tontor gainera (gain + -ra: hacia la cima) frente a tontorrean (-an: en la cima), y en el participio con -rik de estado: zabaldurik (con los ojos abiertos). Los plurales ya los conoces: basoak, zelaiak, nekeak llevan -ak.",
+      "lyrics": {
+        "eu": "Ikusi mendizaleak\nBaso eta zelaiak\nMendi tontor gainera\nIgo behar dugu\nEz nekeak, ez da bide txarra\nGora, gora Euskal Herria, ah, ah, ah\n\nGu euskaldunak gara\nEuskal Herrikoak\n\nHemen mendi tontorrean\nEuskal lurren artean\nBegiak zabaldurik\nBihotza erretan\nHain ederra, hain polita da ta\nGora, gora Euskal Herria, ah, ah, ah",
+        "es": "Ved montañeros\nBosques y prados\nTenemos que subir\na la cima de la montaña\nNo hay fatigas, no hay malos caminos\nViva, Viva Euskal Herria, ah, ah, ah\n\nNosotros somos vascos\nDel País Vasco\n\nAquí en la cima de la montaña\nEntre tierras vascas\nCon los ojos abiertos\nEl corazón quemando\nEs tan hermosa, tan bonita, que\nViva, Viva Euskal Herria, ah, ah, ah"
+      },
+      "known": [
+        {"eu": "mendia", "es": "monte, montaña", "orig": "Nire mendien artean", "origEs": "Entre mis montañas", "origSong": "Negua joan da ta", "here": "Mendi tontor gainera", "hereEs": "a la cima de la montaña"},
+        {"eu": "nekea", "es": "cansancio, esfuerzo", "orig": "Nekeak behingoz ahaztuta", "origEs": "Los cansancios olvidados de una vez por todas", "origSong": "Hegan", "here": "Ez nekeak", "hereEs": "No hay fatigas"},
+        {"eu": "gora", "es": "arriba; viva", "orig": "Gora eta gora beti Doraemon", "origEs": "¡Viva y viva siempre Doraemon!", "origSong": "Doraemon", "here": "Gora, gora Euskal Herria", "hereEs": "Viva, Viva Euskal Herria"},
+        {"eu": "herria", "es": "pueblo", "orig": "Korrika, herri bat mugimenduan", "origEs": "Korrika, un pueblo en movimiento", "origSong": "Korrika", "here": "Euskal Herria", "hereEs": "Euskal Herria"},
+        {"eu": "hemen", "es": "aquí", "orig": "Ni hemen", "origEs": "Y yo aquí", "origSong": "Ez dakit zenbat denbora daramadan hemen", "here": "Hemen mendi tontorrean", "hereEs": "Aquí en la cima de la montaña"},
+        {"eu": "lurra", "es": "tierra", "orig": "Lurra ez baita zolua", "origEs": "Porque la Tierra no es un agujero", "origSong": "Korrika", "here": "Euskal lurren artean", "hereEs": "Entre tierras vascas"},
+        {"eu": "artean", "es": "entre", "orig": "Lainoen forma artean", "origEs": "Entre las formas de las nubes", "origSong": "Hegan", "here": "Euskal lurren artean", "hereEs": "Entre tierras vascas"},
+        {"eu": "begia", "es": "ojo", "orig": "Belarriekin ikusteko nire begiek entzuten ez dutena", "origEs": "Para ver con los oídos lo que mis ojos no oyen", "origSong": "Negua joan da ta", "here": "Begiak zabaldurik", "hereEs": "Con los ojos abiertos"},
+        {"eu": "zabaldu", "es": "abrir", "orig": "Zabalduko ditugu besoak", "origEs": "abriremos los brazos", "origSong": "Zurekin batera", "here": "Begiak zabaldurik", "hereEs": "Con los ojos abiertos"},
+        {"eu": "bihotza", "es": "corazón", "orig": "Bi gizonek nahi zuten jabe izan haren bihotzaz", "origEs": "Dos hombres querían ser dueños de su corazón", "origSong": "Mariñelaren zai", "here": "Bihotza erretan", "hereEs": "El corazón quemando"},
+        {"eu": "ederra", "es": "bonito/a, hermoso/a", "orig": "Zeinen ederra izango den", "origEs": "Qué bonito va a ser", "origSong": "Zeinen ederra izango den", "here": "Hain ederra, hain polita da ta", "hereEs": "Es tan hermosa, tan bonita"}
+      ],
+      "vocab": [
+        {"eu": "ikusi", "es": "ver", "level": 1, "note": "ikusi mendizaleak = ved, montañeros (imperativo plural de ikusi)"},
+        {"eu": "mendizalea", "es": "montañero/a", "level": 2, "morph": "mendi + zale", "morphEs": "monte + aficionado", "note": "-zale = aficionado a: musika-zale, kirol-zale"},
+        {"eu": "basoa", "es": "bosque", "level": 1},
+        {"eu": "zelaia", "es": "prado, campo llano", "level": 2},
+        {"eu": "tontorra", "es": "cima, cumbre", "level": 2, "note": "tontorrean = en la cima; tontor gainera = a lo alto de la cima"},
+        {"eu": "gainera", "es": "a lo alto de, encima (hacia)", "level": 3, "morph": "gain", "morphEs": "encima, cumbre (+ -ra, hacia)"},
+        {"eu": "igo", "es": "subir", "level": 1, "ant": "jaitsi", "antEs": "bajar", "note": "igo behar dugu = tenemos que subir"},
+        {"eu": "behar", "es": "hay que; necesitar", "level": 1, "note": "verbo + behar + auxiliar = tener que (igo behar dugu)"},
+        {"eu": "bidea", "es": "camino", "level": 1},
+        {"eu": "txarra", "es": "malo/a", "level": 1, "ant": "ona", "antEs": "bueno/a"},
+        {"eu": "euskalduna", "es": "vasco (hablante de euskera)", "level": 2, "morph": "euskal + dun", "morphEs": "de euskera + el que tiene", "note": "Euskal Herria = el pueblo del euskera"},
+        {"eu": "Euskal Herria", "es": "País Vasco, tierra del euskera", "level": 1, "morph": "euskal + herri", "morphEs": "de euskera + pueblo"},
+        {"eu": "tontorrean", "es": "en la cima", "level": 2, "morph": "tontor + -ean", "morphEs": "cima + en la"},
+        {"eu": "zabaldurik", "es": "abierto/a, con ... abiertos", "level": 3, "morph": "zabaldu + -rik", "morphEs": "abrir + estado resultante", "note": "begiak zabaldurik = con los ojos abiertos"},
+        {"eu": "erretan", "es": "ardiendo, quemando", "level": 3, "morph": "erre + -tan", "morphEs": "quemar + (estado en proceso)", "note": "bihotza erretan = con el corazón ardiendo"},
+        {"eu": "polita", "es": "bonito/a, lindo/a", "level": 1, "ant": "itsusia", "antEs": "feo/a", "note": "sinónimo cercano de ederra; polit es más cotidiano"},
+        {"eu": "hain", "es": "tan", "level": 1, "note": "hain ederra = tan hermosa"}
+      ],
+      "phrases": [
+        {"eu": "Ikusi mendizaleak / Baso eta zelaiak", "es": "Ved montañeros / Bosques y prados", "note": "Ikusi = ved (imperativo plural). Baso = bosque, zelai = prado/campo."},
+        {"eu": "Mendi tontor gainera / Igo behar dugu", "es": "Tenemos que subir / a la cima de la montaña", "note": "Gainera = hacia arriba/hacia la cima (-ra). Igo behar dugu = tenemos que subir."},
+        {"eu": "Ez nekeak, ez da bide txarra", "es": "No hay fatigas, no hay malos caminos", "note": "Ez + plural = no hay (nekeak). Bide txarra = mal camino."},
+        {"eu": "Gora, gora Euskal Herria, ah, ah, ah", "es": "Viva, Viva Euskal Herria, ah, ah, ah", "note": "Gora = arriba, usado como grito de ánimo ('¡viva!')."},
+        {"eu": "Gu euskaldunak gara / Euskal Herrikoak", "es": "Nosotros somos vascos / Del País Vasco", "note": "Euskaldunak = euskal + dun (los que tienen euskera). -koak = de (procedencia)."},
+        {"eu": "Hemen mendi tontorrean / Euskal lurren artean", "es": "Aquí en la cima de la montaña / Entre tierras vascas", "note": "Tontorrean = en la cima (-an, locativo). Artean = entre."},
+        {"eu": "Begiak zabaldurik / Bihotza erretan", "es": "Con los ojos abiertos / El corazón quemando", "note": "Zabaldurik = participio de estado con -rik. Erretan = ardiendo (erre + -tan)."},
+        {"eu": "Hain ederra, hain polita da ta / Gora, gora Euskal Herria", "es": "Es tan hermosa, tan bonita, que / Viva, Viva Euskal Herria", "note": "Hain = tan. Polita = bonita (más coloquial que ederra)."}
+      ],
+      "praktika": [
+        {"eu": "Mendira igo behar dugu", "es": "(tenemos que subir al monte)", "challenge": "¿Cómo dirías 'tenemos que bajar del monte'?", "answer": "Mendiatik jaitsi behar dugu", "explanation": "-ra (hacia) ↔ -tik (desde): mendira / mendiatik; igo ↔ jaitsi"},
+        {"eu": "Mendizaleak tontorrean daude", "es": "(los montañeros están en la cima)", "challenge": "¿Y 'los montañeros suben a la cima'?", "answer": "Mendizaleak tontorrera igotzen dira", "explanation": "-an/-ean = en (lugar); -ra = hacia (movimiento): tontorrean / tontorrera"},
+        {"eu": "Begiak zabalik ditut", "es": "(tengo los ojos abiertos)", "challenge": "¿Cómo dirías 'tengo el corazón abierto'?", "answer": "Bihotza zabalik dut", "explanation": "un solo objeto = dut; varios = ditut"},
+        {"eu": "Hau ez da bide txarra", "es": "(este no es un mal camino)", "challenge": "¿Y 'esto no es un buen camino'?", "answer": "Hau ez da bide ona", "explanation": "txarra ↔ ona"},
+        {"eu": "Gu euskaldunak gara", "es": "(somos vascos (hablantes de euskera))", "challenge": "¿Cómo dirías 'yo soy vasca (hablante de euskera)'?", "answer": "Ni euskalduna naiz", "explanation": "gara (gu) ↔ naiz (ni); euskaldun = euskal + dun"}
+      ]
+    },
+    "xalbadorren-heriotza": {
+      "title": "Xalbadorren heriotza",
+      "cardDesc": "Un homenaje en forma de canción al bertsolari Xalbador: la letra más difícil, la melodía que merece el esfuerzo.",
+      "introEs": "Homenaje a Fernando Aire 'Xalbador' (1920-1976), el bertsolari de Urepel, uno de los más queridos de la historia. Murió el 7 de noviembre de 1976, el mismo día de un homenaje que le hacían. La letra es de Xabier Lete y la versión más popular es la de Erramun Martikorena. Es un texto difícil y muy poético, pero la melodía hace que merezca la pena aunque no entiendas todo a la primera. Fíjate en el superlativo con -ena (sakonena, bortitzena: 'el más profundo', 'el más violento'), en los participios con -ta/-a (ikasia, josia, estalitako) y en las formas informales de hitano (el 'tú' íntimo): hago (¿dónde estás?), huen (tenías / hiciste), hintzana (el que eras). El hitano se usa mucho en euskera de Iparralde y en poesía; si lo reconoces, entenderás muchas letras antiguas. Fíjate también en -etan para 'en plena acción' (ihesetan: huyendo) y en el sufijo -rik partitivo (bertsorik, oihurik: ningún / el ... de). Ojo con josi: significa coser, pero aquí funciona como 'lleno de' (bakardadez josia, 'cosido de soledad'). Y Urepel (Urepele) se explica como ur + epel, 'agua templada'.",
+      "lyrics": {
+        "eu": "Adiskide bat bazen / Orotan bihotz-bera\nPoesiaren hegoek / Sentimentuzko bertsoek / Antzaldatzen zutena\n\nPlazetako kantari / Bakardadez josia\nHitzen lihoa iruten / Bere barnean irauten\n\nOinazez ikasia / Ikasia\n\nNun hago, zer larretan\nUrepeleko artzaina\nMendi hegaletan gora / Oroitzapen den gerora / Ihesetan joan hintzana\n\nHesia urraturik\nLibratu huen kanta\nLotura guztietatik / Gorputzaren mugetatik / Aske sentitu nahirik\nAzken hatsa huela\nBertsorik sakonena\nInoiz esan ezin diren / Estalitako egien / Oihurik bortitzena\nBortitzena",
+        "es": "Era un amigo / Siempre compasivo\nLas alas de la poesía / Los versos sentimentales / Lo que transfiguraban\n\nCantor de plazas / Lleno de soledad\nHilando el lino de las palabras / Subsistiendo en su interior\n\nAprendido con dolor / Aprendido\n\n¿Dónde estás? ¿En qué prados?\nPastor de Urepel\nLadera arriba / hacia el futuro que se recuerda / huiste\n\nLa barrera rota\nLibraste la canción.\nDe todas las ataduras / de los límites del cuerpo / Queriendo sentirte libre\nEl último aliento\nEl verso más profundo\nLas cosas que no se pueden decir / de las verdades tapadas / El grito más violento\nEl más violento"
+      },
+      "known": [
+        {"eu": "adiskidea", "es": "amigo/a (de confianza)", "orig": "Bere lagun eta adiskideekin batera", "origEs": "Junto con sus amigos y amistades", "origSong": "Kantu bat", "here": "Adiskide bat bazen", "hereEs": "Había un amigo"},
+        {"eu": "bihotza", "es": "corazón", "orig": "Bi gizonek nahi zuten jabe izan haren bihotzaz", "origEs": "Dos hombres querían ser dueños de su corazón", "origSong": "Mariñelaren zai", "here": "bihotz-bera", "hereEs": "de corazón blando"},
+        {"eu": "plaza", "es": "plaza", "orig": "Dantzatuko genuke plazetan", "origEs": "Bailaríamos en las plazas", "origSong": "Zeinen ederra izango den", "here": "Plazetako kantari", "hereEs": "Cantor de plazas"},
+        {"eu": "bakardadea", "es": "soledad", "orig": "Esan bakardadeari gaur ez etortzeko", "origEs": "Dile a la soledad que hoy no venga", "origSong": "Ilargia", "here": "Bakardadez josia", "hereEs": "Lleno de soledad"},
+        {"eu": "oroitzapena", "es": "recuerdo", "orig": "zure usainaren oroitzapena", "origEs": "el recuerdo de tu olor", "origSong": "Zurekin batera", "here": "Oroitzapen den gerora", "hereEs": "hacia el futuro que se recuerda"},
+        {"eu": "geroa", "es": "futuro, lo venidero", "orig": "Geroa margozten", "origEs": "pintando el futuro", "origSong": "Zapalduen olerkia", "here": "Oroitzapen den gerora", "hereEs": "hacia el futuro que se recuerda"},
+        {"eu": "mendia", "es": "monte, montaña", "orig": "Nire mendien artean", "origEs": "Entre mis montañas", "origSong": "Negua joan da ta", "here": "Mendi hegaletan gora", "hereEs": "Ladera arriba"},
+        {"eu": "ihes", "es": "huida", "orig": "ihes egin = huir; iheskor = que huye", "origEs": "huir; fugaz", "origSong": "Hegan", "here": "Ihesetan joan hintzana", "hereEs": "huiste"},
+        {"eu": "kantua", "es": "canción", "orig": "Baina kantatu nahi dut zapalduen olerkia", "origEs": "Pero quiero cantar el poema de los oprimidos", "origSong": "Zapalduen olerkia", "here": "Libratu huen kanta", "hereEs": "Libraste la canción"},
+        {"eu": "gorputza", "es": "cuerpo", "orig": "Nire gorputzak eskatzen dizkidan", "origEs": "que mi cuerpo me pide", "origSong": "Elektrizitatea", "here": "Gorputzaren mugetatik", "hereEs": "de los límites del cuerpo"},
+        {"eu": "sentitu", "es": "sentir", "orig": "Sentitu arte", "origEs": "Hasta que sentimos", "origSong": "Ilargia", "here": "Aske sentitu nahirik", "hereEs": "Queriendo sentirte libre"},
+        {"eu": "esan", "es": "decir", "orig": "esango nizuke besterik gabe maite zaitudala", "origEs": "te diría que, sencillamente, te amo", "origSong": "Zurekin batera", "here": "Inoiz esan ezin diren", "hereEs": "las cosas que no se pueden decir"},
+        {"eu": "ezin", "es": "no poder, imposible", "orig": "Ezin huts egin antiheroiak", "origEs": "No pueden fallar los antihéroes", "origSong": "Korrika", "here": "esan ezin diren", "hereEs": "que no se pueden decir"},
+        {"eu": "egia", "es": "verdad", "orig": "Egia da hori!", "origEs": "¡Eso es cierto!", "origSong": "Doraemon", "here": "Estalitako egien", "hereEs": "de las verdades tapadas"}
+      ],
+      "vocab": [
+        {"eu": "bihotz-bera", "es": "de corazón blando, compasivo", "level": 3, "morph": "bihotz + bera", "morphEs": "corazón + blando, tierno"},
+        {"eu": "poesia", "es": "poesía", "level": 1, "note": "cognado"},
+        {"eu": "hegoa", "es": "ala", "level": 3, "note": "no confundir con hego (sur); aquí hegoak = alas de la poesía"},
+        {"eu": "sentimentua", "es": "sentimiento", "level": 2, "note": "sentimentuzko = de sentimiento (-zko: de, propio de)"},
+        {"eu": "bertsoa", "es": "verso, estrofa improvisada", "level": 2, "morph": "bertso + -lari", "morphEs": "verso + el que lo hace → bertsolari", "note": "bertsolaritza = arte del bertso improvisado"},
+        {"eu": "antzaldatu", "es": "transformar(se), cambiar de aspecto", "level": 3, "morph": "antz + aldatu", "morphEs": "aspecto + cambiar"},
+        {"eu": "kantaria", "es": "cantor/a, cantante", "level": 2, "morph": "kantatu + -ari", "morphEs": "cantar + el que lo hace"},
+        {"eu": "josi", "es": "coser; lleno de", "level": 3, "note": "josia = cosido; en la canción se usa como 'lleno de' (bakardadez josia)"},
+        {"eu": "lihoa", "es": "lino", "level": 3},
+        {"eu": "irun", "es": "hilar", "level": 3, "note": "hitzen lihoa iruten: imagen de 'hilar el lino de las palabras'"},
+        {"eu": "barnea", "es": "interior", "level": 2, "morph": "barne + -an", "morphEs": "dentro, interior (+ en)", "note": "bere barnean = en su interior"},
+        {"eu": "irauten", "es": "subsistiendo, perdurando", "level": 3, "morph": "irau", "morphEs": "durar, perdurar"},
+        {"eu": "oinazea", "es": "dolor, sufrimiento", "level": 3, "note": "oinazez = con/por dolor (-z, instrumental)"},
+        {"eu": "ikasi", "es": "aprender", "level": 1, "note": "ikasia = el aprendido; participio con -a"},
+        {"eu": "larrea", "es": "prado, pasto", "level": 3},
+        {"eu": "artzaina", "es": "pastor", "level": 2},
+        {"eu": "hegala", "es": "ladera; ala", "level": 3, "note": "mendi hegaletan = en las laderas del monte"},
+        {"eu": "hesia", "es": "valla, cerca, barrera", "level": 3},
+        {"eu": "urratu", "es": "romper, rasgar", "level": 3},
+        {"eu": "libratu", "es": "liberar(se)", "level": 3, "note": "cognado de librar"},
+        {"eu": "lotura", "es": "atadura, vínculo", "level": 3, "morph": "lotu + -ura", "morphEs": "atar + sufijo de resultado"},
+        {"eu": "muga", "es": "límite, frontera", "level": 2},
+        {"eu": "aske", "es": "libre", "level": 2, "morph": "askatu", "morphEs": "liberar; askatasuna = libertad"},
+        {"eu": "azken", "es": "último, final", "level": 1, "ant": "lehen", "antEs": "primero, antes"},
+        {"eu": "hatsa", "es": "aliento, soplo", "level": 3, "note": "azken hatsa = el último aliento"},
+        {"eu": "sakona", "es": "profundo/a", "level": 2, "ant": "azalekoa", "antEs": "superficial", "note": "sakonena = el más profundo (superlativo -ena)"},
+        {"eu": "estali", "es": "cubrir, tapar", "level": 3, "ant": "ireki", "antEs": "abrir; descubrir", "note": "estalitako = tapado, encubierto"},
+        {"eu": "oihua", "es": "grito", "level": 2},
+        {"eu": "bortitza", "es": "violento/a, fuerte", "level": 3, "ant": "leuna", "antEs": "suave", "note": "bortitzena = el más violento"},
+        {"eu": "hago", "es": "(tú) estás (hitano)", "level": 3, "note": "forma de hitano: hi + egon; en estándar sería zaude"},
+        {"eu": "huen", "es": "tenías / hiciste (hitano)", "level": 3, "note": "hitano del pasado de ukan; estándar: zenuen"},
+        {"eu": "hintzana", "es": "el que eras (hitano)", "level": 3, "note": "hi + izan en pasado + -a relativo; estándar: zinena"}
+      ],
+      "phrases": [
+        {"eu": "Adiskide bat bazen / Orotan bihotz-bera", "es": "Era un amigo / Siempre compasivo", "note": "Orotan = siempre. Bihotz-bera = de corazón blando/tierno."},
+        {"eu": "Poesiaren hegoek / Sentimentuzko bertsoek / Antzaldatzen zutena", "es": "Las alas de la poesía / Los versos sentimentales / Lo que transfiguraban", "note": "Hegoak = alas. Antzaldatu = transformar, cambiar de aspecto."},
+        {"eu": "Plazetako kantari / Bakardadez josia", "es": "Cantor de plazas / Lleno de soledad", "note": "Josia = cosido. Aquí se usa metafóricamente como 'lleno de' o 'traspasado por'."},
+        {"eu": "Hitzen lihoa iruten / Bere barnean irauten", "es": "Hilando el lino de las palabras / Subsistiendo en su interior", "note": "Irun = hilar. Irauten = perdurar, subsistir."},
+        {"eu": "Oinazez ikasia / Ikasia", "es": "Aprendido con dolor / Aprendido", "note": "Oinazez = con dolor (instrumental -z). Ikasia = participio con artículo (-a)."},
+        {"eu": "Nun hago, zer larretan / Urepeleko artzaina", "es": "¿Dónde estás? ¿En qué prados? / Pastor de Urepel", "note": "Hago = hitano de zaude (tú estás). Urepel = ur (agua) + epel (templada)."},
+        {"eu": "Mendi hegaletan gora / Oroitzapen den gerora / Ihesetan joan hintzana", "es": "Ladera arriba / hacia el futuro que se recuerda / huiste", "note": "Hegal = ladera/ala. Hintzana = hitano de zinena (el que eras). Ihesetan = huyendo (-etan = en plena acción)."},
+        {"eu": "Hesia urraturik / Libratu huen kanta", "es": "La barrera rota / Libraste la canción", "note": "Urraturik = roto/rasgado (estado con -rik). Huen = hitano de zenuen (tú tenías/hiciste)."},
+        {"eu": "Lotura guztietatik / Gorputzaren mugetatik / Aske sentitu nahirik", "es": "De todas las ataduras / de los límites del cuerpo / Queriendo sentirte libre", "note": "-tik = desde/de. Sentitu = sentir (nota: a veces transcrito erróneamente como 'senditu' = sanar)."},
+        {"eu": "Azken hatsa huela / Bertsorik sakonena", "es": "El último aliento / El verso más profundo", "note": "Hatsa = aliento. Sakonena = el más profundo (superlativo -ena)."},
+        {"eu": "Inoiz esan ezin diren / Estalitako egien / Oihurik bortitzena", "es": "Las cosas que no se pueden decir / de las verdades tapadas / El grito más violento", "note": "Ezin + infinitivo = no poder. Estalitako = tapadas/encubiertas. Oihurik = partitivo (-rik)."},
+        {"eu": "Bortitzena", "es": "El más violento", "note": "Repetición enfática del superlativo."}
+      ],
+      "praktika": [
+        {"eu": "Hau da ederrena", "es": "(este es el más hermoso)", "challenge": "¿Cómo dirías 'este es el más profundo'?", "answer": "Hau da sakonena", "explanation": "-en(a) = superlativo: ederrena, sakonena, bortitzena"},
+        {"eu": "Artzaina larrean dago", "es": "(el pastor está en el prado)", "challenge": "¿Y 'el pastor sube al prado'?", "answer": "Artzaina larrera igotzen da", "explanation": "-an/-ean = en; -ra = hacia (movimiento)"},
+        {"eu": "Bihotzean oinazea dut", "es": "(tengo dolor en el corazón)", "challenge": "¿Cómo dirías 'con dolor' (instrumental)?", "answer": "Oinazez", "explanation": "-z = con, por medio de: oinazez, bakardadez, pozez"},
+        {"eu": "Mendiko hegaletan ibili naiz", "es": "(he andado por las laderas del monte)", "challenge": "¿Cómo dirías 'en las laderas' (plural indeterminado)?", "answer": "hegaletan", "explanation": "-etan = en (plural locativo): hegaletan, plazetan, mendietan"},
+        {"eu": "Zer egiten ari haiz?", "es": "(¿qué estás haciendo? (hitano))", "challenge": "¿Cómo se dice en estándar?", "answer": "Zer egiten ari zara?", "explanation": "hitano: haiz (hi) ↔ zara (zu); hi se usa con gente muy cercana"}
+      ]
+    }
+  }
+}
