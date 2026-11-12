@@ -187,10 +187,39 @@
             "Sorgina piruliña",
             "Maritxu nora zoaz"
           ]
+        },
+        {
+          "id": "repaso-3",
+          "title": "3. Blokearen errepasoa",
+          "desc": "Laster / Próximamente",
+          "kind": "repaso",
+          "soon": true
         }
       ],
       "icon": "🎼"
     }
   ],
-  "next": []
+  "next": [],
+  "upcoming": [
+    {
+      "month": "Abendua / Diciembre",
+      "title": "4. BLOKEA",
+      "subtitle": "Gorka Urbizu"
+    },
+    {
+      "month": "Urtarrila / Enero",
+      "title": "5. BLOKEA",
+      "subtitle": "Moderneo · Chill Mafia · Glaukoma · Dupla"
+    },
+    {
+      "month": "Otsaila / Febrero",
+      "title": "6. BLOKEA",
+      "subtitle": "Kokteleo que te veo · Kortatu · Rotten XIII"
+    },
+    {
+      "month": "Martxoa / Marzo",
+      "title": "DENBORALDI AMAIERA",
+      "subtitle": "Final de temporada"
+    }
+  ]
 }
