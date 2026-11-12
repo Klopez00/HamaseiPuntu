@@ -54,7 +54,8 @@
           "desc": "Flashcardak + hitz partekatuak + azterketa",
           "kind": "repaso"
         }
-      ]
+      ],
+      "icon": "🎸"
     },
     {
       "id": 2,
@@ -144,7 +145,8 @@
           "desc": "Flashcardak + hitz partekatuak + azterketa",
           "kind": "repaso"
         }
-      ]
+      ],
+      "icon": "🎧"
     },
     {
       "id": 3,
@@ -161,8 +163,33 @@
             "Euskaldun berriaren balada",
             "Aita semeak"
           ]
+        },
+        {
+          "id": "mikeles",
+          "title": "02. Mikeles (Primera edición)",
+          "desc": "Kideari + Zure begiek",
+          "kind": "song",
+          "name": "Mikeles",
+          "songs": [
+            "Kideari",
+            "Zure begiek"
+          ]
+        },
+        {
+          "id": "haurren-kantak",
+          "title": "Edizio Berezia: Haurren kantak",
+          "desc": "Txiki Txiki Txikia + Lotan nago + Sorgina piruliña + Maritxu nora zoaz",
+          "kind": "special",
+          "name": "Haurren kantak",
+          "songs": [
+            "Txiki Txiki Txikia",
+            "Lotan nago",
+            "Sorgina piruliña",
+            "Maritxu nora zoaz"
+          ]
         }
-      ]
+      ],
+      "icon": "🎼"
     }
   ],
   "next": []
