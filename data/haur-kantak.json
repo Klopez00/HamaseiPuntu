@@ -1,0 +1,177 @@
+{
+  "type": "special",
+  "lang": "eu",
+  "title": "Haurren kantak",
+  "subtitle": "Canciones de niños (parte I)",
+  "bio": "Las canciones infantiles son un punto de partida perfecto para aprender euskera: frases muy cortas, repeticiones, estructuras simples y vocabulario concreto (el cuerpo, la calle, los animales, las brujas). Esta primera parte reúne cuatro: <strong>Txiki Txiki Txikia</strong>, <strong>Lotan nago</strong>, <strong>Sorgina piruliña</strong> y <strong>Maritxu nora zoaz</strong>.<br><br>En la <a href=\"https://open.spotify.com/playlist/6pNYtKbul4nJAtrqPpc7pI\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--sea-dark);font-weight:700\">lista de Spotify</a> encontrarás, además de las versiones de las canciones infantiles, otras 3 canciones que versionan u homenajean a estas canciones.",
+  "songs": {
+    "txiki-txiki-txikia": {
+      "title": "Txiki Txiki Txikia",
+      "cardDesc": "Canción de las partes del cuerpo: cada una sirve para algo (ojos para ver, orejas para oír...).",
+      "introEs": "Canción infantil que recorre las partes del cuerpo y dice para qué sirve cada una. La estructura se repite en toda la canción: parte del cuerpo + verbo con -tzeko/-teko (\"para + verbo\"). Es perfecta para fijar el vocabulario del cuerpo (begia, belarria, sudurra, ahoa, eskua, oina, burua, bihotza) y la forma maite zaitut (\"te quiero\"). Fíjate en -tzeko/-teko (ikusteko, entzuteko, usaintzeko...), en el plural tras bi (bi begi, bi oin) y en el locativo -n (kalean).",
+      "lyrics": {
+        "eu": "Txiki, txiki, txikia\nikusten naiz kalean.\nHanditzen handitzen,\nhasi naiz handitzen\ntxikia izanik / asko maite zaitut nik.\nBi begi ikusteko,\nbi belarri entzuteko.\n\nSudurra usaintzeko,\nahoa dastatzeko.\nHanditzen, handitzen...\nEskuak ukitzeko,\nbi oinak ibiltzeko\n\nBurua pentsatzeko,\nbihotza maitatzeko.",
+        "es": "Peque, peque, pequeño,\nme veo en la calle.\nCreciendo creciendo,\nhe empezado a crecer\nsiendo pequeño / te quiero mucho yo.\nDos ojos para ver,\ndos orejas para oír.\n\nLa nariz para oler,\nla boca para saborear.\nCreciendo, creciendo...\nLas manos para tocar,\nlos pies para andar.\n\nLa cabeza para pensar,\nel corazón para amar."
+      },
+      "known": [
+        {"eu": "txikia", "es": "pequeño/a", "orig": "Ta hain txikia naizela", "origEs": "Dándome cuenta de que soy tan pequeño", "origSong": "Hegan", "here": "txikia izanik", "hereEs": "siendo pequeño"},
+        {"eu": "hasi", "es": "empezar", "orig": "Hasi naiz bapatean", "origEs": "empecé de repente", "origSong": "Hegan", "here": "hasi naiz handitzen", "hereEs": "he empezado a crecer"},
+        {"eu": "maite", "es": "querido/a; amar", "orig": "Marinela maite dut, aita", "origEs": "Amo al marinero, padre", "origSong": "Mariñelaren zai", "here": "asko maite zaitut nik", "hereEs": "te quiero mucho yo"},
+        {"eu": "begia", "es": "ojo", "orig": "Belarriekin ikusteko nire begiek entzuten ez dutena", "origEs": "Para ver con los oídos lo que mis ojos no oyen", "origSong": "Negua joan da ta", "here": "Bi begi ikusteko", "hereEs": "Dos ojos para ver"},
+        {"eu": "belarria", "es": "oído, oreja", "orig": "Belarriekin ikusteko nire begiek entzuten ez dutena", "origEs": "Para ver con los oídos lo que mis ojos no oyen", "origSong": "Negua joan da ta", "here": "bi belarri entzuteko", "hereEs": "dos orejas para oír"},
+        {"eu": "ahoa", "es": "boca", "orig": "zure ahotik gure istorioak", "origEs": "de tu boca nuestras historias", "origSong": "Zurekin batera", "here": "ahoa dastatzeko", "hereEs": "la boca para saborear"},
+        {"eu": "eskua", "es": "mano", "orig": "Emaidazu eskua", "origEs": "Dame la mano", "origSong": "Iparraldera", "here": "Eskuak ukitzeko", "hereEs": "Las manos para tocar"},
+        {"eu": "oina", "es": "pie", "orig": "Oinak bustirik, lurraren erdian", "origEs": "Con los pies mojados, en medio de la tierra", "origSong": "Elektrizitatea", "here": "bi oinak ibiltzeko", "hereEs": "los pies para andar"},
+        {"eu": "burua", "es": "cabeza", "orig": "Buruan mundua, makina jendea", "origEs": "El mundo en la cabeza, un montón de gente", "origSong": "Korrika", "here": "Burua pentsatzeko", "hereEs": "La cabeza para pensar"},
+        {"eu": "bihotza", "es": "corazón", "orig": "Bi gizonek nahi zuten jabe izan haren bihotzaz", "origEs": "Dos hombres querían ser dueños de su corazón", "origSong": "Mariñelaren zai", "here": "bihotza maitatzeko", "hereEs": "el corazón para amar"}
+      ],
+      "vocab": [
+        {"eu": "kalea", "es": "la calle", "level": 1, "note": "kalean = en la calle (-n = en). Parecido en otras palabras: etxean, mendian"},
+        {"eu": "ikusi", "es": "ver", "level": 1, "note": "Ya salió en Ikusi mendizaleak. ikusten naiz = me veo (ikusi + -ten, forma en proceso)"},
+        {"eu": "handitu", "es": "crecer, agrandarse", "level": 1, "note": "-tu forma verbos desde adjetivos: handi → handitu, txiki → txikitu", "morph": "handi + -tu", "morphEs": "grande + volverse", "ant": "txikitu", "antEs": "hacerse pequeño, encoger"},
+        {"eu": "entzun", "es": "oír, escuchar", "level": 1},
+        {"eu": "sudurra", "es": "la nariz", "level": 1},
+        {"eu": "usaindu", "es": "oler", "level": 2, "note": "usain (olor) ya salió en Zurekin batera", "morph": "usain + -du", "morphEs": "olor + hacer"},
+        {"eu": "dastatu", "es": "saborear, probar", "level": 2, "note": "dastatzeko = para saborear"},
+        {"eu": "ukitu", "es": "tocar (con las manos)", "level": 1, "note": "ukitzeko = para tocar"},
+        {"eu": "ibili", "es": "andar, caminar", "level": 1, "note": "ibiltzeko = para andar"},
+        {"eu": "pentsatu", "es": "pensar", "level": 1, "note": "Ya salió en Euskaldun berriaren balada"},
+        {"eu": "maitatu", "es": "amar, querer", "level": 1, "note": "maite (querido) → maitatu (amar); maitatzeko = para amar", "morph": "maite + -tu", "morphEs": "querido + volver/hacer"},
+        {"eu": "asko", "es": "mucho, muchos", "level": 1, "ant": "gutxi", "antEs": "poco"},
+        {"eu": "zaitut", "es": "a ti (yo): maite zaitut = te quiero", "level": 2, "note": "nik zu maite zaitut = yo te quiero. zaitut es la forma de \"yo + a ti\"", "morph": "zu + dut", "morphEs": "a ti + yo lo tengo"},
+        {"eu": "bi", "es": "dos", "level": 1, "note": "bi begi = dos ojos; bi oin = dos pies (tras el numeral, el sustantivo va sin plural)"},
+        {"eu": "ikusteko", "es": "para ver", "level": 2, "note": "-tzeko/-teko = finalidad (para + infinitivo): ikusteko, entzuteko, usaintzeko, dastatzeko, ukitzeko, ibiltzeko, pentsatzeko, maitatzeko", "morph": "ikusi + -teko", "morphEs": "ver + para"},
+        {"eu": "izanik", "es": "siendo, aun siendo", "level": 3, "note": "txikia izanik = siendo pequeño. Construcción más literaria", "morph": "izan + -ik", "morphEs": "ser + (forma de gerundio)"}
+      ],
+      "phrases": [
+        {"eu": "Txiki, txiki, txikia / ikusten naiz kalean.", "es": "Peque, peque, pequeño, / me veo en la calle.", "note": "Kalean = en la calle (locativo -n)."},
+        {"eu": "Handitzen handitzen, / hasi naiz handitzen", "es": "Creciendo creciendo, / he empezado a crecer", "note": "Handitu = crecer. -tzen indica proceso en curso."},
+        {"eu": "txikia izanik / asko maite zaitut nik.", "es": "siendo pequeño / te quiero mucho yo.", "note": "Izanik = siendo (gerundio de izan). Maite zaitut = te quiero (nik zu)."},
+        {"eu": "Bi begi ikusteko, / bi belarri entzuteko.", "es": "Dos ojos para ver, / dos orejas para oír.", "note": "-teko/-tzeko = para + infinitivo (finalidad)."},
+        {"eu": "Sudurra usaintzeko, / ahoa dastatzeko.", "es": "La nariz para oler, / la boca para saborear.", "note": "Usaindu = oler. Dastatu = saborear."},
+        {"eu": "Eskuak ukitzeko, / bi oinak ibiltzeko", "es": "Las manos para tocar, / los pies para andar.", "note": "Ukitu = tocar. Ibili = andar."},
+        {"eu": "Burua pentsatzeko, / bihotza maitatzeko.", "es": "La cabeza para pensar, / el corazón para amar.", "note": "Pentsatu = pensar. Maitatu = amar."}
+      ],
+      "praktika": [
+        {"eu": "Liburu bat irakurtzeko denbora behar dut", "es": "(necesito tiempo para leer un libro)", "challenge": "¿Cómo dirías 'para ver'?", "answer": "Ikusteko", "explanation": "-tzeko/-teko = para + verbo: ikusi → ikusteko, entzun → entzuteko, ukitu → ukitzeko"},
+        {"eu": "Ama, asko maite zaitut", "es": "(mamá, te quiero mucho)", "challenge": "¿Cómo dirías 'te quiero' a una persona?", "answer": "Maite zaitut", "explanation": "zaitut = yo + a ti. maite = querido; maite zaitut = te quiero"},
+        {"eu": "Haurra azkar handitzen ari da", "es": "(el niño crece rápido)", "challenge": "¿Cuál es el contrario de handitu?", "answer": "Txikitu", "explanation": "handi → handitu, txiki → txikitu: adjetivo + -tu = verbo"},
+        {"eu": "Kalean ikusi zaitut", "es": "(te he visto en la calle)", "challenge": "¿Qué añade -n a kale?", "answer": "\"En la calle\": kalean", "explanation": "-n/-an/-ean = en: kalean, etxean, buruan"},
+        {"eu": "Eskuak ukitzeko erabiltzen ditugu", "es": "(usamos las manos para tocar)", "challenge": "¿Con qué parte del cuerpo se hace 'ibiltzeko'?", "answer": "Oinak (los pies)", "explanation": "Cada parte del cuerpo con su función: begiak ikusteko, belarriak entzuteko, oinak ibiltzeko"}
+      ]
+    },
+    "lotan-nago": {
+      "title": "Lotan nago",
+      "cardDesc": "Una nana al revés: estoy dormido con los ojos cerrados, pero suena el despertador y no puedo dormir.",
+      "introEs": "Canción muy corta y repetitiva, ideal para empezar. Juega con el contraste entre estar dormido (lotan nago) y no poder dormir (ezin lorik egin). Fíjate en lotan egon (estar dormido) y lo egin (dormir), en el estado resultante begiak itxita (con los ojos cerrados: itxi + -ta) y en el partitivo con negación lorik, el mismo que viste en milagrorik o kulparik.",
+      "lyrics": {
+        "eu": "Lotan nago, begiak itxita\nLotan nago, begiak itxita\nRing eta ring, ezin lorik egin!\nRing eta ring, ezin lorik egin!",
+        "es": "Estoy dormido, con los ojos cerrados,\nEstoy dormido, con los ojos cerrados,\nRing y ring, y no puedo dormir!\nRing y ring, y no puedo dormir!"
+      },
+      "known": [
+        {"eu": "lo", "es": "sueño (dormir)", "orig": "loa oztopatzen digutenak", "origEs": "Los que nos estorban el sueño", "origSong": "Beldurrik gabe", "here": "ezin lorik egin", "hereEs": "no puedo dormir"},
+        {"eu": "ezin", "es": "no poder, imposible", "orig": "Ezin huts egin antiheroiak", "origEs": "No pueden fallar los antihéroes", "origSong": "Korrika", "here": "ezin lorik egin", "hereEs": "no puedo dormir"},
+        {"eu": "begia", "es": "ojo", "orig": "Belarriekin ikusteko nire begiek entzuten ez dutena", "origEs": "Para ver con los oídos lo que mis ojos no oyen", "origSong": "Negua joan da ta", "here": "begiak itxita", "hereEs": "con los ojos cerrados"}
+      ],
+      "vocab": [
+        {"eu": "lotan", "es": "dormido, durmiendo", "level": 1, "note": "lotan egon = estar dormido; lo egin = dormir (hacer sueño)", "morph": "lo + -tan", "morphEs": "sueño + en"},
+        {"eu": "nago", "es": "estoy", "level": 1, "note": "egon (estar): nago (yo), zaude (tú), dago (él/ella)"},
+        {"eu": "itxi", "es": "cerrar", "level": 1, "note": "itxita = cerrado (itxi + -ta: estado resultante)", "ant": "ireki", "antEs": "abrir"},
+        {"eu": "itxita", "es": "cerrado/a", "level": 1, "note": "begiak itxita = con los ojos cerrados", "morph": "itxi + -ta", "morphEs": "cerrar + (estado)", "ant": "irekita", "antEs": "abierto/a"},
+        {"eu": "lorik", "es": "ningún sueño (dormir, con negación)", "level": 2, "note": "Partitivo con negación: ezin lorik egin = no poder dormir; ez dut dirurik = no tengo dinero", "morph": "lo + -rik", "morphEs": "sueño + (partitivo)"},
+        {"eu": "egin", "es": "hacer", "level": 1, "note": "lo egin = dormir; ezin lorik egin = no poder dormir"},
+        {"eu": "ring", "es": "ring (sonido del timbre/despertador)", "level": 1, "note": "Onomatopeya: ring eta ring = ring y ring (insistente)"}
+      ],
+      "phrases": [
+        {"eu": "Lotan nago, begiak itxita", "es": "Estoy dormido, con los ojos cerrados,", "note": "Lotan nago = estoy dormido (lotan + nago). Itxita = cerrado (estado resultante con -ta)."},
+        {"eu": "Ring eta ring, ezin lorik egin!", "es": "Ring y ring, y no puedo dormir!", "note": "Ezin + infinitivo = no poder. Lorik = partitivo con negación (ningún sueño)."}
+      ],
+      "praktika": [
+        {"eu": "Haurra lotan dago", "es": "(el niño está dormido)", "challenge": "¿Cómo dirías 'yo estoy dormido'?", "answer": "Lotan nago", "explanation": "lotan egon = estar dormido; egon: nago (yo), zaude (tú), dago (él/ella)"},
+        {"eu": "Gaur ezin dut lorik egin", "es": "(hoy no puedo dormir)", "challenge": "¿Qué significa lorik en ezin lorik egin?", "answer": "'Ningún sueño': partitivo -rik con negación", "explanation": "Con negación se usa el partitivo: ez dut dirurik (no tengo dinero), ezin lorik egin (no poder dormir)"},
+        {"eu": "Itxi leihoa, mesedez", "es": "(cierra la ventana, por favor)", "challenge": "¿Cuál es el contrario de itxi?", "answer": "Ireki", "explanation": "itxi ↔ ireki; itxita ↔ irekita"},
+        {"eu": "Gaur ondo egin dut lo", "es": "(hoy he dormido bien)", "challenge": "¿Cómo se dice 'dormir' con la palabra lo?", "answer": "Lo egin", "explanation": "lo egin = dormir (literal: hacer sueño). lotan egon = estar dormido"},
+        {"eu": "Leihoa irekita dago", "es": "(la ventana está abierta)", "challenge": "¿Qué indica -ta en irekita?", "answer": "Estado resultante: abierto", "explanation": "participio + -ta = estado: irekita (abierto), itxita (cerrado)"}
+      ]
+    },
+    "sorgina-pirulina": {
+      "title": "Sorgina piruliña",
+      "cardDesc": "Juego de reto y persecución: una bruja sobre su escoba y el clásico \"¡a que no me pillas!\".",
+      "introEs": "Canción-juego muy conocida entre los niños, con un tono burlón: una bruja sobre la escoba, el sombrero en la cabeza, y el reto final de pillarla. Vocabulario muy concreto (sorgina, erratza, kapela, ipurdia, zikina) y expresiones de juego infantil (tentela, ezetz harrapatu). Fíjate en -an = en (buruan), en gainean (encima de) y en la forma zara (eres).",
+      "lyrics": {
+        "eu": "Sorgina pirulina erratza gainean,\nipurdia zikina, kapela buruan.\nSorgina sorgina ipurdia zikina,\ntentela zara zu?\nEzetz harrapatu!",
+        "es": "Bruja piruja encima de la escoba,\nel culo sucio, el sombrero en la cabeza.\nBruja bruja culo sucio,\n¿eres tonta?\n¡A que no me pillas!"
+      },
+      "known": [
+        {"eu": "gainean", "es": "encima de, sobre", "orig": "Tokatu denaren gainean", "origEs": "Sobre lo que ha tocado", "origSong": "Iparraldera", "here": "erratza gainean", "hereEs": "encima de la escoba"},
+        {"eu": "burua", "es": "cabeza", "orig": "Buruan mundua, makina jendea", "origEs": "El mundo en la cabeza, un montón de gente", "origSong": "Korrika", "here": "kapela buruan", "hereEs": "el sombrero en la cabeza"}
+      ],
+      "vocab": [
+        {"eu": "sorgina", "es": "la bruja", "level": 1},
+        {"eu": "erratza", "es": "la escoba", "level": 1, "note": "erratzaren gainean = encima de la escoba"},
+        {"eu": "ipurdia", "es": "el culo, el trasero", "level": 1, "note": "Palabra coloquial/infantil"},
+        {"eu": "zikina", "es": "sucio/a", "level": 1, "ant": "garbia", "antEs": "limpio/a"},
+        {"eu": "kapela", "es": "el sombrero", "level": 1},
+        {"eu": "tentela", "es": "tonto/a, bobo/a", "level": 2, "note": "Insulto suave y habitual en juegos infantiles"},
+        {"eu": "harrapatu", "es": "atrapar, pillar", "level": 2, "note": "Ezetz harrapatu = ¡a que no me pillas!"},
+        {"eu": "ezetz", "es": "a que no", "level": 3, "note": "ez + -etz: fórmula de reto en juegos infantiles (\"a que no...\"); se usa con un verbo detrás"},
+        {"eu": "zara", "es": "eres", "level": 1, "note": "izan (ser): naiz (soy), zara (eres), da (es). tentela zara zu? = ¿eres tonta?"},
+        {"eu": "buruan", "es": "en la cabeza", "level": 1, "note": "burua (cabeza) ya la conoces; -an = en", "morph": "buru + -an", "morphEs": "cabeza + en"}
+      ],
+      "phrases": [
+        {"eu": "Sorgina pirulina erratza gainean,", "es": "Bruja piruja encima de la escoba,", "note": "Gainean = encima de."},
+        {"eu": "ipurdia zikina, kapela buruan.", "es": "el culo sucio, el sombrero en la cabeza.", "note": "Zikina = sucio. Buruan = en la cabeza (locativo -an)."},
+        {"eu": "Sorgina sorgina ipurdia zikina, / tentela zara zu?", "es": "Bruja bruja culo sucio, / ¿eres tonta?", "note": "Tentela = tonta. Zara = eres."},
+        {"eu": "Ezetz harrapatu!", "es": "¡A que no me pillas!", "note": "Ezetz = a que no (fórmula de reto). Harrapatu = atrapar, pillar."}
+      ],
+      "praktika": [
+        {"eu": "Zure eskuak zikinak daude", "es": "(tus manos están sucias)", "challenge": "¿Cuál es el contrario de zikin?", "answer": "Garbi", "explanation": "zikin ↔ garbi"},
+        {"eu": "Sorgina erratzaren gainean dabil", "es": "(la bruja anda encima de la escoba)", "challenge": "¿Cómo dirías 'encima de la mesa'?", "answer": "Mahaiaren gainean", "explanation": "-aren gainean = encima de: erratzaren gainean, mahaiaren gainean"},
+        {"eu": "Katuak sagua harrapatu du", "es": "(el gato ha atrapado al ratón)", "challenge": "¿Qué verbo significa 'atrapar, pillar'?", "answer": "Harrapatu", "explanation": "harrapatu = atrapar, pillar (también en juegos de persecución)"},
+        {"eu": "Kapela buruan dut", "es": "(llevo el sombrero en la cabeza)", "challenge": "¿Qué indica -an en buruan?", "answer": "\"En\": buru + -an = en la cabeza", "explanation": "-an/-ean = en: buruan, kalean, etxean"},
+        {"eu": "Mariak ez du ezer ulertzen, baina ez da tentela", "es": "(María no entiende nada, pero no es tonta)", "challenge": "¿Cómo dirías 'eres' (tú)?", "answer": "Zara", "explanation": "izan: naiz (soy), zara (eres), da (es)"}
+      ]
+    },
+    "maritxu-nora-zoaz": {
+      "title": "Maritxu nora zoaz",
+      "cardDesc": "Un diálogo de pregunta y respuesta: ¿adónde vas? A la fuente. ¿Qué hay allí? Vino blanco.",
+      "introEs": "Canción de diálogo, muy popular, con preguntas y respuestas cortas: adónde va Maritxu, qué hay en la fuente, qué harán los dos. Es muy buena para practicar las preguntas básicas (nora? zer?), los casos de lugar (-n = en, -ra = a/hacia: iturrian, iturrira), el futuro con -ko/-go (edango dugu) y el condicional con ba- (nahi baduzu).",
+      "lyrics": {
+        "eu": "Maritxu nora zoaz / Eder galant ori?\nIturrira Bartolo / Nahi baduzu etorri\nIturrian zer dago?\nArdotxo zuria\nBiok edango dugu / Nahi dugun guztia",
+        "es": "¿A dónde vas Maritxu / guapa?\nA la fuente Bartolo, / si quieres ven\n¿Qué hay en la fuente?\nVinito blanco\nLos dos beberemos / todo lo que queramos"
+      },
+      "known": [
+        {"eu": "etorri", "es": "venir", "orig": "Emaidazu eskua ta etorri iparraldera", "origEs": "Dame la mano y ven al norte", "origSong": "Iparraldera", "here": "Nahi baduzu etorri", "hereEs": "si quieres ven"},
+        {"eu": "zuria", "es": "blanco/a", "orig": "berde marroi zuri", "origEs": "verde marrón blanco", "origSong": "Kantu bat", "here": "Ardotxo zuria", "hereEs": "Vinito blanco"},
+        {"eu": "nahi", "es": "querer, desear", "orig": "Gerra hontan zurekin galdu nahi dut nik", "origEs": "En esta guerra yo quiero perder contigo", "origSong": "Sumendiak", "here": "Nahi baduzu", "hereEs": "si quieres"}
+      ],
+      "vocab": [
+        {"eu": "nora", "es": "¿adónde?", "level": 1, "note": "non (dónde), nora (adónde), nondik (de dónde)", "morph": "non + -ra", "morphEs": "dónde + hacia"},
+        {"eu": "zoaz", "es": "vas", "level": 2, "note": "joan (ir): noa (voy), zoaz (vas), doa (va). Nora zoaz? = ¿adónde vas?"},
+        {"eu": "galanta", "es": "guapo/a, elegante", "level": 2, "note": "Cumplido algo antiguo; ya conoces eder (bello)"},
+        {"eu": "iturria", "es": "la fuente, el manantial", "level": 1, "note": "iturrira = a la fuente; iturrian = en la fuente"},
+        {"eu": "ardotxoa", "es": "el vinito", "level": 2, "note": "-txo = diminutivo cariñoso: ardotxo (vinito)", "morph": "ardo + -txo", "morphEs": "vino + (diminutivo)"},
+        {"eu": "edan", "es": "beber", "level": 1},
+        {"eu": "edango dugu", "es": "beberemos", "level": 2, "note": "-ko/-go forma el futuro: edango dugu, ikusiko dugu", "morph": "edan + -go + dugu", "morphEs": "beber + (futuro) + lo tenemos"},
+        {"eu": "zer", "es": "qué", "level": 1},
+        {"eu": "dago", "es": "está, hay", "level": 1, "note": "egon: dago = está / hay (lugar)"},
+        {"eu": "baduzu", "es": "si tienes (nahi baduzu = si quieres)", "level": 2, "note": "ba- = si (condicional): nahi baduzu, ez badut", "morph": "ba + duzu", "morphEs": "si + tienes"},
+        {"eu": "biok", "es": "los dos, ambos", "level": 2, "note": "-ok = nosotros/vosotros incluidos: biok (los dos), hirurok (los tres)", "morph": "bi + -ok", "morphEs": "dos + (nosotros)"},
+        {"eu": "guztia", "es": "todo", "level": 1, "note": "guztia = todo; guztiak = todos"}
+      ],
+      "phrases": [
+        {"eu": "Maritxu nora zoaz / Eder galant ori?", "es": "¿A dónde vas Maritxu / guapa?", "note": "Nora = ¿adónde? Zoaz = vas (de joan)."},
+        {"eu": "Iturrira Bartolo / Nahi baduzu etorri", "es": "A la fuente Bartolo, / si quieres ven", "note": "-ra = hacia/a. Nahi baduzu = si quieres (ba- condicional)."},
+        {"eu": "Iturrian zer dago? / Ardotxo zuria", "es": "¿Qué hay en la fuente? / Vinito blanco", "note": "-n = en (iturrian). Ardotxo = vinito (diminutivo -txo)."},
+        {"eu": "Biok edango dugu / Nahi dugun guztia", "es": "Los dos beberemos / todo lo que queramos", "note": "Edango dugu = beberemos (futuro). Biok = los dos (nosotros dos)."}
+      ],
+      "praktika": [
+        {"eu": "Nora zoaz hain azkar?", "es": "(¿adónde vas tan rápido?)", "challenge": "¿Cómo responderías 'voy a la fuente'?", "answer": "Iturrira noa", "explanation": "joan: noa (voy), zoaz (vas), doa (va). -ra = hacia/a"},
+        {"eu": "Bihar ardoa edango dugu", "es": "(mañana beberemos vino)", "challenge": "¿Cómo dirías 'beberemos'?", "answer": "Edango dugu", "explanation": "-ko/-go forma el futuro: edan → edango, ikusi → ikusiko"},
+        {"eu": "Ardotxo bat nahi dut", "es": "(quiero un vinito)", "challenge": "¿Qué añade -txo?", "answer": "Diminutivo: ardo + -txo = vinito", "explanation": "-txo expresa diminutivo y cariño: ardotxo, etxetxo"},
+        {"eu": "Nahi baduzu, etorri gurekin", "es": "(si quieres, ven con nosotros)", "challenge": "¿Qué indica ba- en baduzu?", "answer": "\"Si\" (condicional): ba + duzu", "explanation": "ba- + verbo = si: nahi baduzu (si quieres), ez badut (si no tengo)"},
+        {"eu": "Iturrian ura dago", "es": "(en la fuente hay agua)", "challenge": "¿Cómo dirías 'a la fuente'?", "answer": "Iturrira", "explanation": "-n = en (iturrian), -ra = a/hacia (iturrira)"}
+      ]
+    }
+  }
+}
